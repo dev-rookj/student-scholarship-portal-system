@@ -11,11 +11,14 @@ https://trello.com/b/70oi2Quo/scholarship-management-system
 # Git Operation Guide
 
 ### 1. Clone the repository
-1. Install **Git** by downloading the installer on this website:
-```https://git-scm.com/downloads/win```
+1. Download **Git** by clicking [here](https://git-scm.com/downloads/win).
 
 3. Open **Command Prompt** and allocate the directory where you want to put your local files using this command
-```cd <directory>```
+```
+cd <directory>
+```
 
 5. Clone the repository using this command
-```git clone https://github.com/dev-rookj/student-scholarship-portal-system.git```
+```
+git clone https://github.com/dev-rookj/student-scholarship-portal-system.git
+```
