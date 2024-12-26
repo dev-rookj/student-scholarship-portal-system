@@ -26,4 +26,20 @@ cd C:\Users\Windows\cs1b
 git clone https://github.com/dev-rookj/student-scholarship-portal-system.git
 ```
 <br/>
-##
+## Switching into branches
+Open **Command Prompt** and input this command:
+```
+git branch <branchname>
+```
+There are five different branches per member:
+```
+shane
+princess
+eyara
+maven
+jeff
+```
+So your command syntax should look like this:
+```
+git branch jeff
+```
