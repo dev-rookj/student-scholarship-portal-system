@@ -8,9 +8,9 @@ https://trello.com/b/70oi2Quo/scholarship-management-system
 
 *NOTE: Please create an Atlassian account to access the Trello board. The purpose of this is to make progress tracking easier.*
 
-# Git Operation Guide
+# Git Operation Guide<br/>
 
-### Cloning the repository (initial step)
+## Cloning the repository (initial step)
 - Download **Git** by clicking [here](https://git-scm.com/downloads/win).
 
 - Open **Command Prompt** and allocate the directory where you want to put your local files using this command
@@ -25,3 +25,5 @@ cd C:\Users\Windows\cs1b
 ```
 git clone https://github.com/dev-rookj/student-scholarship-portal-system.git
 ```
+<br/>
+##
