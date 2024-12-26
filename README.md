@@ -8,9 +8,9 @@ https://trello.com/b/70oi2Quo/scholarship-management-system
 
 *NOTE: Please create an Atlassian account to access the Trello board. The purpose of this is to make progress tracking easier.*
 
-#Git Operation Guide
+# Git Operation Guide
 
-###1. Clone the repository
+### 1. Clone the repository
 1. Install **Git** by downloading the installer on this website:
 `https://git-scm.com/downloads/win`
 
