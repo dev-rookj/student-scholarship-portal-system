@@ -27,8 +27,9 @@ cd C:\Users\Windows\cs1b
 ```
 git clone https://github.com/dev-rookj/student-scholarship-portal-system.git
 ```
+and the repository should be cloned to your device.
 
-## Pulling the repository
+## Updating project
 *This operation is done to update the project on your device.* <br/>
 - Open **Command Prompt** and allocate to the project directory using this command:
 ```
@@ -43,3 +44,24 @@ cd C:\Users\username\cs1b\student-scholarship-portal-system
 git pull
 ```
 and it should update your files.
+
+## Submitting changes
+*This operation is done to submit your changes to the repository.*<br/>
+- Open **Command Prompt** and allocate to the project directory using this command:
+```
+cd <directory>
+```
+- Add the updated files you made to the files that are about to be moved in the repository using this command:
+```
+git add .
+```
+- Create a commit message for your push using this command:
+```
+git commit -m "<commitmessage>"
+```
+*Take note that your commit message should be brief, yet informative. (e.g. "button resized", "textbox opacity reduced")*
+- Push the changes to the repository using this command:
+```
+git push
+```
+and it should be submitted to the repository.
