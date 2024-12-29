@@ -11,35 +11,35 @@ https://trello.com/b/70oi2Quo/scholarship-management-system
 # Git Operation Guide<br/>
 
 ## Cloning the repository (initial step)
+*This operation is your initial step to start working on the project.*<br/>
+
 - Download **Git** by clicking [here](https://git-scm.com/downloads/win).
 
-- Open **Command Prompt** and allocate the directory where you want to put your local files using this command
+- Open **Command Prompt** and allocate the directory where you want to put your local files using this command:
 ```
 cd <directory>
 ```
-Example:
+(it should look like this)
 ```
 cd C:\Users\Windows\cs1b
 ```
-- Clone the repository using this command
+- Clone the repository using this command:
 ```
 git clone https://github.com/dev-rookj/student-scholarship-portal-system.git
 ```
 
-## Switching into branches
-Open **Command Prompt** and input this command:
+## Pulling the repository
+*This operation is done to update the project on your device.* <br/>
+- Open **Command Prompt** and allocate to the project directory using this command:
 ```
-git branch <branchname>
+cd <directory>
 ```
-There are five different branches per member:
+(it should look like this)
 ```
-shane
-princess
-eyara
-maven
-jeff
+cd C:\Users\username\cs1b\student-scholarship-portal-system
 ```
-So your command syntax should look like this:
+- Pull the contents in the repository using this commmand:
 ```
-git branch jeff
+git pull
 ```
+and it should update your files.
