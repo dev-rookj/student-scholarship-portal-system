@@ -82,7 +82,7 @@ public class login extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jTextField1);
-        jTextField1.setBounds(100, 170, 200, 37);
+        jTextField1.setBounds(100, 180, 200, 37);
 
         jTextField2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jTextField2.setForeground(new java.awt.Color(153, 153, 153));
@@ -101,17 +101,17 @@ public class login extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jTextField2);
-        jTextField2.setBounds(100, 220, 200, 37);
+        jTextField2.setBounds(100, 230, 200, 37);
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logo.png"))); // NOI18N
         jPanel1.add(jLabel4);
-        jLabel4.setBounds(80, 70, 229, 75);
+        jLabel4.setBounds(80, 80, 229, 75);
 
         jLabel5.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Don't have an account?");
         jPanel1.add(jLabel5);
-        jLabel5.setBounds(100, 310, 140, 14);
+        jLabel5.setBounds(100, 320, 140, 14);
 
         jButton1.setBackground(new java.awt.Color(0, 51, 102));
         jButton1.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
@@ -125,24 +125,24 @@ public class login extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton1);
-        jButton1.setBounds(150, 270, 100, 30);
+        jButton1.setBounds(150, 280, 100, 30);
 
         jLabel2.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 51, 204));
         jLabel2.setText("Register!");
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(240, 310, 60, 14);
+        jLabel2.setBounds(240, 320, 60, 14);
 
         jLabel3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("© Copyright 2024 #include <iostream> | Scholarship Portal");
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(10, 450, 330, 40);
+        jLabel3.setBounds(10, 460, 330, 40);
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/bg.jpg"))); // NOI18N
         jLabel7.setText("jLabel7");
         jPanel1.add(jLabel7);
-        jLabel7.setBounds(0, 0, 400, 480);
+        jLabel7.setBounds(0, 0, 400, 490);
 
         jTabbedPane1.addTab("login", jPanel1);
 
@@ -151,18 +151,18 @@ public class login extends javax.swing.JFrame {
         jLabel8.setFont(new java.awt.Font("Arial", 1, 28)); // NOI18N
         jLabel8.setText("Registration");
         jPanel2.add(jLabel8);
-        jLabel8.setBounds(120, 50, 170, 40);
+        jLabel8.setBounds(120, 60, 170, 40);
 
         jLabel9.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         jLabel9.setText("Already Registered?");
         jPanel2.add(jLabel9);
-        jLabel9.setBounds(140, 80, 120, 30);
+        jLabel9.setBounds(140, 90, 120, 30);
 
         jLabel10.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(0, 51, 153));
         jLabel10.setText("Login");
         jPanel2.add(jLabel10);
-        jLabel10.setBounds(240, 80, 30, 30);
+        jLabel10.setBounds(240, 90, 30, 30);
 
         jTextField3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jTextField3.setForeground(new java.awt.Color(153, 153, 153));
@@ -181,7 +181,7 @@ public class login extends javax.swing.JFrame {
             }
         });
         jPanel2.add(jTextField3);
-        jTextField3.setBounds(80, 110, 240, 24);
+        jTextField3.setBounds(80, 120, 240, 24);
 
         jTextField4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jTextField4.setForeground(new java.awt.Color(153, 153, 153));
@@ -200,7 +200,7 @@ public class login extends javax.swing.JFrame {
             }
         });
         jPanel2.add(jTextField4);
-        jTextField4.setBounds(80, 150, 240, 24);
+        jTextField4.setBounds(80, 160, 240, 24);
 
         jTextField5.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jTextField5.setForeground(new java.awt.Color(153, 153, 153));
@@ -219,7 +219,7 @@ public class login extends javax.swing.JFrame {
             }
         });
         jPanel2.add(jTextField5);
-        jTextField5.setBounds(80, 190, 240, 24);
+        jTextField5.setBounds(80, 200, 240, 24);
 
         jTextField6.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jTextField6.setForeground(new java.awt.Color(153, 153, 153));
@@ -238,7 +238,7 @@ public class login extends javax.swing.JFrame {
             }
         });
         jPanel2.add(jTextField6);
-        jTextField6.setBounds(80, 230, 240, 24);
+        jTextField6.setBounds(80, 240, 240, 24);
 
         jTextField7.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jTextField7.setForeground(new java.awt.Color(153, 153, 153));
@@ -257,7 +257,7 @@ public class login extends javax.swing.JFrame {
             }
         });
         jPanel2.add(jTextField7);
-        jTextField7.setBounds(80, 270, 240, 24);
+        jTextField7.setBounds(80, 280, 240, 24);
 
         jTextField8.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jTextField8.setForeground(new java.awt.Color(153, 153, 153));
@@ -276,7 +276,7 @@ public class login extends javax.swing.JFrame {
             }
         });
         jPanel2.add(jTextField8);
-        jTextField8.setBounds(80, 310, 240, 24);
+        jTextField8.setBounds(80, 320, 240, 24);
 
         jTextField9.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jTextField9.setForeground(new java.awt.Color(153, 153, 153));
@@ -295,7 +295,7 @@ public class login extends javax.swing.JFrame {
             }
         });
         jPanel2.add(jTextField9);
-        jTextField9.setBounds(80, 350, 240, 24);
+        jTextField9.setBounds(80, 360, 240, 24);
 
         jButton2.setBackground(new java.awt.Color(0, 51, 102));
         jButton2.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
@@ -308,23 +308,23 @@ public class login extends javax.swing.JFrame {
             }
         });
         jPanel2.add(jButton2);
-        jButton2.setBounds(150, 390, 100, 30);
+        jButton2.setBounds(150, 400, 100, 30);
 
         jLabel11.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("© Copyright 2024 #include <iostream> | Scholarship Portal");
         jPanel2.add(jLabel11);
-        jLabel11.setBounds(10, 450, 330, 40);
+        jLabel11.setBounds(10, 460, 330, 40);
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/bg.jpg"))); // NOI18N
         jLabel6.setText("jLabel2");
         jPanel2.add(jLabel6);
-        jLabel6.setBounds(0, 0, 400, 480);
+        jLabel6.setBounds(0, 0, 400, 490);
 
         jTabbedPane1.addTab("register", jPanel2);
 
         getContentPane().add(jTabbedPane1);
-        jTabbedPane1.setBounds(0, -40, 400, 570);
+        jTabbedPane1.setBounds(0, -40, 400, 590);
 
         pack();
         setLocationRelativeTo(null);
