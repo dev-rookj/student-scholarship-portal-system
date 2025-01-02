@@ -4,6 +4,8 @@
  */
 package com.mycompany.portalsystem;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Windows
@@ -26,19 +28,410 @@ public class dashboard extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        navBar = new javax.swing.JPanel();
+        Logo = new javax.swing.JLabel();
+        profile = new javax.swing.JLabel();
+        profileDetails = new javax.swing.JLabel();
+        acadBg = new javax.swing.JLabel();
+        scholarship = new javax.swing.JLabel();
+        scholarshipDetails = new javax.swing.JLabel();
+        renewalInformation = new javax.swing.JLabel();
+        processAndSteps = new javax.swing.JLabel();
+        schedule = new javax.swing.JLabel();
+        logOut = new javax.swing.JButton();
+        tpHomePage = new javax.swing.JTabbedPane();
+        pnHomePage = new javax.swing.JPanel();
+        pnWcAndNameBoarder = new javax.swing.JPanel();
+        lbWelcome = new javax.swing.JLabel();
+        lbFullName = new javax.swing.JTextField();
+        tfCurrentSem = new javax.swing.JTextField();
+        tfSemNumAndSY = new javax.swing.JTextField();
+        tfStuCode = new javax.swing.JTextField();
+        tfStatus = new javax.swing.JTextField();
+        spGradeTable = new javax.swing.JScrollPane();
+        tGradeTable = new javax.swing.JTable();
+
+        navBar.setBackground(new java.awt.Color(8, 24, 47));
+        navBar.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        navBar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                navBarMouseClicked(evt);
+            }
+        });
+
+        Logo.setForeground(new java.awt.Color(255, 204, 102));
+        Logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/WhiteTransLogo.png"))); // NOI18N
+        Logo.setIconTextGap(0);
+        Logo.setMaximumSize(new java.awt.Dimension(420, 594));
+        Logo.setMinimumSize(new java.awt.Dimension(420, 594));
+        Logo.setPreferredSize(new java.awt.Dimension(420, 594));
+
+        profile.setFont(new java.awt.Font("Arial", 0, 17)); // NOI18N
+        profile.setForeground(new java.awt.Color(255, 255, 255));
+        profile.setText("Profile");
+
+        profileDetails.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
+        profileDetails.setForeground(new java.awt.Color(215, 215, 217));
+        profileDetails.setText("Profile Details");
+        profileDetails.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                profileDetailsMouseClicked(evt);
+            }
+        });
+
+        acadBg.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
+        acadBg.setForeground(new java.awt.Color(215, 215, 217));
+        acadBg.setText("Academic Background");
+        acadBg.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                acadBgMouseClicked(evt);
+            }
+        });
+
+        scholarship.setFont(new java.awt.Font("Arial", 0, 17)); // NOI18N
+        scholarship.setForeground(new java.awt.Color(255, 255, 255));
+        scholarship.setText("Scholarship");
+
+        scholarshipDetails.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
+        scholarshipDetails.setForeground(new java.awt.Color(215, 215, 217));
+        scholarshipDetails.setText("Scholarship Details");
+
+        renewalInformation.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        renewalInformation.setForeground(new java.awt.Color(255, 255, 255));
+        renewalInformation.setText("Renewal Information");
+
+        processAndSteps.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        processAndSteps.setForeground(new java.awt.Color(215, 215, 217));
+        processAndSteps.setText("Process and Steps");
+
+        schedule.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        schedule.setForeground(new java.awt.Color(215, 215, 217));
+        schedule.setText("Schedule");
+
+        logOut.setBackground(new java.awt.Color(215, 215, 217));
+        logOut.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        logOut.setForeground(new java.awt.Color(15, 30, 54));
+        logOut.setText("Log Out");
+        logOut.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                logOutActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout navBarLayout = new javax.swing.GroupLayout(navBar);
+        navBar.setLayout(navBarLayout);
+        navBarLayout.setHorizontalGroup(
+            navBarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, navBarLayout.createSequentialGroup()
+                .addGap(10, 51, Short.MAX_VALUE)
+                .addGroup(navBarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(profile, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(profileDetails, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(acadBg, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(scholarship, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(scholarshipDetails, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(processAndSteps, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, navBarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(logOut)
+                        .addComponent(renewalInformation, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE))))
+            .addGroup(navBarLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(schedule, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+            .addComponent(Logo, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+        );
+        navBarLayout.setVerticalGroup(
+            navBarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(navBarLayout.createSequentialGroup()
+                .addGap(56, 56, 56)
+                .addComponent(Logo, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(51, 51, 51)
+                .addComponent(profile)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(profileDetails)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(acadBg)
+                .addGap(44, 44, 44)
+                .addComponent(scholarship)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(scholarshipDetails)
+                .addGap(50, 50, 50)
+                .addComponent(renewalInformation)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(processAndSteps)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(schedule)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(logOut)
+                .addGap(55, 55, 55))
+        );
+
+        pnWcAndNameBoarder.setBackground(new java.awt.Color(112, 136, 162));
+        pnWcAndNameBoarder.setForeground(new java.awt.Color(112, 136, 162));
+
+        lbWelcome.setFont(new java.awt.Font("Gentium Book Basic", 1, 48)); // NOI18N
+        lbWelcome.setForeground(new java.awt.Color(15, 30, 54));
+        lbWelcome.setText("WELCOME!");
+
+        lbFullName.setEditable(false);
+        lbFullName.setBackground(new java.awt.Color(112, 136, 162));
+        lbFullName.setFont(new java.awt.Font("Arial", 0, 50)); // NOI18N
+        lbFullName.setForeground(new java.awt.Color(15, 30, 54));
+        lbFullName.setText("SURNAME, FIRST NAME MI");
+        lbFullName.setBorder(null);
+        lbFullName.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lbFullNameActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout pnWcAndNameBoarderLayout = new javax.swing.GroupLayout(pnWcAndNameBoarder);
+        pnWcAndNameBoarder.setLayout(pnWcAndNameBoarderLayout);
+        pnWcAndNameBoarderLayout.setHorizontalGroup(
+            pnWcAndNameBoarderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnWcAndNameBoarderLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(pnWcAndNameBoarderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnWcAndNameBoarderLayout.createSequentialGroup()
+                        .addGap(6, 6, 6)
+                        .addComponent(lbFullName, javax.swing.GroupLayout.PREFERRED_SIZE, 740, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lbWelcome, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(208, Short.MAX_VALUE))
+        );
+        pnWcAndNameBoarderLayout.setVerticalGroup(
+            pnWcAndNameBoarderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnWcAndNameBoarderLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lbWelcome, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(lbFullName, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(21, Short.MAX_VALUE))
+        );
+
+        tfCurrentSem.setEditable(false);
+        tfCurrentSem.setBackground(new java.awt.Color(221, 221, 222));
+        tfCurrentSem.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        tfCurrentSem.setForeground(new java.awt.Color(15, 30, 54));
+        tfCurrentSem.setText("Current Semester");
+        tfCurrentSem.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 0, 14), new java.awt.Color(112, 136, 162))); // NOI18N
+        tfCurrentSem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tfCurrentSemActionPerformed(evt);
+            }
+        });
+
+        tfSemNumAndSY.setEditable(false);
+        tfSemNumAndSY.setBackground(new java.awt.Color(221, 221, 222));
+        tfSemNumAndSY.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        tfSemNumAndSY.setForeground(new java.awt.Color(15, 30, 54));
+        tfSemNumAndSY.setText("first semester (2024-2025 )");
+        tfSemNumAndSY.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 0, 14), new java.awt.Color(112, 136, 162))); // NOI18N
+        tfSemNumAndSY.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tfSemNumAndSYActionPerformed(evt);
+            }
+        });
+
+        tfStuCode.setEditable(false);
+        tfStuCode.setBackground(new java.awt.Color(221, 221, 222));
+        tfStuCode.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        tfStuCode.setForeground(new java.awt.Color(15, 30, 54));
+        tfStuCode.setText("202410555");
+        tfStuCode.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 0, 14), new java.awt.Color(112, 136, 162))); // NOI18N
+        tfStuCode.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tfStuCodeActionPerformed(evt);
+            }
+        });
+
+        tfStatus.setEditable(false);
+        tfStatus.setBackground(new java.awt.Color(221, 221, 222));
+        tfStatus.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        tfStatus.setForeground(new java.awt.Color(15, 30, 54));
+        tfStatus.setText("SCHOLARSHIP STATUS: ACTIVE");
+        tfStatus.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 0, 14), new java.awt.Color(112, 136, 162))); // NOI18N
+        tfStatus.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tfStatusActionPerformed(evt);
+            }
+        });
+
+        tGradeTable.setAutoCreateRowSorter(true);
+        tGradeTable.setBackground(new java.awt.Color(202, 202, 203));
+        tGradeTable.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        tGradeTable.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
+        tGradeTable.setForeground(new java.awt.Color(15, 30, 54));
+        tGradeTable.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"GNED  02 ", "Ethics ", "1.25"},
+                {"GNED 05 ", "Purposive Commmunication ", "1.25"},
+                {"GNED 11 ", "Kontekstwalisadong Komunikasyon Sa Filipino ", "1.25"},
+                {"COSC 50 ", "Discrete Structure ", "1.50 "},
+                {"DCIT 21 ", "Introduction To Computing ", "1.75"},
+                {"DCIT 22 ", "Computer Programming 1  ", "1.50"},
+                {"PATHFIT 1 ", "Movement Enhancement ", "2.00"},
+                {"NSTP  1 ", "National Service Training Program 1 ", "1.75"},
+                {"CVSU  101", "Institutional Orientation", "1.50"},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null}
+            },
+            new String [] {
+                "Code", "Description", "Grade"
+            }
+        ));
+        tGradeTable.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_ALL_COLUMNS);
+        tGradeTable.setCellSelectionEnabled(true);
+        tGradeTable.setDoubleBuffered(true);
+        tGradeTable.setGridColor(new java.awt.Color(255, 255, 255));
+        tGradeTable.setIntercellSpacing(new java.awt.Dimension(5, 5));
+        tGradeTable.setMaximumSize(new java.awt.Dimension(2147483647, 270));
+        tGradeTable.setMinimumSize(new java.awt.Dimension(45, 270));
+        tGradeTable.setOpaque(false);
+        tGradeTable.setPreferredSize(new java.awt.Dimension(225, 270));
+        tGradeTable.setSelectionForeground(new java.awt.Color(0, 0, 102));
+        tGradeTable.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_INTERVAL_SELECTION);
+        tGradeTable.setShowGrid(true);
+        tGradeTable.setShowHorizontalLines(true);
+        spGradeTable.setViewportView(tGradeTable);
+
+        javax.swing.GroupLayout pnHomePageLayout = new javax.swing.GroupLayout(pnHomePage);
+        pnHomePage.setLayout(pnHomePageLayout);
+        pnHomePageLayout.setHorizontalGroup(
+            pnHomePageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnHomePageLayout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addGroup(pnHomePageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(tfStatus, javax.swing.GroupLayout.PREFERRED_SIZE, 407, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tfStuCode, javax.swing.GroupLayout.PREFERRED_SIZE, 407, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tfSemNumAndSY, javax.swing.GroupLayout.PREFERRED_SIZE, 407, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tfCurrentSem, javax.swing.GroupLayout.PREFERRED_SIZE, 407, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pnWcAndNameBoarder, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(spGradeTable))
+                .addContainerGap(30, Short.MAX_VALUE))
+        );
+        pnHomePageLayout.setVerticalGroup(
+            pnHomePageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnHomePageLayout.createSequentialGroup()
+                .addGap(28, 28, 28)
+                .addComponent(pnWcAndNameBoarder, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(29, 29, 29)
+                .addComponent(tfCurrentSem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(tfSemNumAndSY, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(tfStuCode, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(tfStatus, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(27, 27, 27)
+                .addComponent(spGradeTable, javax.swing.GroupLayout.PREFERRED_SIZE, 271, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(172, Short.MAX_VALUE))
+        );
+
+        tpHomePage.addTab("tab1", pnHomePage);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(navBar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(tpHomePage))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addComponent(navBar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(tpHomePage))
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void logOutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logOutActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_logOutActionPerformed
+
+    private void profileDetailsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_profileDetailsMouseClicked
+        JOptionPane.showMessageDialog(null, "My Goodness, this is so concise");
+        pnProfileDetails.setVisible(true);
+        pnAcademicBg.setVisible(false);
+    }//GEN-LAST:event_profileDetailsMouseClicked
+
+    private void navBarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_navBarMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_navBarMouseClicked
+
+    private void acadBgMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_acadBgMouseClicked
+        pnAcademicBg.setVisible(true);
+        pnProfileDetails.setVisible(false);
+    }//GEN-LAST:event_acadBgMouseClicked
+
+    private void lbFullNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lbFullNameActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lbFullNameActionPerformed
+
+    private void tfCurrentSemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfCurrentSemActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tfCurrentSemActionPerformed
+
+    private void tfSemNumAndSYActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfSemNumAndSYActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tfSemNumAndSYActionPerformed
+
+    private void tfStuCodeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfStuCodeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tfStuCodeActionPerformed
+
+    private void tfStatusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfStatusActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tfStatusActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Logo;
+    private javax.swing.JLabel acadBg;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel8;
+    private javax.swing.JPanel jPanel9;
+    private javax.swing.JTextField lbFullName;
+    private javax.swing.JLabel lbWelcome;
+    private javax.swing.JButton logOut;
+    private javax.swing.JPanel navBar;
+    private javax.swing.JPanel pnHomePage;
+    private javax.swing.JPanel pnWcAndNameBoarder;
+    private javax.swing.JLabel processAndSteps;
+    private javax.swing.JLabel profile;
+    private javax.swing.JLabel profile1;
+    private javax.swing.JLabel profile2;
+    private javax.swing.JLabel profile3;
+    private javax.swing.JLabel profile4;
+    private javax.swing.JLabel profile5;
+    private javax.swing.JLabel profile6;
+    private javax.swing.JLabel profile7;
+    private javax.swing.JLabel profileDetails;
+    private javax.swing.JLabel renewalInformation;
+    private javax.swing.JLabel schedule;
+    private javax.swing.JLabel scholarship;
+    private javax.swing.JLabel scholarshipDetails;
+    private javax.swing.JScrollPane spGradeTable;
+    private javax.swing.JTable tGradeTable;
+    private javax.swing.JTextField tfCurrentSem;
+    private javax.swing.JTextField tfSemNumAndSY;
+    private javax.swing.JTextField tfStatus;
+    private javax.swing.JTextField tfStuCode;
+    private javax.swing.JTabbedPane tpHomePage;
     // End of variables declaration//GEN-END:variables
 }
