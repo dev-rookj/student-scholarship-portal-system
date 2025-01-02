@@ -354,9 +354,7 @@ public class dashboard extends javax.swing.JPanel {
     }//GEN-LAST:event_logOutActionPerformed
 
     private void profileDetailsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_profileDetailsMouseClicked
-        JOptionPane.showMessageDialog(null, "My Goodness, this is so concise");
-        pnProfileDetails.setVisible(true);
-        pnAcademicBg.setVisible(false);
+        // wala na
     }//GEN-LAST:event_profileDetailsMouseClicked
 
     private void navBarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_navBarMouseClicked
@@ -364,8 +362,7 @@ public class dashboard extends javax.swing.JPanel {
     }//GEN-LAST:event_navBarMouseClicked
 
     private void acadBgMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_acadBgMouseClicked
-        pnAcademicBg.setVisible(true);
-        pnProfileDetails.setVisible(false);
+        // wala na
     }//GEN-LAST:event_acadBgMouseClicked
 
     private void lbFullNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lbFullNameActionPerformed
