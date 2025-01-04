@@ -323,6 +323,8 @@ public class login extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("register", jPanel2);
 
+        jTabbedPane1.setSelectedIndex(1);
+
         getContentPane().add(jTabbedPane1);
         jTabbedPane1.setBounds(0, -40, 400, 590);
 
