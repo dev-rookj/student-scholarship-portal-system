@@ -1,19 +1,18 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
- */
 package com.mycompany.portalsystem;
 
-import javax.swing.JOptionPane;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
+ */
 
 /**
  *
  * @author Windows
  */
-public class dashboard extends javax.swing.JPanel {
+public class dashboard extends javax.swing.JFrame {
 
     /**
-     * Creates new form dashboard
+     * Creates new form dashboard1
      */
     public dashboard() {
         initComponents();
@@ -28,7 +27,6 @@ public class dashboard extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
         navBar = new javax.swing.JPanel();
         lblLogo = new javax.swing.JLabel();
         btnProfile = new javax.swing.JButton();
@@ -70,7 +68,7 @@ public class dashboard extends javax.swing.JPanel {
         jScrollPane3 = new javax.swing.JScrollPane();
         jTextPane2 = new javax.swing.JTextPane();
 
-        jLabel1.setText("jLabel1");
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         navBar.setBackground(new java.awt.Color(8, 24, 47));
         navBar.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -612,8 +610,8 @@ public class dashboard extends javax.swing.JPanel {
 
         tpHomePage.addTab("tab2", pnAcadBg);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
@@ -629,15 +627,9 @@ public class dashboard extends javax.swing.JPanel {
                 .addContainerGap()
                 .addComponent(tpHomePage))
         );
+
+        pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void logOutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logOutActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_logOutActionPerformed
-
-    private void navBarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_navBarMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_navBarMouseClicked
 
     private void btnProfileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProfileActionPerformed
         // TODO add your handling code here:
@@ -667,25 +659,33 @@ public class dashboard extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnProcessStepsActionPerformed
 
-    private void tfStatusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfStatusActionPerformed
+    private void logOutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logOutActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_tfStatusActionPerformed
+    }//GEN-LAST:event_logOutActionPerformed
 
-    private void tfStuCodeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfStuCodeActionPerformed
+    private void navBarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_navBarMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_tfStuCodeActionPerformed
+    }//GEN-LAST:event_navBarMouseClicked
 
-    private void tfSemNumAndSYActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfSemNumAndSYActionPerformed
+    private void lbFullNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lbFullNameActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_tfSemNumAndSYActionPerformed
+    }//GEN-LAST:event_lbFullNameActionPerformed
 
     private void tfCurrentSemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfCurrentSemActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_tfCurrentSemActionPerformed
 
-    private void lbFullNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lbFullNameActionPerformed
+    private void tfSemNumAndSYActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfSemNumAndSYActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_lbFullNameActionPerformed
+    }//GEN-LAST:event_tfSemNumAndSYActionPerformed
+
+    private void tfStuCodeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfStuCodeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tfStuCodeActionPerformed
+
+    private void tfStatusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfStatusActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tfStatusActionPerformed
 
     private void lbFullName1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lbFullName1ActionPerformed
         // TODO add your handling code here:
@@ -695,6 +695,41 @@ public class dashboard extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_lbFullName2ActionPerformed
 
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(dashboard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(dashboard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(dashboard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(dashboard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new dashboard().setVisible(true);
+            }
+        });
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAcadBg;
@@ -705,7 +740,6 @@ public class dashboard extends javax.swing.JPanel {
     private javax.swing.JButton btnSchedule;
     private javax.swing.JButton btnScholarDeets;
     private javax.swing.JButton btnScholarship;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
