@@ -4,6 +4,8 @@
  */
 package com.mycompany.portalsystem;
 
+import javax.swing.*;
+
 /**
  *
  * @author Windows
@@ -28,6 +30,7 @@ public class dashboard extends javax.swing.JFrame {
 
         navBar = new javax.swing.JPanel();
         lblLogo = new javax.swing.JLabel();
+        btnDashboard = new javax.swing.JButton();
         btnProfile = new javax.swing.JButton();
         btnProfileDetails = new javax.swing.JButton();
         btnAcadBg = new javax.swing.JButton();
@@ -84,6 +87,8 @@ public class dashboard extends javax.swing.JFrame {
         jTextPane24 = new javax.swing.JTextPane();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Scholarship Portal");
+        setName("dashboard"); // NOI18N
         setResizable(false);
 
         navBar.setBackground(new java.awt.Color(8, 24, 47));
@@ -101,11 +106,25 @@ public class dashboard extends javax.swing.JFrame {
         lblLogo.setMinimumSize(new java.awt.Dimension(420, 594));
         lblLogo.setPreferredSize(new java.awt.Dimension(420, 594));
 
+        btnDashboard.setBackground(new java.awt.Color(8, 24, 47));
+        btnDashboard.setFont(new java.awt.Font("Arial", 0, 17)); // NOI18N
+        btnDashboard.setForeground(new java.awt.Color(255, 255, 255));
+        btnDashboard.setBorder(null);
+        btnDashboard.setFocusPainted(false);
+        btnDashboard.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnDashboard.setLabel("Dashboard");
+        btnDashboard.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDashboardActionPerformed(evt);
+            }
+        });
+
         btnProfile.setBackground(new java.awt.Color(8, 24, 47));
         btnProfile.setFont(new java.awt.Font("Arial", 0, 17)); // NOI18N
         btnProfile.setForeground(new java.awt.Color(255, 255, 255));
         btnProfile.setText("Profile");
         btnProfile.setBorder(null);
+        btnProfile.setFocusPainted(false);
         btnProfile.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnProfile.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -118,6 +137,7 @@ public class dashboard extends javax.swing.JFrame {
         btnProfileDetails.setForeground(new java.awt.Color(215, 215, 217));
         btnProfileDetails.setText("Profile Details");
         btnProfileDetails.setBorder(null);
+        btnProfileDetails.setFocusPainted(false);
         btnProfileDetails.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnProfileDetails.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -130,6 +150,7 @@ public class dashboard extends javax.swing.JFrame {
         btnAcadBg.setForeground(new java.awt.Color(215, 215, 217));
         btnAcadBg.setText("Academic Background");
         btnAcadBg.setBorder(null);
+        btnAcadBg.setFocusPainted(false);
         btnAcadBg.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnAcadBg.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -142,6 +163,7 @@ public class dashboard extends javax.swing.JFrame {
         btnScholarship.setForeground(new java.awt.Color(255, 255, 255));
         btnScholarship.setText("Scholarship");
         btnScholarship.setBorder(null);
+        btnScholarship.setFocusPainted(false);
         btnScholarship.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnScholarship.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -154,6 +176,7 @@ public class dashboard extends javax.swing.JFrame {
         btnScholarDeets.setForeground(new java.awt.Color(215, 215, 217));
         btnScholarDeets.setText("Scholarship Details");
         btnScholarDeets.setBorder(null);
+        btnScholarDeets.setFocusPainted(false);
         btnScholarDeets.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnScholarDeets.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -166,6 +189,7 @@ public class dashboard extends javax.swing.JFrame {
         btnRenewInf.setForeground(new java.awt.Color(255, 255, 255));
         btnRenewInf.setText("Renewal Information");
         btnRenewInf.setBorder(null);
+        btnRenewInf.setFocusPainted(false);
         btnRenewInf.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnRenewInf.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -179,6 +203,7 @@ public class dashboard extends javax.swing.JFrame {
         btnProcessSteps.setText("Process and Steps");
         btnProcessSteps.setBorder(null);
         btnProcessSteps.setBorderPainted(false);
+        btnProcessSteps.setFocusPainted(false);
         btnProcessSteps.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnProcessSteps.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -190,6 +215,7 @@ public class dashboard extends javax.swing.JFrame {
         logOut.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         logOut.setForeground(new java.awt.Color(15, 30, 54));
         logOut.setText("Log Out");
+        logOut.setFocusPainted(false);
         logOut.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 logOutActionPerformed(evt);
@@ -201,6 +227,7 @@ public class dashboard extends javax.swing.JFrame {
         btnSchedule.setForeground(new java.awt.Color(215, 215, 217));
         btnSchedule.setText("Schedule");
         btnSchedule.setBorder(null);
+        btnSchedule.setFocusPainted(false);
         btnSchedule.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
 
         javax.swing.GroupLayout navBarLayout = new javax.swing.GroupLayout(navBar);
@@ -224,7 +251,8 @@ public class dashboard extends javax.swing.JFrame {
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(navBarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addComponent(btnProcessSteps, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(btnSchedule, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                        .addComponent(btnSchedule, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(btnDashboard, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(navBarLayout.createSequentialGroup()
                         .addGap(86, 86, 86)
                         .addComponent(logOut)))
@@ -235,7 +263,9 @@ public class dashboard extends javax.swing.JFrame {
             .addGroup(navBarLayout.createSequentialGroup()
                 .addGap(56, 56, 56)
                 .addComponent(lblLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(52, 52, 52)
+                .addGap(54, 54, 54)
+                .addComponent(btnDashboard)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnProfile)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnProfileDetails, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -253,7 +283,7 @@ public class dashboard extends javax.swing.JFrame {
                 .addComponent(btnSchedule)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(logOut)
-                .addGap(57, 57, 57))
+                .addGap(28, 28, 28))
         );
 
         pnWcAndNameBoarder.setBackground(new java.awt.Color(112, 136, 162));
@@ -674,7 +704,7 @@ public class dashboard extends javax.swing.JFrame {
     }//GEN-LAST:event_btnProfileActionPerformed
 
     private void btnProfileDetailsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProfileDetailsActionPerformed
-        // TODO add your handling code here:
+        tpHomePage.setSelectedIndex(1);
     }//GEN-LAST:event_btnProfileDetailsActionPerformed
 
     private void btnAcadBgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAcadBgActionPerformed
@@ -698,7 +728,16 @@ public class dashboard extends javax.swing.JFrame {
     }//GEN-LAST:event_btnProcessStepsActionPerformed
 
     private void logOutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logOutActionPerformed
-        // TODO add your handling code here:
+        int response = JOptionPane.showConfirmDialog(tpHomePage, "Do you want to log out?", "Yes", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+        if (response == JOptionPane.YES_OPTION) {
+            java.awt.EventQueue.invokeLater(new Runnable() {
+                public void run() {
+                    new login().setVisible(true);
+                }
+            });
+            
+            dispose();
+        }
     }//GEN-LAST:event_logOutActionPerformed
 
     private void navBarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_navBarMouseClicked
@@ -728,6 +767,10 @@ public class dashboard extends javax.swing.JFrame {
     private void lbFullName3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lbFullName3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_lbFullName3ActionPerformed
+
+    private void btnDashboardActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDashboardActionPerformed
+        tpHomePage.setSelectedIndex(0);
+    }//GEN-LAST:event_btnDashboardActionPerformed
 
     /**
      * @param args the command line arguments
@@ -767,6 +810,7 @@ public class dashboard extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAcadBg;
+    private javax.swing.JButton btnDashboard;
     private javax.swing.JButton btnProcessSteps;
     private javax.swing.JButton btnProfile;
     private javax.swing.JButton btnProfileDetails;

@@ -5,6 +5,10 @@
 package com.mycompany.portalsystem;
 
 import java.awt.Color;
+import javax.swing.border.CompoundBorder;
+import javax.swing.border.EmptyBorder;
+import javax.swing.border.LineBorder;
+
 
 /**
  *
@@ -33,15 +37,15 @@ public class login extends javax.swing.JFrame {
         jTextField1 = new javax.swing.JTextField();
         jTextField2 = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
+        jButton3 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
+        errorMsgText = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
         jTextField3 = new javax.swing.JTextField();
         jTextField4 = new javax.swing.JTextField();
         jTextField5 = new javax.swing.JTextField();
@@ -51,6 +55,7 @@ public class login extends javax.swing.JFrame {
         jTextField9 = new javax.swing.JTextField();
         jButton2 = new javax.swing.JButton();
         jLabel11 = new javax.swing.JLabel();
+        jButton4 = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -66,14 +71,21 @@ public class login extends javax.swing.JFrame {
 
         jTextField1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jTextField1.setForeground(new java.awt.Color(153, 153, 153));
+        jTextField1.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         jTextField1.setText("Student Number or Student Email");
         jTextField1.setToolTipText("");
+        jTextField1.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createEmptyBorder(1, 5, 1, 1)));
         jTextField1.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 jTextField1FocusGained(evt);
             }
             public void focusLost(java.awt.event.FocusEvent evt) {
                 jTextField1FocusLost(evt);
+            }
+        });
+        jTextField1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jTextField1MouseExited(evt);
             }
         });
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
@@ -86,7 +98,9 @@ public class login extends javax.swing.JFrame {
 
         jTextField2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jTextField2.setForeground(new java.awt.Color(153, 153, 153));
+        jTextField2.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         jTextField2.setText("Password");
+        jTextField2.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createEmptyBorder(1, 5, 1, 1)));
         jTextField2.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 jTextField2FocusGained(evt);
@@ -107,18 +121,13 @@ public class login extends javax.swing.JFrame {
         jPanel1.add(jLabel4);
         jLabel4.setBounds(80, 80, 229, 75);
 
-        jLabel5.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("Don't have an account?");
-        jPanel1.add(jLabel5);
-        jLabel5.setBounds(100, 320, 140, 14);
-
         jButton1.setBackground(new java.awt.Color(0, 51, 102));
         jButton1.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Login");
         jButton1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jButton1.setFocusPainted(false);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -127,17 +136,42 @@ public class login extends javax.swing.JFrame {
         jPanel1.add(jButton1);
         jButton1.setBounds(150, 280, 100, 30);
 
-        jLabel2.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 51, 204));
-        jLabel2.setText("Register!");
-        jPanel1.add(jLabel2);
-        jLabel2.setBounds(240, 320, 60, 14);
+        jButton3.setBackground(new java.awt.Color(0, 51, 102));
+        jButton3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(255, 255, 255));
+        jButton3.setText("Register");
+        jButton3.setBorder(null);
+        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jButton3.setFocusPainted(false);
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton3);
+        jButton3.setBounds(160, 420, 80, 20);
 
-        jLabel3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("© Copyright 2024 #include <iostream> | Scholarship Portal");
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(10, 460, 330, 40);
+        jLabel3.setBounds(0, 460, 400, 20);
+
+        errorMsgText.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        errorMsgText.setForeground(new java.awt.Color(200, 0, 0));
+        errorMsgText.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        errorMsgText.setText(" ");
+        errorMsgText.setAlignmentY(0.0F);
+        jPanel1.add(errorMsgText);
+        errorMsgText.setBounds(100, 320, 200, 20);
+
+        jLabel12.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel12.setText("Don't have an account?");
+        jLabel12.setAlignmentY(0.0F);
+        jPanel1.add(jLabel12);
+        jLabel12.setBounds(130, 400, 140, 20);
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/bg.jpg"))); // NOI18N
         jLabel7.setText("jLabel7");
@@ -148,25 +182,24 @@ public class login extends javax.swing.JFrame {
 
         jPanel2.setLayout(null);
 
-        jLabel8.setFont(new java.awt.Font("Arial", 1, 28)); // NOI18N
-        jLabel8.setText("Registration");
+        jLabel8.setFont(new java.awt.Font("Californian FB", 1, 28)); // NOI18N
+        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel8.setText("REGISTRATION");
+        jLabel8.setToolTipText("");
         jPanel2.add(jLabel8);
-        jLabel8.setBounds(120, 60, 170, 40);
+        jLabel8.setBounds(80, 80, 240, 30);
 
-        jLabel9.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel9.setText("Already Registered?");
+        jLabel9.setAlignmentY(0.0F);
         jPanel2.add(jLabel9);
-        jLabel9.setBounds(140, 90, 120, 30);
-
-        jLabel10.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(0, 51, 153));
-        jLabel10.setText("Login");
-        jPanel2.add(jLabel10);
-        jLabel10.setBounds(240, 90, 30, 30);
+        jLabel9.setBounds(140, 400, 120, 20);
 
         jTextField3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jTextField3.setForeground(new java.awt.Color(153, 153, 153));
         jTextField3.setText("Student Number");
+        jTextField3.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createEmptyBorder(1, 5, 1, 1)));
         jTextField3.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 jTextField3FocusGained(evt);
@@ -186,6 +219,7 @@ public class login extends javax.swing.JFrame {
         jTextField4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jTextField4.setForeground(new java.awt.Color(153, 153, 153));
         jTextField4.setText("First Name");
+        jTextField4.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createEmptyBorder(1, 5, 1, 1)));
         jTextField4.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 jTextField4FocusGained(evt);
@@ -200,11 +234,12 @@ public class login extends javax.swing.JFrame {
             }
         });
         jPanel2.add(jTextField4);
-        jTextField4.setBounds(80, 160, 240, 24);
+        jTextField4.setBounds(80, 150, 240, 24);
 
         jTextField5.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jTextField5.setForeground(new java.awt.Color(153, 153, 153));
         jTextField5.setText("Last Name");
+        jTextField5.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createEmptyBorder(1, 5, 1, 1)));
         jTextField5.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 jTextField5FocusGained(evt);
@@ -219,11 +254,12 @@ public class login extends javax.swing.JFrame {
             }
         });
         jPanel2.add(jTextField5);
-        jTextField5.setBounds(80, 200, 240, 24);
+        jTextField5.setBounds(80, 180, 240, 24);
 
         jTextField6.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jTextField6.setForeground(new java.awt.Color(153, 153, 153));
         jTextField6.setText("Middle Name");
+        jTextField6.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createEmptyBorder(1, 5, 1, 1)));
         jTextField6.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 jTextField6FocusGained(evt);
@@ -238,11 +274,12 @@ public class login extends javax.swing.JFrame {
             }
         });
         jPanel2.add(jTextField6);
-        jTextField6.setBounds(80, 240, 240, 24);
+        jTextField6.setBounds(80, 210, 240, 24);
 
         jTextField7.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jTextField7.setForeground(new java.awt.Color(153, 153, 153));
         jTextField7.setText("Date of Birth");
+        jTextField7.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createEmptyBorder(1, 5, 1, 1)));
         jTextField7.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 jTextField7FocusGained(evt);
@@ -257,11 +294,12 @@ public class login extends javax.swing.JFrame {
             }
         });
         jPanel2.add(jTextField7);
-        jTextField7.setBounds(80, 280, 240, 24);
+        jTextField7.setBounds(80, 240, 240, 24);
 
         jTextField8.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jTextField8.setForeground(new java.awt.Color(153, 153, 153));
         jTextField8.setText("Email Address");
+        jTextField8.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createEmptyBorder(1, 5, 1, 1)));
         jTextField8.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 jTextField8FocusGained(evt);
@@ -276,11 +314,12 @@ public class login extends javax.swing.JFrame {
             }
         });
         jPanel2.add(jTextField8);
-        jTextField8.setBounds(80, 320, 240, 24);
+        jTextField8.setBounds(80, 270, 240, 24);
 
         jTextField9.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jTextField9.setForeground(new java.awt.Color(153, 153, 153));
         jTextField9.setText("Password");
+        jTextField9.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createEmptyBorder(1, 5, 1, 1)));
         jTextField9.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 jTextField9FocusGained(evt);
@@ -295,26 +334,42 @@ public class login extends javax.swing.JFrame {
             }
         });
         jPanel2.add(jTextField9);
-        jTextField9.setBounds(80, 360, 240, 24);
+        jTextField9.setBounds(80, 300, 240, 24);
 
         jButton2.setBackground(new java.awt.Color(0, 51, 102));
-        jButton2.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jButton2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("Sign up");
+        jButton2.setText("Login");
         jButton2.setBorder(null);
+        jButton2.setFocusPainted(false);
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
         jPanel2.add(jButton2);
-        jButton2.setBounds(150, 400, 100, 30);
+        jButton2.setBounds(160, 420, 80, 20);
 
-        jLabel11.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel11.setText("© Copyright 2024 #include <iostream> | Scholarship Portal");
         jPanel2.add(jLabel11);
-        jLabel11.setBounds(10, 460, 330, 40);
+        jLabel11.setBounds(0, 460, 400, 20);
+
+        jButton4.setBackground(new java.awt.Color(0, 51, 102));
+        jButton4.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jButton4.setForeground(new java.awt.Color(255, 255, 255));
+        jButton4.setText("Sign up");
+        jButton4.setBorder(null);
+        jButton4.setFocusPainted(false);
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton4);
+        jButton4.setBounds(150, 340, 100, 30);
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/bg.jpg"))); // NOI18N
         jLabel6.setText("jLabel2");
@@ -322,8 +377,6 @@ public class login extends javax.swing.JFrame {
         jLabel6.setBounds(0, 0, 400, 490);
 
         jTabbedPane1.addTab("register", jPanel2);
-
-        jTabbedPane1.setSelectedIndex(1);
 
         getContentPane().add(jTabbedPane1);
         jTabbedPane1.setBounds(0, -40, 400, 590);
@@ -361,11 +414,59 @@ public class login extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField9ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        LineBorder coloredBorderBlk = new LineBorder(Color.BLACK, 1);
+        EmptyBorder paddingBorder = new EmptyBorder(1, 5, 1, 1);
+        
         jTabbedPane1.setSelectedIndex(0);
+        errorMsgText.setText("");
+        jTextField1.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
+        jTextField2.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        jTabbedPane1.setSelectedIndex(1);
+        LineBorder coloredBorderRed = new LineBorder(Color.RED, 1);
+        LineBorder coloredBorderBlk = new LineBorder(Color.BLACK, 1);
+        EmptyBorder paddingBorder = new EmptyBorder(1, 5, 1, 1);
+        
+        if(jTextField1.getText().equals("Student Number or Student Email") && jTextField2.getText().equals("Password")) {
+            errorMsgText.setText("You entered empty credentials.");
+            
+            jTextField1.setBorder(new CompoundBorder(coloredBorderRed, paddingBorder));
+            jTextField2.setBorder(new CompoundBorder(coloredBorderRed, paddingBorder));
+        }
+        
+        else if(jTextField1.getText().equals("Student Number or Student Email")) {
+            errorMsgText.setText("Username is empty.");
+            
+            jTextField1.setBorder(new CompoundBorder(coloredBorderRed, paddingBorder));
+            jTextField2.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
+        }
+        
+        else if(jTextField2.getText().equals("Password")) {
+            errorMsgText.setText("Password is empty.");
+            
+            jTextField1.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
+            jTextField2.setBorder(new CompoundBorder(coloredBorderRed, paddingBorder));
+        }
+        
+        else {
+            errorMsgText.setText("");
+            
+            jTextField1.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
+            jTextField2.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
+            
+            if(jTextField1.getText().equals("admin") && jTextField2.getText().equals("pass")) {
+                java.awt.EventQueue.invokeLater(new Runnable() {
+                    public void run() {
+                        new dashboard().setVisible(true);
+                    }
+                });
+                
+                dispose();
+            }
+            
+            else errorMsgText.setText("Incorrect credentials.");
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
@@ -488,6 +589,60 @@ public class login extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jTextField9FocusLost
 
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        LineBorder coloredBorderRed = new LineBorder(Color.RED, 1);
+        LineBorder coloredBorderBlk = new LineBorder(Color.BLACK, 1);
+        EmptyBorder paddingBorder = new EmptyBorder(1, 5, 1, 1);
+        
+        if(jTextField3.getText().equals("Student Number"))
+            jTextField3.setBorder(new CompoundBorder(coloredBorderRed, paddingBorder));
+        else jTextField3.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
+        
+        if(jTextField4.getText().equals("First Name"))
+            jTextField4.setBorder(new CompoundBorder(coloredBorderRed, paddingBorder));
+        else jTextField4.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
+        
+        if(jTextField5.getText().equals("Last Name"))
+            jTextField5.setBorder(new CompoundBorder(coloredBorderRed, paddingBorder));
+        else jTextField5.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
+        
+        if(jTextField6.getText().equals("Middle Name"))
+            jTextField6.setBorder(new CompoundBorder(coloredBorderRed, paddingBorder));
+        else jTextField6.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
+        
+        if(jTextField7.getText().equals("Date of Birth"))
+            jTextField7.setBorder(new CompoundBorder(coloredBorderRed, paddingBorder));
+        else jTextField7.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
+        
+        if(jTextField8.getText().equals("Email Address"))
+            jTextField8.setBorder(new CompoundBorder(coloredBorderRed, paddingBorder));
+        else jTextField8.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
+        
+        if(jTextField9.getText().equals("Password"))
+            jTextField9.setBorder(new CompoundBorder(coloredBorderRed, paddingBorder));
+        else jTextField9.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
+            
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        jTabbedPane1.setSelectedIndex(1);
+        
+        LineBorder coloredBorderBlk = new LineBorder(Color.BLACK, 1);
+        EmptyBorder paddingBorder = new EmptyBorder(1, 5, 1, 1);
+        
+        jTextField3.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
+        jTextField4.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
+        jTextField5.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
+        jTextField6.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
+        jTextField7.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
+        jTextField8.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
+        jTextField9.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jTextField1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField1MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1MouseExited
+
     private void jTextField3FocusGained(java.awt.event.FocusEvent evt) {                                        
         if(jTextField3.getText().equals("Student Number")) {
             jTextField3.setText("");
@@ -539,14 +694,15 @@ public class login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel errorMsgText;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel10;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel11;
-    private static javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
