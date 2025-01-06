@@ -85,6 +85,9 @@ public class dashboard extends javax.swing.JFrame {
         lblGuardian = new javax.swing.JLabel();
         spGuardian = new javax.swing.JScrollPane();
         jTextPane24 = new javax.swing.JTextPane();
+        pnSDetails = new javax.swing.JPanel();
+        pnProSteps = new javax.swing.JPanel();
+        pnSchedule = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Scholarship Portal");
@@ -679,6 +682,45 @@ public class dashboard extends javax.swing.JFrame {
 
         tpHomePage.addTab("tab2", pnAcadBg);
 
+        javax.swing.GroupLayout pnSDetailsLayout = new javax.swing.GroupLayout(pnSDetails);
+        pnSDetails.setLayout(pnSDetailsLayout);
+        pnSDetailsLayout.setHorizontalGroup(
+            pnSDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1117, Short.MAX_VALUE)
+        );
+        pnSDetailsLayout.setVerticalGroup(
+            pnSDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 975, Short.MAX_VALUE)
+        );
+
+        tpHomePage.addTab("tab3", pnSDetails);
+
+        javax.swing.GroupLayout pnProStepsLayout = new javax.swing.GroupLayout(pnProSteps);
+        pnProSteps.setLayout(pnProStepsLayout);
+        pnProStepsLayout.setHorizontalGroup(
+            pnProStepsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1117, Short.MAX_VALUE)
+        );
+        pnProStepsLayout.setVerticalGroup(
+            pnProStepsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 975, Short.MAX_VALUE)
+        );
+
+        tpHomePage.addTab("tab4", pnProSteps);
+
+        javax.swing.GroupLayout pnScheduleLayout = new javax.swing.GroupLayout(pnSchedule);
+        pnSchedule.setLayout(pnScheduleLayout);
+        pnScheduleLayout.setHorizontalGroup(
+            pnScheduleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1117, Short.MAX_VALUE)
+        );
+        pnScheduleLayout.setVerticalGroup(
+            pnScheduleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 975, Short.MAX_VALUE)
+        );
+
+        tpHomePage.addTab("tab5", pnSchedule);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -848,6 +890,9 @@ public class dashboard extends javax.swing.JFrame {
     private javax.swing.JPanel pnAcadBg;
     private javax.swing.JPanel pnHeaderName2;
     private javax.swing.JPanel pnHomePage;
+    private javax.swing.JPanel pnProSteps;
+    private javax.swing.JPanel pnSDetails;
+    private javax.swing.JPanel pnSchedule;
     private javax.swing.JPanel pnWcAndNameBoarder;
     private javax.swing.JScrollPane spAddress;
     private javax.swing.JScrollPane spCitizenship;
