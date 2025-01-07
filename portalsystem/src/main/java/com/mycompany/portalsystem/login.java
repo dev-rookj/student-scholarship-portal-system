@@ -119,7 +119,7 @@ public class login extends javax.swing.JFrame {
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logo.png"))); // NOI18N
         jPanel1.add(jLabel4);
-        jLabel4.setBounds(80, 80, 229, 75);
+        jLabel4.setBounds(80, 70, 229, 75);
 
         jButton1.setBackground(new java.awt.Color(0, 51, 102));
         jButton1.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
@@ -173,7 +173,7 @@ public class login extends javax.swing.JFrame {
         jPanel1.add(jLabel12);
         jLabel12.setBounds(130, 400, 140, 20);
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/bg.jpg"))); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/loginbg.jpg"))); // NOI18N
         jLabel7.setText("jLabel7");
         jPanel1.add(jLabel7);
         jLabel7.setBounds(0, 0, 400, 490);
