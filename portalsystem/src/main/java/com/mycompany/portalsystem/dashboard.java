@@ -28,7 +28,6 @@ public class dashboard extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jScrollBar1 = new javax.swing.JScrollBar();
         navBar = new javax.swing.JPanel();
         lblLogo = new javax.swing.JLabel();
         btnDashboard = new javax.swing.JButton();
@@ -90,25 +89,35 @@ public class dashboard extends javax.swing.JFrame {
         spGuardian = new javax.swing.JScrollPane();
         jTextPane24 = new javax.swing.JTextPane();
         lblElemSchool = new javax.swing.JLabel();
-        lblName = new javax.swing.JLabel();
-        spName = new javax.swing.JScrollPane();
+        lblESName = new javax.swing.JLabel();
+        spESName = new javax.swing.JScrollPane();
         jTextPane1 = new javax.swing.JTextPane();
-        jLabel1 = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
+        lblESAddress = new javax.swing.JLabel();
+        spESAddress = new javax.swing.JScrollPane();
         jTextPane2 = new javax.swing.JTextPane();
-        jLabel2 = new javax.swing.JLabel();
-        spName1 = new javax.swing.JScrollPane();
+        lblESYearGraduated = new javax.swing.JLabel();
+        spESYearGraduated = new javax.swing.JScrollPane();
         jTextPane3 = new javax.swing.JTextPane();
         lblElemSchool2 = new javax.swing.JLabel();
         lblName2 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
         spName4 = new javax.swing.JScrollPane();
         jTextPane7 = new javax.swing.JTextPane();
+        jLabel5 = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
         jTextPane8 = new javax.swing.JTextPane();
+        jLabel6 = new javax.swing.JLabel();
         spName5 = new javax.swing.JScrollPane();
         jTextPane9 = new javax.swing.JTextPane();
+        lblElemSchool3 = new javax.swing.JLabel();
+        lblName3 = new javax.swing.JLabel();
+        spName6 = new javax.swing.JScrollPane();
+        jTextPane10 = new javax.swing.JTextPane();
+        jLabel7 = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextPane4 = new javax.swing.JTextPane();
+        jLabel8 = new javax.swing.JLabel();
+        spName7 = new javax.swing.JScrollPane();
+        jTextPane15 = new javax.swing.JTextPane();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Scholarship Portal");
@@ -334,7 +343,7 @@ public class dashboard extends javax.swing.JFrame {
                 .addGroup(pnWcAndNameBoarderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lbWelcome, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lbFullName, javax.swing.GroupLayout.PREFERRED_SIZE, 740, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(345, Short.MAX_VALUE))
+                .addContainerGap(374, Short.MAX_VALUE))
         );
         pnWcAndNameBoarderLayout.setVerticalGroup(
             pnWcAndNameBoarderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -511,7 +520,7 @@ public class dashboard extends javax.swing.JFrame {
         pnSDetails.setLayout(pnSDetailsLayout);
         pnSDetailsLayout.setHorizontalGroup(
             pnSDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1109, Short.MAX_VALUE)
+            .addGap(0, 1138, Short.MAX_VALUE)
         );
         pnSDetailsLayout.setVerticalGroup(
             pnSDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -524,7 +533,7 @@ public class dashboard extends javax.swing.JFrame {
         pnProSteps.setLayout(pnProStepsLayout);
         pnProStepsLayout.setHorizontalGroup(
             pnProStepsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1109, Short.MAX_VALUE)
+            .addGap(0, 1138, Short.MAX_VALUE)
         );
         pnProStepsLayout.setVerticalGroup(
             pnProStepsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -537,7 +546,7 @@ public class dashboard extends javax.swing.JFrame {
         pnSchedule.setLayout(pnScheduleLayout);
         pnScheduleLayout.setHorizontalGroup(
             pnScheduleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1109, Short.MAX_VALUE)
+            .addGap(0, 1138, Short.MAX_VALUE)
         );
         pnScheduleLayout.setVerticalGroup(
             pnScheduleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -574,7 +583,7 @@ public class dashboard extends javax.swing.JFrame {
                 .addComponent(lbFullName3, javax.swing.GroupLayout.PREFERRED_SIZE, 703, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(63, 63, 63)
                 .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(164, Short.MAX_VALUE))
+                .addContainerGap(193, Short.MAX_VALUE))
         );
         pnHeaderName2Layout.setVerticalGroup(
             pnHeaderName2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -661,47 +670,70 @@ public class dashboard extends javax.swing.JFrame {
         lblElemSchool.setForeground(new java.awt.Color(15, 30, 54));
         lblElemSchool.setText("ELEMENTARY SCHOOL:");
 
-        lblName.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        lblName.setForeground(new java.awt.Color(15, 30, 54));
-        lblName.setText("NAME:");
+        lblESName.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        lblESName.setForeground(new java.awt.Color(15, 30, 54));
+        lblESName.setText("NAME:");
 
-        spName.setViewportView(jTextPane1);
+        spESName.setViewportView(jTextPane1);
 
-        jLabel1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(15, 30, 54));
-        jLabel1.setText("ADDRESS:");
+        lblESAddress.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        lblESAddress.setForeground(new java.awt.Color(15, 30, 54));
+        lblESAddress.setText("ADDRESS:");
 
         jTextPane2.setMinimumSize(new java.awt.Dimension(60, 20));
-        jScrollPane1.setViewportView(jTextPane2);
+        spESAddress.setViewportView(jTextPane2);
 
-        jLabel2.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(15, 30, 54));
-        jLabel2.setText("YEAR GRADUATED:");
+        lblESYearGraduated.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        lblESYearGraduated.setForeground(new java.awt.Color(15, 30, 54));
+        lblESYearGraduated.setText("YEAR GRADUATED:");
 
-        spName1.setViewportView(jTextPane3);
+        spESYearGraduated.setViewportView(jTextPane3);
 
         lblElemSchool2.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         lblElemSchool2.setForeground(new java.awt.Color(15, 30, 54));
-        lblElemSchool2.setText("ELEMENTARY SCHOOL:");
+        lblElemSchool2.setText("HIGH SCHOOL:");
 
         lblName2.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         lblName2.setForeground(new java.awt.Color(15, 30, 54));
         lblName2.setText("NAME:");
 
+        spName4.setViewportView(jTextPane7);
+
         jLabel5.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(15, 30, 54));
         jLabel5.setText("ADDRESS:");
+
+        jTextPane8.setMinimumSize(new java.awt.Dimension(60, 20));
+        jScrollPane3.setViewportView(jTextPane8);
 
         jLabel6.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(15, 30, 54));
         jLabel6.setText("YEAR GRADUATED:");
 
-        spName4.setViewportView(jTextPane7);
-
-        jTextPane8.setMinimumSize(new java.awt.Dimension(60, 20));
-        jScrollPane3.setViewportView(jTextPane8);
-
         spName5.setViewportView(jTextPane9);
+
+        lblElemSchool3.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        lblElemSchool3.setForeground(new java.awt.Color(15, 30, 54));
+        lblElemSchool3.setText("HIGH SCHOOL:");
+
+        lblName3.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        lblName3.setForeground(new java.awt.Color(15, 30, 54));
+        lblName3.setText("NAME:");
+
+        spName6.setViewportView(jTextPane10);
+
+        jLabel7.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(15, 30, 54));
+        jLabel7.setText("ADDRESS:");
+
+        jTextPane4.setMinimumSize(new java.awt.Dimension(60, 20));
+        jScrollPane2.setViewportView(jTextPane4);
+
+        jLabel8.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(15, 30, 54));
+        jLabel8.setText("YEAR GRADUATED:");
+
+        spName7.setViewportView(jTextPane15);
 
         javax.swing.GroupLayout pnAcadBgLayout = new javax.swing.GroupLayout(pnAcadBg);
         pnAcadBg.setLayout(pnAcadBgLayout);
@@ -732,51 +764,65 @@ public class dashboard extends javax.swing.JFrame {
                         .addComponent(spStuNum, javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(spAddress))
                     .addComponent(lblMobileNum))
+                .addGap(18, 18, Short.MAX_VALUE)
                 .addGroup(pnAcadBgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnAcadBgLayout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addGroup(pnAcadBgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(pnAcadBgLayout.createSequentialGroup()
-                                .addComponent(lblName)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(spName, javax.swing.GroupLayout.PREFERRED_SIZE, 430, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(pnAcadBgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(pnAcadBgLayout.createSequentialGroup()
+                            .addGap(65, 65, 65)
                             .addGroup(pnAcadBgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                 .addGroup(javax.swing.GroupLayout.Alignment.LEADING, pnAcadBgLayout.createSequentialGroup()
-                                    .addGap(64, 64, 64)
-                                    .addComponent(jLabel2)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(spName1, javax.swing.GroupLayout.PREFERRED_SIZE, 343, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(jLabel8)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(spName7))
+                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, pnAcadBgLayout.createSequentialGroup()
+                                    .addComponent(jLabel7)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(jScrollPane2))
                                 .addGroup(pnAcadBgLayout.createSequentialGroup()
-                                    .addComponent(jLabel1)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 404, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addGap(100, 100, 100))
-                    .addGroup(pnAcadBgLayout.createSequentialGroup()
-                        .addGap(41, 41, 41)
-                        .addGroup(pnAcadBgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lblName3)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(spName6)))
+                            .addContainerGap())
+                        .addComponent(lblElemSchool, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(lblElemSchool2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(lblElemSchool3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnAcadBgLayout.createSequentialGroup()
+                            .addGroup(pnAcadBgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(pnAcadBgLayout.createSequentialGroup()
+                                    .addGap(57, 57, 57)
+                                    .addGroup(pnAcadBgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, pnAcadBgLayout.createSequentialGroup()
+                                            .addComponent(jLabel6)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(spName5, javax.swing.GroupLayout.PREFERRED_SIZE, 347, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, pnAcadBgLayout.createSequentialGroup()
+                                            .addComponent(lblName2)
+                                            .addGap(18, 18, 18)
+                                            .addComponent(spName4, javax.swing.GroupLayout.PREFERRED_SIZE, 419, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addGroup(pnAcadBgLayout.createSequentialGroup()
+                                    .addComponent(jLabel5)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(spESAddress)))
+                            .addGap(62, 62, 62)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnAcadBgLayout.createSequentialGroup()
+                        .addGap(44, 44, 44)
+                        .addGroup(pnAcadBgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(pnAcadBgLayout.createSequentialGroup()
+                                .addComponent(lblESName)
+                                .addGap(38, 38, 38)
+                                .addComponent(spESName, javax.swing.GroupLayout.PREFERRED_SIZE, 430, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(pnAcadBgLayout.createSequentialGroup()
                                 .addGroup(pnAcadBgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnAcadBgLayout.createSequentialGroup()
-                                        .addGroup(pnAcadBgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, pnAcadBgLayout.createSequentialGroup()
-                                                .addComponent(jLabel5)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 404, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGroup(pnAcadBgLayout.createSequentialGroup()
-                                                .addComponent(lblName2)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(spName4, javax.swing.GroupLayout.PREFERRED_SIZE, 430, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(4, 4, 4))
-                                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, pnAcadBgLayout.createSequentialGroup()
-                                                .addComponent(jLabel6)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(spName5, javax.swing.GroupLayout.PREFERRED_SIZE, 343, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                        .addGap(86, 86, 86))
-                                    .addComponent(lblElemSchool2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addContainerGap())
-                            .addGroup(pnAcadBgLayout.createSequentialGroup()
-                                .addComponent(lblElemSchool, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGap(14, 14, 14))))))
+                                    .addGroup(pnAcadBgLayout.createSequentialGroup()
+                                        .addComponent(lblESYearGraduated)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(spESYearGraduated, javax.swing.GroupLayout.PREFERRED_SIZE, 343, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(pnAcadBgLayout.createSequentialGroup()
+                                        .addComponent(lblESAddress)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 404, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(26, 26, 26)))
+                        .addGap(99, 99, 99))))
         );
         pnAcadBgLayout.setVerticalGroup(
             pnAcadBgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -784,7 +830,7 @@ public class dashboard extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(pnHeaderName2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(lblStuNum1, javax.swing.GroupLayout.DEFAULT_SIZE, 18, Short.MAX_VALUE)
+                .addComponent(lblStuNum1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(pnAcadBgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(pnAcadBgLayout.createSequentialGroup()
@@ -798,7 +844,7 @@ public class dashboard extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(spGender, javax.swing.GroupLayout.DEFAULT_SIZE, 23, Short.MAX_VALUE)
                         .addGap(18, 18, 18)
-                        .addComponent(lblAddress, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
+                        .addComponent(lblAddress, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(spAddress, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(28, 28, 28)
@@ -822,39 +868,64 @@ public class dashboard extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(spCivilStatus, javax.swing.GroupLayout.DEFAULT_SIZE, 23, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(lblGuardian)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(spGuardian, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())
+                        .addComponent(lblGuardian))
                     .addGroup(pnAcadBgLayout.createSequentialGroup()
                         .addComponent(lblElemSchool, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(pnAcadBgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblName)
-                            .addComponent(spName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addComponent(lblESName)
+                            .addComponent(spESName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(pnAcadBgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
-                            .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(pnAcadBgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(spName1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel2))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblESAddress))
+                        .addGroup(pnAcadBgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(pnAcadBgLayout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(lblESYearGraduated)
+                                .addGap(40, 40, 40))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnAcadBgLayout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(spESYearGraduated, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(34, 34, 34)))
                         .addComponent(lblElemSchool2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(pnAcadBgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(lblName2)
-                            .addComponent(spName4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(pnAcadBgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(pnAcadBgLayout.createSequentialGroup()
+                                .addGap(11, 11, 11)
+                                .addComponent(lblName2)
+                                .addGap(17, 17, 17))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnAcadBgLayout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(spName4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
                         .addGroup(pnAcadBgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel5)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(spESAddress, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(12, 12, 12)
                         .addGroup(pnAcadBgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel6)
                             .addComponent(spName5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(320, 320, 320))))
+                        .addGap(23, 23, 23)
+                        .addComponent(lblElemSchool3, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(pnAcadBgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblName3)
+                            .addComponent(spName6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(pnAcadBgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(pnAcadBgLayout.createSequentialGroup()
+                                .addGap(13, 13, 13)
+                                .addComponent(jLabel7))
+                            .addGroup(pnAcadBgLayout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(pnAcadBgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel8)
+                            .addComponent(spName7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(33, 33, 33)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(spGuardian, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         tpHomePage.addTab("tab2", pnAcadBg);
@@ -974,7 +1045,7 @@ public class dashboard extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(dashboard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
             java.util.logging.Logger.getLogger(dashboard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelElblNamen ex) {
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(dashboard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
@@ -998,19 +1069,20 @@ public class dashboard extends javax.swing.JFrame {
     private javax.swing.JButton btnSchedule;
     private javax.swing.JButton btnScholarDeets;
     private javax.swing.JButton btnScholarship;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JScrollBar jScrollBar1;
-    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTextPane jTextPane1;
+    private javax.swing.JTextPane jTextPane10;
     private javax.swing.JTextPane jTextPane11;
     private javax.swing.JTextPane jTextPane12;
     private javax.swing.JTextPane jTextPane13;
     private javax.swing.JTextPane jTextPane14;
+    private javax.swing.JTextPane jTextPane15;
     private javax.swing.JTextPane jTextPane16;
     private javax.swing.JTextPane jTextPane18;
     private javax.swing.JTextPane jTextPane2;
@@ -1019,6 +1091,7 @@ public class dashboard extends javax.swing.JFrame {
     private javax.swing.JTextPane jTextPane23;
     private javax.swing.JTextPane jTextPane24;
     private javax.swing.JTextPane jTextPane3;
+    private javax.swing.JTextPane jTextPane4;
     private javax.swing.JTextPane jTextPane7;
     private javax.swing.JTextPane jTextPane8;
     private javax.swing.JTextPane jTextPane9;
@@ -1029,15 +1102,19 @@ public class dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel lblCitizenship;
     private javax.swing.JLabel lblCivilStatus;
     private javax.swing.JLabel lblDateOfBirth1;
+    private javax.swing.JLabel lblESAddress;
+    private javax.swing.JLabel lblESName;
+    private javax.swing.JLabel lblESYearGraduated;
     private javax.swing.JLabel lblElemSchool;
     private javax.swing.JLabel lblElemSchool2;
+    private javax.swing.JLabel lblElemSchool3;
     private javax.swing.JLabel lblEmailAddress;
     private javax.swing.JLabel lblGender;
     private javax.swing.JLabel lblGuardian;
     private javax.swing.JLabel lblLogo;
     private javax.swing.JLabel lblMobileNum;
-    private javax.swing.JLabel lblName;
     private javax.swing.JLabel lblName2;
+    private javax.swing.JLabel lblName3;
     private javax.swing.JLabel lblReligion;
     private javax.swing.JLabel lblStuNum1;
     private javax.swing.JButton logOut;
@@ -1053,15 +1130,18 @@ public class dashboard extends javax.swing.JFrame {
     private javax.swing.JScrollPane spCitizenship;
     private javax.swing.JScrollPane spCivilStatus;
     private javax.swing.JScrollPane spDateOfBirth;
+    private javax.swing.JScrollPane spESAddress;
+    private javax.swing.JScrollPane spESName;
+    private javax.swing.JScrollPane spESYearGraduated;
     private javax.swing.JScrollPane spEmailAddress;
     private javax.swing.JScrollPane spGender;
     private javax.swing.JScrollPane spGradeTable;
     private javax.swing.JScrollPane spGuardian;
     private javax.swing.JScrollPane spMobileNum;
-    private javax.swing.JScrollPane spName;
-    private javax.swing.JScrollPane spName1;
     private javax.swing.JScrollPane spName4;
     private javax.swing.JScrollPane spName5;
+    private javax.swing.JScrollPane spName6;
+    private javax.swing.JScrollPane spName7;
     private javax.swing.JScrollPane spReligion;
     private javax.swing.JScrollPane spStuNum;
     private javax.swing.JTable tGradeTable;
