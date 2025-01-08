@@ -51,10 +51,7 @@ public class dashboard extends javax.swing.JFrame {
         tfStatus = new javax.swing.JTextField();
         spGradeTable = new javax.swing.JScrollPane();
         tGradeTable = new javax.swing.JTable();
-        pnSDetails = new javax.swing.JPanel();
-        pnProSteps = new javax.swing.JPanel();
-        pnSchedule = new javax.swing.JPanel();
-        pnAcadBg = new javax.swing.JPanel();
+        pnProfileDetails = new javax.swing.JPanel();
         pnHeaderName2 = new javax.swing.JPanel();
         lbFullName3 = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
@@ -118,6 +115,51 @@ public class dashboard extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         spName7 = new javax.swing.JScrollPane();
         jTextPane15 = new javax.swing.JTextPane();
+        pnSDetails = new javax.swing.JPanel();
+        pnProSteps = new javax.swing.JPanel();
+        pnSchedule = new javax.swing.JPanel();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        pnAcadBG = new javax.swing.JPanel();
+        jpFirstYearFirstSem = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        jTable2 = new javax.swing.JTable();
+        jpFirstYearSecondSem = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
+        jScrollPane6 = new javax.swing.JScrollPane();
+        jTable3 = new javax.swing.JTable();
+        jpSecondYearFirstSem = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jScrollPane7 = new javax.swing.JScrollPane();
+        jTable4 = new javax.swing.JTable();
+        jpSecondYearSecondSem1 = new javax.swing.JPanel();
+        jLabel10 = new javax.swing.JLabel();
+        jScrollPane8 = new javax.swing.JScrollPane();
+        jTable5 = new javax.swing.JTable();
+        jpThirdYearFirstSem1 = new javax.swing.JPanel();
+        jPanel4 = new javax.swing.JPanel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jScrollPane9 = new javax.swing.JScrollPane();
+        jTable6 = new javax.swing.JTable();
+        jpThirdYearSecondSem2 = new javax.swing.JPanel();
+        jLabel14 = new javax.swing.JLabel();
+        jScrollPane10 = new javax.swing.JScrollPane();
+        jTable7 = new javax.swing.JTable();
+        jpFourthYearFirstSem2 = new javax.swing.JPanel();
+        jPanel5 = new javax.swing.JPanel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jScrollPane11 = new javax.swing.JScrollPane();
+        jTable8 = new javax.swing.JTable();
+        jpFourthYearSecondSem3 = new javax.swing.JPanel();
+        jLabel17 = new javax.swing.JLabel();
+        jScrollPane12 = new javax.swing.JScrollPane();
+        jTable9 = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Scholarship Portal");
@@ -343,7 +385,7 @@ public class dashboard extends javax.swing.JFrame {
                 .addGroup(pnWcAndNameBoarderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lbWelcome, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lbFullName, javax.swing.GroupLayout.PREFERRED_SIZE, 740, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(374, Short.MAX_VALUE))
+                .addContainerGap(377, Short.MAX_VALUE))
         );
         pnWcAndNameBoarderLayout.setVerticalGroup(
             pnWcAndNameBoarderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -516,45 +558,6 @@ public class dashboard extends javax.swing.JFrame {
 
         tpHomePage.addTab("tab1", pnHomePage);
 
-        javax.swing.GroupLayout pnSDetailsLayout = new javax.swing.GroupLayout(pnSDetails);
-        pnSDetails.setLayout(pnSDetailsLayout);
-        pnSDetailsLayout.setHorizontalGroup(
-            pnSDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1138, Short.MAX_VALUE)
-        );
-        pnSDetailsLayout.setVerticalGroup(
-            pnSDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 855, Short.MAX_VALUE)
-        );
-
-        tpHomePage.addTab("tab3", pnSDetails);
-
-        javax.swing.GroupLayout pnProStepsLayout = new javax.swing.GroupLayout(pnProSteps);
-        pnProSteps.setLayout(pnProStepsLayout);
-        pnProStepsLayout.setHorizontalGroup(
-            pnProStepsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1138, Short.MAX_VALUE)
-        );
-        pnProStepsLayout.setVerticalGroup(
-            pnProStepsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 855, Short.MAX_VALUE)
-        );
-
-        tpHomePage.addTab("tab4", pnProSteps);
-
-        javax.swing.GroupLayout pnScheduleLayout = new javax.swing.GroupLayout(pnSchedule);
-        pnSchedule.setLayout(pnScheduleLayout);
-        pnScheduleLayout.setHorizontalGroup(
-            pnScheduleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1138, Short.MAX_VALUE)
-        );
-        pnScheduleLayout.setVerticalGroup(
-            pnScheduleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 855, Short.MAX_VALUE)
-        );
-
-        tpHomePage.addTab("tab5", pnSchedule);
-
         pnHeaderName2.setBackground(new java.awt.Color(112, 136, 162));
         pnHeaderName2.setForeground(new java.awt.Color(112, 136, 162));
 
@@ -583,7 +586,7 @@ public class dashboard extends javax.swing.JFrame {
                 .addComponent(lbFullName3, javax.swing.GroupLayout.PREFERRED_SIZE, 703, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(63, 63, 63)
                 .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(193, Short.MAX_VALUE))
+                .addContainerGap(196, Short.MAX_VALUE))
         );
         pnHeaderName2Layout.setVerticalGroup(
             pnHeaderName2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -735,15 +738,15 @@ public class dashboard extends javax.swing.JFrame {
 
         spName7.setViewportView(jTextPane15);
 
-        javax.swing.GroupLayout pnAcadBgLayout = new javax.swing.GroupLayout(pnAcadBg);
-        pnAcadBg.setLayout(pnAcadBgLayout);
-        pnAcadBgLayout.setHorizontalGroup(
-            pnAcadBgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout pnProfileDetailsLayout = new javax.swing.GroupLayout(pnProfileDetails);
+        pnProfileDetails.setLayout(pnProfileDetailsLayout);
+        pnProfileDetailsLayout.setHorizontalGroup(
+            pnProfileDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(pnHeaderName2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(pnAcadBgLayout.createSequentialGroup()
+            .addGroup(pnProfileDetailsLayout.createSequentialGroup()
                 .addGap(35, 35, 35)
-                .addGroup(pnAcadBgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pnAcadBgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                .addGroup(pnProfileDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnProfileDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addComponent(spGender, javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(spDateOfBirth, javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(lblGuardian, javax.swing.GroupLayout.Alignment.LEADING)
@@ -765,20 +768,20 @@ public class dashboard extends javax.swing.JFrame {
                         .addComponent(spAddress))
                     .addComponent(lblMobileNum))
                 .addGap(18, 18, Short.MAX_VALUE)
-                .addGroup(pnAcadBgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pnAcadBgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(pnAcadBgLayout.createSequentialGroup()
+                .addGroup(pnProfileDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnProfileDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(pnProfileDetailsLayout.createSequentialGroup()
                             .addGap(65, 65, 65)
-                            .addGroup(pnAcadBgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, pnAcadBgLayout.createSequentialGroup()
+                            .addGroup(pnProfileDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, pnProfileDetailsLayout.createSequentialGroup()
                                     .addComponent(jLabel8)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                     .addComponent(spName7))
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, pnAcadBgLayout.createSequentialGroup()
+                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, pnProfileDetailsLayout.createSequentialGroup()
                                     .addComponent(jLabel7)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                     .addComponent(jScrollPane2))
-                                .addGroup(pnAcadBgLayout.createSequentialGroup()
+                                .addGroup(pnProfileDetailsLayout.createSequentialGroup()
                                     .addComponent(lblName3)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                     .addComponent(spName6)))
@@ -786,54 +789,54 @@ public class dashboard extends javax.swing.JFrame {
                         .addComponent(lblElemSchool, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(lblElemSchool2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(lblElemSchool3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnAcadBgLayout.createSequentialGroup()
-                            .addGroup(pnAcadBgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(pnAcadBgLayout.createSequentialGroup()
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnProfileDetailsLayout.createSequentialGroup()
+                            .addGroup(pnProfileDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(pnProfileDetailsLayout.createSequentialGroup()
                                     .addGap(57, 57, 57)
-                                    .addGroup(pnAcadBgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, pnAcadBgLayout.createSequentialGroup()
+                                    .addGroup(pnProfileDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, pnProfileDetailsLayout.createSequentialGroup()
                                             .addComponent(jLabel6)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                             .addComponent(spName5, javax.swing.GroupLayout.PREFERRED_SIZE, 347, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, pnAcadBgLayout.createSequentialGroup()
+                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, pnProfileDetailsLayout.createSequentialGroup()
                                             .addComponent(lblName2)
                                             .addGap(18, 18, 18)
                                             .addComponent(spName4, javax.swing.GroupLayout.PREFERRED_SIZE, 419, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                .addGroup(pnAcadBgLayout.createSequentialGroup()
+                                .addGroup(pnProfileDetailsLayout.createSequentialGroup()
                                     .addComponent(jLabel5)
                                     .addGap(18, 18, 18)
                                     .addComponent(spESAddress)))
                             .addGap(62, 62, 62)))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnAcadBgLayout.createSequentialGroup()
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnProfileDetailsLayout.createSequentialGroup()
                         .addGap(44, 44, 44)
-                        .addGroup(pnAcadBgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(pnAcadBgLayout.createSequentialGroup()
+                        .addGroup(pnProfileDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(pnProfileDetailsLayout.createSequentialGroup()
                                 .addComponent(lblESName)
                                 .addGap(38, 38, 38)
                                 .addComponent(spESName, javax.swing.GroupLayout.PREFERRED_SIZE, 430, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(pnAcadBgLayout.createSequentialGroup()
-                                .addGroup(pnAcadBgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(pnAcadBgLayout.createSequentialGroup()
+                            .addGroup(pnProfileDetailsLayout.createSequentialGroup()
+                                .addGroup(pnProfileDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(pnProfileDetailsLayout.createSequentialGroup()
                                         .addComponent(lblESYearGraduated)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addComponent(spESYearGraduated, javax.swing.GroupLayout.PREFERRED_SIZE, 343, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(pnAcadBgLayout.createSequentialGroup()
+                                    .addGroup(pnProfileDetailsLayout.createSequentialGroup()
                                         .addComponent(lblESAddress)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 404, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addGap(26, 26, 26)))
                         .addGap(99, 99, 99))))
         );
-        pnAcadBgLayout.setVerticalGroup(
-            pnAcadBgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnAcadBgLayout.createSequentialGroup()
+        pnProfileDetailsLayout.setVerticalGroup(
+            pnProfileDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnProfileDetailsLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(pnHeaderName2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(lblStuNum1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(pnAcadBgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pnAcadBgLayout.createSequentialGroup()
+                .addGroup(pnProfileDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnProfileDetailsLayout.createSequentialGroup()
                         .addComponent(spStuNum, javax.swing.GroupLayout.DEFAULT_SIZE, 23, Short.MAX_VALUE)
                         .addGap(28, 28, 28)
                         .addComponent(lblDateOfBirth1, javax.swing.GroupLayout.DEFAULT_SIZE, 18, Short.MAX_VALUE)
@@ -869,57 +872,57 @@ public class dashboard extends javax.swing.JFrame {
                         .addComponent(spCivilStatus, javax.swing.GroupLayout.DEFAULT_SIZE, 23, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(lblGuardian))
-                    .addGroup(pnAcadBgLayout.createSequentialGroup()
+                    .addGroup(pnProfileDetailsLayout.createSequentialGroup()
                         .addComponent(lblElemSchool, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(pnAcadBgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(pnProfileDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lblESName)
                             .addComponent(spESName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(pnAcadBgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(pnProfileDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(lblESAddress))
-                        .addGroup(pnAcadBgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(pnAcadBgLayout.createSequentialGroup()
+                        .addGroup(pnProfileDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(pnProfileDetailsLayout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(lblESYearGraduated)
                                 .addGap(40, 40, 40))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnAcadBgLayout.createSequentialGroup()
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnProfileDetailsLayout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(spESYearGraduated, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(34, 34, 34)))
                         .addComponent(lblElemSchool2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(pnAcadBgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(pnAcadBgLayout.createSequentialGroup()
+                        .addGroup(pnProfileDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(pnProfileDetailsLayout.createSequentialGroup()
                                 .addGap(11, 11, 11)
                                 .addComponent(lblName2)
                                 .addGap(17, 17, 17))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnAcadBgLayout.createSequentialGroup()
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnProfileDetailsLayout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(spName4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
-                        .addGroup(pnAcadBgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(pnProfileDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel5)
                             .addComponent(spESAddress, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(12, 12, 12)
-                        .addGroup(pnAcadBgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(pnProfileDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel6)
                             .addComponent(spName5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(23, 23, 23)
                         .addComponent(lblElemSchool3, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(pnAcadBgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(pnProfileDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lblName3)
                             .addComponent(spName6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(pnAcadBgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(pnAcadBgLayout.createSequentialGroup()
+                        .addGroup(pnProfileDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(pnProfileDetailsLayout.createSequentialGroup()
                                 .addGap(13, 13, 13)
                                 .addComponent(jLabel7))
-                            .addGroup(pnAcadBgLayout.createSequentialGroup()
+                            .addGroup(pnProfileDetailsLayout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(pnAcadBgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(pnProfileDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel8)
                             .addComponent(spName7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(33, 33, 33)))
@@ -928,7 +931,666 @@ public class dashboard extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        tpHomePage.addTab("tab2", pnAcadBg);
+        tpHomePage.addTab("tab2", pnProfileDetails);
+
+        javax.swing.GroupLayout pnSDetailsLayout = new javax.swing.GroupLayout(pnSDetails);
+        pnSDetails.setLayout(pnSDetailsLayout);
+        pnSDetailsLayout.setHorizontalGroup(
+            pnSDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1141, Short.MAX_VALUE)
+        );
+        pnSDetailsLayout.setVerticalGroup(
+            pnSDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 855, Short.MAX_VALUE)
+        );
+
+        tpHomePage.addTab("tab3", pnSDetails);
+
+        javax.swing.GroupLayout pnProStepsLayout = new javax.swing.GroupLayout(pnProSteps);
+        pnProSteps.setLayout(pnProStepsLayout);
+        pnProStepsLayout.setHorizontalGroup(
+            pnProStepsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1141, Short.MAX_VALUE)
+        );
+        pnProStepsLayout.setVerticalGroup(
+            pnProStepsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 855, Short.MAX_VALUE)
+        );
+
+        tpHomePage.addTab("tab4", pnProSteps);
+
+        javax.swing.GroupLayout pnScheduleLayout = new javax.swing.GroupLayout(pnSchedule);
+        pnSchedule.setLayout(pnScheduleLayout);
+        pnScheduleLayout.setHorizontalGroup(
+            pnScheduleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1141, Short.MAX_VALUE)
+        );
+        pnScheduleLayout.setVerticalGroup(
+            pnScheduleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 855, Short.MAX_VALUE)
+        );
+
+        tpHomePage.addTab("tab5", pnSchedule);
+
+        jpFirstYearFirstSem.setBackground(new java.awt.Color(221, 221, 222));
+
+        jPanel2.setBackground(new java.awt.Color(112, 136, 162));
+
+        jLabel1.setBackground(new java.awt.Color(112, 136, 162));
+        jLabel1.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(15, 30, 54));
+        jLabel1.setText("FIRST YEAR");
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(25, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(25, 25, 25))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        jLabel2.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(15, 30, 54));
+        jLabel2.setText("FIRST SEMESTER");
+
+        jScrollPane5.setAutoscrolls(true);
+
+        jTable2.setBackground(new java.awt.Color(202, 202, 203));
+        jTable2.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jTable2.setForeground(new java.awt.Color(15, 30, 54));
+        jTable2.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"Code 1", "Name 1", "-"},
+                {"Code 2", "Name 2", "-"},
+                {"Code 3", "Name 3", "-"},
+                {"Code 4", "Name  4", "-"},
+                {"Code 5", "Name 5", "-"},
+                {"Code 6", "Name 6", "-"},
+                {"Code 7", "Name 7", "-"},
+                {"Code 8", "Name 8", "-"},
+                {"Code 9", "Name 9", "-"},
+                {"Code 10", "Name 10", null}
+            },
+            new String [] {
+                "CODE", "COURSE TITLE", "GRADE"
+            }
+        ));
+        jTable2.setAutoscrolls(false);
+        jTable2.setGridColor(new java.awt.Color(255, 255, 255));
+        jTable2.setShowGrid(true);
+        jTable2.setShowHorizontalLines(true);
+        jTable2.setShowVerticalLines(true);
+        jScrollPane5.setViewportView(jTable2);
+
+        javax.swing.GroupLayout jpFirstYearFirstSemLayout = new javax.swing.GroupLayout(jpFirstYearFirstSem);
+        jpFirstYearFirstSem.setLayout(jpFirstYearFirstSemLayout);
+        jpFirstYearFirstSemLayout.setHorizontalGroup(
+            jpFirstYearFirstSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpFirstYearFirstSemLayout.createSequentialGroup()
+                .addGroup(jpFirstYearFirstSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jpFirstYearFirstSemLayout.createSequentialGroup()
+                        .addGap(589, 589, 589)
+                        .addGroup(jpFirstYearFirstSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jpFirstYearFirstSemLayout.createSequentialGroup()
+                                .addGap(6, 6, 6)
+                                .addComponent(jLabel2))))
+                    .addGroup(jpFirstYearFirstSemLayout.createSequentialGroup()
+                        .addGap(35, 35, 35)
+                        .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 1286, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(588, Short.MAX_VALUE))
+        );
+        jpFirstYearFirstSemLayout.setVerticalGroup(
+            jpFirstYearFirstSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpFirstYearFirstSemLayout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(18, Short.MAX_VALUE))
+        );
+
+        jpFirstYearSecondSem.setBackground(new java.awt.Color(221, 221, 222));
+
+        jLabel4.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(15, 30, 54));
+        jLabel4.setText("SECOND SEMESTER");
+
+        jScrollPane6.setAutoscrolls(true);
+
+        jTable3.setBackground(new java.awt.Color(202, 202, 203));
+        jTable3.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jTable3.setForeground(new java.awt.Color(15, 30, 54));
+        jTable3.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"Code 1", "Name 1", "-"},
+                {"Code 2", "Name 2", "-"},
+                {"Code 3", "Name 3", "-"},
+                {"Code 4", "Name  4", "-"},
+                {"Code 5", "Name 5", "-"},
+                {"Code 6", "Name 6", "-"},
+                {"Code 7", "Name 7", "-"},
+                {"Code 8", "Name 8", "-"},
+                {"Code 9", "Name 9", "-"},
+                {"Code 10", "Name 10", null}
+            },
+            new String [] {
+                "CODE", "COURSE TITLE", "GRADE"
+            }
+        ));
+        jTable3.setAutoscrolls(false);
+        jTable3.setGridColor(new java.awt.Color(255, 255, 255));
+        jTable3.setShowGrid(true);
+        jScrollPane6.setViewportView(jTable3);
+
+        javax.swing.GroupLayout jpFirstYearSecondSemLayout = new javax.swing.GroupLayout(jpFirstYearSecondSem);
+        jpFirstYearSecondSem.setLayout(jpFirstYearSecondSemLayout);
+        jpFirstYearSecondSemLayout.setHorizontalGroup(
+            jpFirstYearSecondSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpFirstYearSecondSemLayout.createSequentialGroup()
+                .addGroup(jpFirstYearSecondSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jpFirstYearSecondSemLayout.createSequentialGroup()
+                        .addGap(595, 595, 595)
+                        .addComponent(jLabel4))
+                    .addGroup(jpFirstYearSecondSemLayout.createSequentialGroup()
+                        .addGap(35, 35, 35)
+                        .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 1286, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(576, Short.MAX_VALUE))
+        );
+        jpFirstYearSecondSemLayout.setVerticalGroup(
+            jpFirstYearSecondSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpFirstYearSecondSemLayout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jpSecondYearFirstSem.setBackground(new java.awt.Color(221, 221, 222));
+
+        jPanel3.setBackground(new java.awt.Color(112, 136, 162));
+
+        jLabel3.setBackground(new java.awt.Color(112, 136, 162));
+        jLabel3.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(15, 30, 54));
+        jLabel3.setText("SECOND YEAR");
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(13, 13, 13)
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(13, Short.MAX_VALUE))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jLabel9.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(15, 30, 54));
+        jLabel9.setText("FIRST SEMESTER");
+
+        jScrollPane7.setAutoscrolls(true);
+
+        jTable4.setBackground(new java.awt.Color(202, 202, 203));
+        jTable4.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jTable4.setForeground(new java.awt.Color(15, 30, 54));
+        jTable4.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"Code 1", "Name 1", "-"},
+                {"Code 2", "Name 2", "-"},
+                {"Code 3", "Name 3", "-"},
+                {"Code 4", "Name  4", "-"},
+                {"Code 5", "Name 5", "-"},
+                {"Code 6", "Name 6", "-"},
+                {"Code 7", "Name 7", "-"},
+                {"Code 8", "Name 8", "-"},
+                {"Code 9", "Name 9", "-"},
+                {"Code 10", "Name 10", null}
+            },
+            new String [] {
+                "CODE", "COURSE TITLE", "GRADE"
+            }
+        ));
+        jTable4.setAutoscrolls(false);
+        jTable4.setGridColor(new java.awt.Color(255, 255, 255));
+        jTable4.setShowGrid(true);
+        jScrollPane7.setViewportView(jTable4);
+
+        javax.swing.GroupLayout jpSecondYearFirstSemLayout = new javax.swing.GroupLayout(jpSecondYearFirstSem);
+        jpSecondYearFirstSem.setLayout(jpSecondYearFirstSemLayout);
+        jpSecondYearFirstSemLayout.setHorizontalGroup(
+            jpSecondYearFirstSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpSecondYearFirstSemLayout.createSequentialGroup()
+                .addGroup(jpSecondYearFirstSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jpSecondYearFirstSemLayout.createSequentialGroup()
+                        .addGap(595, 595, 595)
+                        .addComponent(jLabel9))
+                    .addGroup(jpSecondYearFirstSemLayout.createSequentialGroup()
+                        .addGap(35, 35, 35)
+                        .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 1286, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jpSecondYearFirstSemLayout.createSequentialGroup()
+                        .addGap(586, 586, 586)
+                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(588, Short.MAX_VALUE))
+        );
+        jpSecondYearFirstSemLayout.setVerticalGroup(
+            jpSecondYearFirstSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpSecondYearFirstSemLayout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(18, Short.MAX_VALUE))
+        );
+
+        jpSecondYearSecondSem1.setBackground(new java.awt.Color(221, 221, 222));
+
+        jLabel10.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(15, 30, 54));
+        jLabel10.setText("SECOND SEMESTER");
+
+        jScrollPane8.setAutoscrolls(true);
+
+        jTable5.setBackground(new java.awt.Color(202, 202, 203));
+        jTable5.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jTable5.setForeground(new java.awt.Color(15, 30, 54));
+        jTable5.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"Code 1", "Name 1", "-"},
+                {"Code 2", "Name 2", "-"},
+                {"Code 3", "Name 3", "-"},
+                {"Code 4", "Name  4", "-"},
+                {"Code 5", "Name 5", "-"},
+                {"Code 6", "Name 6", "-"},
+                {"Code 7", "Name 7", "-"},
+                {"Code 8", "Name 8", "-"},
+                {"Code 9", "Name 9", "-"},
+                {"Code 10", "Name 10", null}
+            },
+            new String [] {
+                "CODE", "COURSE TITLE", "GRADE"
+            }
+        ));
+        jTable5.setAutoscrolls(false);
+        jTable5.setGridColor(new java.awt.Color(255, 255, 255));
+        jTable5.setShowGrid(true);
+        jScrollPane8.setViewportView(jTable5);
+
+        javax.swing.GroupLayout jpSecondYearSecondSem1Layout = new javax.swing.GroupLayout(jpSecondYearSecondSem1);
+        jpSecondYearSecondSem1.setLayout(jpSecondYearSecondSem1Layout);
+        jpSecondYearSecondSem1Layout.setHorizontalGroup(
+            jpSecondYearSecondSem1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpSecondYearSecondSem1Layout.createSequentialGroup()
+                .addGroup(jpSecondYearSecondSem1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jpSecondYearSecondSem1Layout.createSequentialGroup()
+                        .addGap(595, 595, 595)
+                        .addComponent(jLabel10))
+                    .addGroup(jpSecondYearSecondSem1Layout.createSequentialGroup()
+                        .addGap(35, 35, 35)
+                        .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 1286, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(576, Short.MAX_VALUE))
+        );
+        jpSecondYearSecondSem1Layout.setVerticalGroup(
+            jpSecondYearSecondSem1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpSecondYearSecondSem1Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jpThirdYearFirstSem1.setBackground(new java.awt.Color(221, 221, 222));
+
+        jPanel4.setBackground(new java.awt.Color(112, 136, 162));
+
+        jLabel12.setBackground(new java.awt.Color(112, 136, 162));
+        jLabel12.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(15, 30, 54));
+        jLabel12.setText("SECOND YEAR");
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(13, 13, 13)
+                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(13, Short.MAX_VALUE))
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jLabel13.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(15, 30, 54));
+        jLabel13.setText("FIRST SEMESTER");
+
+        jScrollPane9.setAutoscrolls(true);
+
+        jTable6.setBackground(new java.awt.Color(202, 202, 203));
+        jTable6.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jTable6.setForeground(new java.awt.Color(15, 30, 54));
+        jTable6.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"Code 1", "Name 1", "-"},
+                {"Code 2", "Name 2", "-"},
+                {"Code 3", "Name 3", "-"},
+                {"Code 4", "Name  4", "-"},
+                {"Code 5", "Name 5", "-"},
+                {"Code 6", "Name 6", "-"},
+                {"Code 7", "Name 7", "-"},
+                {"Code 8", "Name 8", "-"},
+                {"Code 9", "Name 9", "-"},
+                {"Code 10", "Name 10", null}
+            },
+            new String [] {
+                "CODE", "COURSE TITLE", "GRADE"
+            }
+        ));
+        jTable6.setAutoscrolls(false);
+        jTable6.setGridColor(new java.awt.Color(255, 255, 255));
+        jTable6.setShowGrid(true);
+        jScrollPane9.setViewportView(jTable6);
+
+        javax.swing.GroupLayout jpThirdYearFirstSem1Layout = new javax.swing.GroupLayout(jpThirdYearFirstSem1);
+        jpThirdYearFirstSem1.setLayout(jpThirdYearFirstSem1Layout);
+        jpThirdYearFirstSem1Layout.setHorizontalGroup(
+            jpThirdYearFirstSem1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpThirdYearFirstSem1Layout.createSequentialGroup()
+                .addGroup(jpThirdYearFirstSem1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jpThirdYearFirstSem1Layout.createSequentialGroup()
+                        .addGap(595, 595, 595)
+                        .addComponent(jLabel13))
+                    .addGroup(jpThirdYearFirstSem1Layout.createSequentialGroup()
+                        .addGap(35, 35, 35)
+                        .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 1286, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jpThirdYearFirstSem1Layout.createSequentialGroup()
+                        .addGap(586, 586, 586)
+                        .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(588, Short.MAX_VALUE))
+        );
+        jpThirdYearFirstSem1Layout.setVerticalGroup(
+            jpThirdYearFirstSem1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpThirdYearFirstSem1Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(18, Short.MAX_VALUE))
+        );
+
+        jpThirdYearSecondSem2.setBackground(new java.awt.Color(221, 221, 222));
+
+        jLabel14.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(15, 30, 54));
+        jLabel14.setText("SECOND SEMESTER");
+
+        jScrollPane10.setAutoscrolls(true);
+
+        jTable7.setBackground(new java.awt.Color(202, 202, 203));
+        jTable7.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jTable7.setForeground(new java.awt.Color(15, 30, 54));
+        jTable7.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"Code 1", "Name 1", "-"},
+                {"Code 2", "Name 2", "-"},
+                {"Code 3", "Name 3", "-"},
+                {"Code 4", "Name  4", "-"},
+                {"Code 5", "Name 5", "-"},
+                {"Code 6", "Name 6", "-"},
+                {"Code 7", "Name 7", "-"},
+                {"Code 8", "Name 8", "-"},
+                {"Code 9", "Name 9", "-"},
+                {"Code 10", "Name 10", null}
+            },
+            new String [] {
+                "CODE", "COURSE TITLE", "GRADE"
+            }
+        ));
+        jTable7.setAutoscrolls(false);
+        jTable7.setGridColor(new java.awt.Color(255, 255, 255));
+        jTable7.setShowGrid(true);
+        jScrollPane10.setViewportView(jTable7);
+
+        javax.swing.GroupLayout jpThirdYearSecondSem2Layout = new javax.swing.GroupLayout(jpThirdYearSecondSem2);
+        jpThirdYearSecondSem2.setLayout(jpThirdYearSecondSem2Layout);
+        jpThirdYearSecondSem2Layout.setHorizontalGroup(
+            jpThirdYearSecondSem2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpThirdYearSecondSem2Layout.createSequentialGroup()
+                .addGroup(jpThirdYearSecondSem2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jpThirdYearSecondSem2Layout.createSequentialGroup()
+                        .addGap(595, 595, 595)
+                        .addComponent(jLabel14))
+                    .addGroup(jpThirdYearSecondSem2Layout.createSequentialGroup()
+                        .addGap(35, 35, 35)
+                        .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 1286, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(576, Short.MAX_VALUE))
+        );
+        jpThirdYearSecondSem2Layout.setVerticalGroup(
+            jpThirdYearSecondSem2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpThirdYearSecondSem2Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jpFourthYearFirstSem2.setBackground(new java.awt.Color(221, 221, 222));
+
+        jPanel5.setBackground(new java.awt.Color(112, 136, 162));
+
+        jLabel15.setBackground(new java.awt.Color(112, 136, 162));
+        jLabel15.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(15, 30, 54));
+        jLabel15.setText("SECOND YEAR");
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(13, 13, 13)
+                .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(13, Short.MAX_VALUE))
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jLabel16.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
+        jLabel16.setForeground(new java.awt.Color(15, 30, 54));
+        jLabel16.setText("FIRST SEMESTER");
+
+        jScrollPane11.setAutoscrolls(true);
+
+        jTable8.setBackground(new java.awt.Color(202, 202, 203));
+        jTable8.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jTable8.setForeground(new java.awt.Color(15, 30, 54));
+        jTable8.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"Code 1", "Name 1", "-"},
+                {"Code 2", "Name 2", "-"},
+                {"Code 3", "Name 3", "-"},
+                {"Code 4", "Name  4", "-"},
+                {"Code 5", "Name 5", "-"},
+                {"Code 6", "Name 6", "-"},
+                {"Code 7", "Name 7", "-"},
+                {"Code 8", "Name 8", "-"},
+                {"Code 9", "Name 9", "-"},
+                {"Code 10", "Name 10", null}
+            },
+            new String [] {
+                "CODE", "COURSE TITLE", "GRADE"
+            }
+        ));
+        jTable8.setAutoscrolls(false);
+        jTable8.setGridColor(new java.awt.Color(255, 255, 255));
+        jTable8.setShowGrid(true);
+        jScrollPane11.setViewportView(jTable8);
+
+        javax.swing.GroupLayout jpFourthYearFirstSem2Layout = new javax.swing.GroupLayout(jpFourthYearFirstSem2);
+        jpFourthYearFirstSem2.setLayout(jpFourthYearFirstSem2Layout);
+        jpFourthYearFirstSem2Layout.setHorizontalGroup(
+            jpFourthYearFirstSem2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpFourthYearFirstSem2Layout.createSequentialGroup()
+                .addGroup(jpFourthYearFirstSem2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jpFourthYearFirstSem2Layout.createSequentialGroup()
+                        .addGap(595, 595, 595)
+                        .addComponent(jLabel16))
+                    .addGroup(jpFourthYearFirstSem2Layout.createSequentialGroup()
+                        .addGap(35, 35, 35)
+                        .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 1286, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jpFourthYearFirstSem2Layout.createSequentialGroup()
+                        .addGap(586, 586, 586)
+                        .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(588, Short.MAX_VALUE))
+        );
+        jpFourthYearFirstSem2Layout.setVerticalGroup(
+            jpFourthYearFirstSem2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpFourthYearFirstSem2Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(18, Short.MAX_VALUE))
+        );
+
+        jpFourthYearSecondSem3.setBackground(new java.awt.Color(221, 221, 222));
+
+        jLabel17.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
+        jLabel17.setForeground(new java.awt.Color(15, 30, 54));
+        jLabel17.setText("SECOND SEMESTER");
+
+        jScrollPane12.setAutoscrolls(true);
+
+        jTable9.setBackground(new java.awt.Color(202, 202, 203));
+        jTable9.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jTable9.setForeground(new java.awt.Color(15, 30, 54));
+        jTable9.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"Code 1", "Name 1", "-"},
+                {"Code 2", "Name 2", "-"},
+                {"Code 3", "Name 3", "-"},
+                {"Code 4", "Name  4", "-"},
+                {"Code 5", "Name 5", "-"},
+                {"Code 6", "Name 6", "-"},
+                {"Code 7", "Name 7", "-"},
+                {"Code 8", "Name 8", "-"},
+                {"Code 9", "Name 9", "-"},
+                {"Code 10", "Name 10", null}
+            },
+            new String [] {
+                "CODE", "COURSE TITLE", "GRADE"
+            }
+        ));
+        jTable9.setAutoscrolls(false);
+        jTable9.setGridColor(new java.awt.Color(255, 255, 255));
+        jTable9.setShowGrid(true);
+        jScrollPane12.setViewportView(jTable9);
+
+        javax.swing.GroupLayout jpFourthYearSecondSem3Layout = new javax.swing.GroupLayout(jpFourthYearSecondSem3);
+        jpFourthYearSecondSem3.setLayout(jpFourthYearSecondSem3Layout);
+        jpFourthYearSecondSem3Layout.setHorizontalGroup(
+            jpFourthYearSecondSem3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpFourthYearSecondSem3Layout.createSequentialGroup()
+                .addGroup(jpFourthYearSecondSem3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jpFourthYearSecondSem3Layout.createSequentialGroup()
+                        .addGap(595, 595, 595)
+                        .addComponent(jLabel17))
+                    .addGroup(jpFourthYearSecondSem3Layout.createSequentialGroup()
+                        .addGap(35, 35, 35)
+                        .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, 1286, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(576, Short.MAX_VALUE))
+        );
+        jpFourthYearSecondSem3Layout.setVerticalGroup(
+            jpFourthYearSecondSem3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpFourthYearSecondSem3Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout pnAcadBGLayout = new javax.swing.GroupLayout(pnAcadBG);
+        pnAcadBG.setLayout(pnAcadBGLayout);
+        pnAcadBGLayout.setHorizontalGroup(
+            pnAcadBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnAcadBGLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(pnAcadBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jpFirstYearFirstSem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jpFirstYearSecondSem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jpSecondYearSecondSem1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jpThirdYearSecondSem2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jpFourthYearSecondSem3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(647, Short.MAX_VALUE))
+            .addGroup(pnAcadBGLayout.createSequentialGroup()
+                .addGroup(pnAcadBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jpSecondYearFirstSem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jpThirdYearFirstSem1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jpFourthYearFirstSem2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        pnAcadBGLayout.setVerticalGroup(
+            pnAcadBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnAcadBGLayout.createSequentialGroup()
+                .addComponent(jpFirstYearFirstSem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jpFirstYearSecondSem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jpSecondYearFirstSem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jpSecondYearSecondSem1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jpThirdYearFirstSem1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jpThirdYearSecondSem2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jpFourthYearFirstSem2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jpFourthYearSecondSem3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 1260, Short.MAX_VALUE))
+        );
+
+        jScrollPane4.setViewportView(pnAcadBG);
+
+        tpHomePage.addTab("tab7", jScrollPane4);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -938,11 +1600,11 @@ public class dashboard extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(navBar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(tpHomePage))
+                .addComponent(tpHomePage, javax.swing.GroupLayout.DEFAULT_SIZE, 1141, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(tpHomePage)
+            .addComponent(tpHomePage, javax.swing.GroupLayout.DEFAULT_SIZE, 890, Short.MAX_VALUE)
             .addComponent(navBar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
@@ -1069,13 +1731,46 @@ public class dashboard extends javax.swing.JFrame {
     private javax.swing.JButton btnSchedule;
     private javax.swing.JButton btnScholarDeets;
     private javax.swing.JButton btnScholarship;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JScrollPane jScrollPane10;
+    private javax.swing.JScrollPane jScrollPane11;
+    private javax.swing.JScrollPane jScrollPane12;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JScrollPane jScrollPane6;
+    private javax.swing.JScrollPane jScrollPane7;
+    private javax.swing.JScrollPane jScrollPane8;
+    private javax.swing.JScrollPane jScrollPane9;
+    private javax.swing.JTable jTable2;
+    private javax.swing.JTable jTable3;
+    private javax.swing.JTable jTable4;
+    private javax.swing.JTable jTable5;
+    private javax.swing.JTable jTable6;
+    private javax.swing.JTable jTable7;
+    private javax.swing.JTable jTable8;
+    private javax.swing.JTable jTable9;
     private javax.swing.JTextPane jTextPane1;
     private javax.swing.JTextPane jTextPane10;
     private javax.swing.JTextPane jTextPane11;
@@ -1095,6 +1790,14 @@ public class dashboard extends javax.swing.JFrame {
     private javax.swing.JTextPane jTextPane7;
     private javax.swing.JTextPane jTextPane8;
     private javax.swing.JTextPane jTextPane9;
+    private javax.swing.JPanel jpFirstYearFirstSem;
+    private javax.swing.JPanel jpFirstYearSecondSem;
+    private javax.swing.JPanel jpFourthYearFirstSem2;
+    private javax.swing.JPanel jpFourthYearSecondSem3;
+    private javax.swing.JPanel jpSecondYearFirstSem;
+    private javax.swing.JPanel jpSecondYearSecondSem1;
+    private javax.swing.JPanel jpThirdYearFirstSem1;
+    private javax.swing.JPanel jpThirdYearSecondSem2;
     private javax.swing.JTextField lbFullName;
     private javax.swing.JTextField lbFullName3;
     private javax.swing.JLabel lbWelcome;
@@ -1119,10 +1822,11 @@ public class dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel lblStuNum1;
     private javax.swing.JButton logOut;
     private javax.swing.JPanel navBar;
-    private javax.swing.JPanel pnAcadBg;
+    private javax.swing.JPanel pnAcadBG;
     private javax.swing.JPanel pnHeaderName2;
     private javax.swing.JPanel pnHomePage;
     private javax.swing.JPanel pnProSteps;
+    private javax.swing.JPanel pnProfileDetails;
     private javax.swing.JPanel pnSDetails;
     private javax.swing.JPanel pnSchedule;
     private javax.swing.JPanel pnWcAndNameBoarder;
