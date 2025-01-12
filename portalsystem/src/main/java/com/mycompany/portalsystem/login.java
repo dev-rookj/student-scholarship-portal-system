@@ -5,6 +5,8 @@
 package com.mycompany.portalsystem;
 
 import java.awt.Color;
+import java.sql.*;
+import javax.swing.JOptionPane;
 import javax.swing.border.CompoundBorder;
 import javax.swing.border.EmptyBorder;
 import javax.swing.border.LineBorder;
@@ -15,12 +17,13 @@ import javax.swing.border.LineBorder;
  * @author Windows
  */
 public class login extends javax.swing.JFrame {
-
-    /**
-     * Creates new form login1
-     */
+    Connection con = null;
+    PreparedStatement pst = null;
+    ResultSet rs = null;
     public login() {
         initComponents();
+        
+        con = dbConnection.connectionDB();
     }
 
     /**
@@ -428,6 +431,7 @@ public class login extends javax.swing.JFrame {
         LineBorder coloredBorderBlk = new LineBorder(Color.BLACK, 1);
         EmptyBorder paddingBorder = new EmptyBorder(1, 5, 1, 1);
         
+        // if user entered empty credentials in the text boxes
         if(jTextField1.getText().equals("Student Number or Student Email") && jTextField2.getText().equals("Password")) {
             errorMsgText.setText("You entered empty credentials.");
             
@@ -435,6 +439,7 @@ public class login extends javax.swing.JFrame {
             jTextField2.setBorder(new CompoundBorder(coloredBorderRed, paddingBorder));
         }
         
+        // if user entered empty username in the username field
         else if(jTextField1.getText().equals("Student Number or Student Email")) {
             errorMsgText.setText("Username is empty.");
             
@@ -442,6 +447,7 @@ public class login extends javax.swing.JFrame {
             jTextField2.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
         }
         
+        // if user entered empty password in the password field
         else if(jTextField2.getText().equals("Password")) {
             errorMsgText.setText("Password is empty.");
             
@@ -455,7 +461,7 @@ public class login extends javax.swing.JFrame {
             jTextField1.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
             jTextField2.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
             
-            if(jTextField1.getText().equals("admin") && jTextField2.getText().equals("pass")) {
+            /*if(jTextField1.getText().equals("admin") && jTextField2.getText().equals("pass")) {
                 java.awt.EventQueue.invokeLater(new Runnable() {
                     public void run() {
                         new dashboard().setVisible(true);
@@ -465,7 +471,35 @@ public class login extends javax.swing.JFrame {
                 dispose();
             }
             
-            else errorMsgText.setText("Incorrect credentials.");
+            else errorMsgText.setText("Incorrect credentials.");*/
+            
+            // sql accounts checking from database
+            String sql = "SELECT * FROM users WHERE user = ? AND pass = ?";
+            try (Connection con = DriverManager.getConnection("jdbc:sqlite:AccountsDB.db")){
+                pst = con.prepareStatement(sql);
+                pst.setString(1, jTextField1.getText());
+                pst.setString(2, jTextField2.getText());
+                rs = pst.executeQuery();
+                
+                if(rs.next()) { // login successful
+                    // show dashboard
+                    /*java.awt.EventQueue.invokeLater(new Runnable() {
+                        public void run() {
+                            new dashboard().setVisible(true);
+                        }
+                    });
+
+                    dispose();*/
+                    
+                    JOptionPane.showMessageDialog(null, "gegege"); // para lang sa testing ng accounts database 'to
+                }
+                
+                else errorMsgText.setText("Incorrect credentials."); // login failed
+            }
+            catch(SQLException ex) {
+                ex.printStackTrace();
+                System.out.println("Database error: " + ex.getMessage());
+            }
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -710,7 +744,7 @@ public class login extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private static javax.swing.JTabbedPane jTabbedPane1;
-    private static javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;

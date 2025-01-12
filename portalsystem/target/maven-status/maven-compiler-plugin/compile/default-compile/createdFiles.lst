@@ -7,6 +7,7 @@ com\mycompany\portalsystem\login$4.class
 com\mycompany\portalsystem\login$18.class
 com\mycompany\portalsystem\dashboard$4.class
 com\mycompany\portalsystem\dashboard$18.class
+com\mycompany\portalsystem\dbConnection.class
 com\mycompany\portalsystem\login$10.class
 com\mycompany\portalsystem\login$20.class
 com\mycompany\portalsystem\login$15.class
@@ -35,7 +36,6 @@ com\mycompany\portalsystem\login$23.class
 com\mycompany\portalsystem\dashboard$9.class
 com\mycompany\portalsystem\dashboard$16.class
 com\mycompany\portalsystem\login$1.class
-com\mycompany\portalsystem\login$25.class
 com\mycompany\portalsystem\dashboard$7.class
 com\mycompany\portalsystem\Portalsystem.class
 com\mycompany\portalsystem\login$22.class
