@@ -9,7 +9,7 @@ public class dbConnection {
     public static Connection connectionDB(){
         try{
             Class.forName("org.sqlite.JDBC");
-            Connection con = DriverManager.getConnection("jdbc:sqlite:AccountsDB.db");
+            Connection con = DriverManager.getConnection("jdbc:sqlite:../AccountsDB.db");
             System.out.println("Connection succeeded.");
             return con;
         }

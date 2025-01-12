@@ -20,9 +20,9 @@ public class login extends javax.swing.JFrame {
     Connection con = null;
     PreparedStatement pst = null;
     ResultSet rs = null;
+    
     public login() {
         initComponents();
-        
         con = dbConnection.connectionDB();
     }
 
@@ -474,8 +474,8 @@ public class login extends javax.swing.JFrame {
             else errorMsgText.setText("Incorrect credentials.");*/
             
             // sql accounts checking from database
-            String sql = "SELECT * FROM users WHERE user = ? AND pass = ?";
-            try (Connection con = DriverManager.getConnection("jdbc:sqlite:AccountsDB.db")){
+            String sql = "SELECT * from Accounts WHERE User = ? AND Pass = ?";
+            try {
                 pst = con.prepareStatement(sql);
                 pst.setString(1, jTextField1.getText());
                 pst.setString(2, jTextField2.getText());
@@ -483,22 +483,20 @@ public class login extends javax.swing.JFrame {
                 
                 if(rs.next()) { // login successful
                     // show dashboard
-                    /*java.awt.EventQueue.invokeLater(new Runnable() {
+                    java.awt.EventQueue.invokeLater(new Runnable() {
                         public void run() {
                             new dashboard().setVisible(true);
                         }
                     });
 
-                    dispose();*/
-                    
-                    JOptionPane.showMessageDialog(null, "gegege"); // para lang sa testing ng accounts database 'to
+                    dispose();
                 }
                 
                 else errorMsgText.setText("Incorrect credentials."); // login failed
             }
             catch(SQLException ex) {
                 ex.printStackTrace();
-                System.out.println("Database error: " + ex.getMessage());
+                System.out.println(ex.getMessage());
             }
         }
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -655,7 +653,8 @@ public class login extends javax.swing.JFrame {
         if(jTextField9.getText().equals("Password"))
             jTextField9.setBorder(new CompoundBorder(coloredBorderRed, paddingBorder));
         else jTextField9.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
-            
+        
+        //String sql = "INSERT INTO Accounts VALUES()";
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
