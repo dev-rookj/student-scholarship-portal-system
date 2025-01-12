@@ -5,19 +5,67 @@
 package com.mycompany.portalsystem;
 
 import javax.swing.*;
+import java.sql.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
  * @author Windows
  */
 public class dashboard extends javax.swing.JFrame {
-
-    /**
-     * Creates new form dashboard1
-     */
+    // sql establishment (DO NOT REMOVE!)
+    Connection con = null;
+    PreparedStatement pst = null;
+    ResultSet rs = null;
+    
+    // user variables
+    int UserID = -1;
+    int StudentNumber = 0;
+    String FirstName = null;
+    String LastName = null;
+    String MiddleName = null;
+    String BirthDate = null;
+    String Email = null;
+    
     public dashboard() {
         initComponents();
+        con = dbConnection.connectionDB();
+        
+
+        
+        try {
+            // get the information from database
+            pst = con.prepareStatement("SELECT userid, * FROM Accounts ORDER BY userid");
+            rs = pst.executeQuery();
+            if(rs.next()) {
+                StudentNumber = rs.getInt("studentnumber"); 
+                FirstName = rs.getString("firstname");
+                LastName = rs.getString("lastname");
+                MiddleName = rs.getString("middlename"); 
+                BirthDate = rs.getString("birthdate");
+                Email = rs.getString("email"); 
+            }
+        }
+        catch (SQLException ex) { System.out.println(ex.getMessage()); }
+        
+        // set name at welcome in dashboard
+        char MiddleInitial = MiddleName.charAt(0);
+        lbFullName.setText(LastName + ", " + FirstName + " " + MiddleInitial + ".");
+        
+        // set name in student profile
+        lbFullName3.setText(LastName + ", " + FirstName + " " +  MiddleInitial + ".");
+        
+        // set student number in student profile
+        tpStuNum.setText(Integer.toString(StudentNumber));
+        
+        // set birthdate in student profule
+        tpDateOfBirth.setText(BirthDate);
+        
+        // set email in student profule
+        tpEmail.setText(Email);
     }
+
 
     /**
      * This method is called from within the constructor to initialize the form.

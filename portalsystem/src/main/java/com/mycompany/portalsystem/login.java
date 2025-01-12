@@ -6,6 +6,8 @@ package com.mycompany.portalsystem;
 
 import java.awt.Color;
 import java.sql.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import javax.swing.border.CompoundBorder;
 import javax.swing.border.EmptyBorder;
@@ -24,6 +26,19 @@ public class login extends javax.swing.JFrame {
     public login() {
         initComponents();
         con = dbConnection.connectionDB();
+    }
+    
+    boolean emptyspaces() {
+        if(regStNumber.getText().equals("Student Number") ||
+           regFName.getText().equals("First Name") ||
+           regLName.getText().equals("Last Name") ||
+           regMName.getText().equals("Middle Name") ||
+           regBirthdate.getText().equals("Date of Birth") ||
+           regEmail.getText().equals("Email Address") ||
+           regPass.getText().equals("Password"))
+        return true;
+        
+        return false;
     }
 
     /**
@@ -49,13 +64,13 @@ public class login extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
-        jTextField8 = new javax.swing.JTextField();
-        jTextField9 = new javax.swing.JTextField();
+        regStNumber = new javax.swing.JTextField();
+        regFName = new javax.swing.JTextField();
+        regLName = new javax.swing.JTextField();
+        regMName = new javax.swing.JTextField();
+        regBirthdate = new javax.swing.JTextField();
+        regEmail = new javax.swing.JTextField();
+        regPass = new javax.swing.JTextField();
         jButton2 = new javax.swing.JButton();
         jLabel11 = new javax.swing.JLabel();
         jButton4 = new javax.swing.JButton();
@@ -199,145 +214,145 @@ public class login extends javax.swing.JFrame {
         jPanel2.add(jLabel9);
         jLabel9.setBounds(140, 400, 120, 20);
 
-        jTextField3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        jTextField3.setForeground(new java.awt.Color(153, 153, 153));
-        jTextField3.setText("Student Number");
-        jTextField3.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createEmptyBorder(1, 5, 1, 1)));
-        jTextField3.addFocusListener(new java.awt.event.FocusAdapter() {
+        regStNumber.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        regStNumber.setForeground(new java.awt.Color(153, 153, 153));
+        regStNumber.setText("Student Number");
+        regStNumber.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createEmptyBorder(1, 5, 1, 1)));
+        regStNumber.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
-                jTextField3FocusGained(evt);
+                regStNumberFocusGained(evt);
             }
             public void focusLost(java.awt.event.FocusEvent evt) {
-                jTextField3FocusLost(evt);
+                regStNumberFocusLost(evt);
             }
         });
-        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+        regStNumber.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField3ActionPerformed(evt);
+                regStNumberActionPerformed(evt);
             }
         });
-        jPanel2.add(jTextField3);
-        jTextField3.setBounds(80, 120, 240, 24);
+        jPanel2.add(regStNumber);
+        regStNumber.setBounds(80, 120, 240, 24);
 
-        jTextField4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        jTextField4.setForeground(new java.awt.Color(153, 153, 153));
-        jTextField4.setText("First Name");
-        jTextField4.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createEmptyBorder(1, 5, 1, 1)));
-        jTextField4.addFocusListener(new java.awt.event.FocusAdapter() {
+        regFName.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        regFName.setForeground(new java.awt.Color(153, 153, 153));
+        regFName.setText("First Name");
+        regFName.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createEmptyBorder(1, 5, 1, 1)));
+        regFName.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
-                jTextField4FocusGained(evt);
+                regFNameFocusGained(evt);
             }
             public void focusLost(java.awt.event.FocusEvent evt) {
-                jTextField4FocusLost(evt);
+                regFNameFocusLost(evt);
             }
         });
-        jTextField4.addActionListener(new java.awt.event.ActionListener() {
+        regFName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField4ActionPerformed(evt);
+                regFNameActionPerformed(evt);
             }
         });
-        jPanel2.add(jTextField4);
-        jTextField4.setBounds(80, 150, 240, 24);
+        jPanel2.add(regFName);
+        regFName.setBounds(80, 150, 240, 24);
 
-        jTextField5.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        jTextField5.setForeground(new java.awt.Color(153, 153, 153));
-        jTextField5.setText("Last Name");
-        jTextField5.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createEmptyBorder(1, 5, 1, 1)));
-        jTextField5.addFocusListener(new java.awt.event.FocusAdapter() {
+        regLName.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        regLName.setForeground(new java.awt.Color(153, 153, 153));
+        regLName.setText("Last Name");
+        regLName.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createEmptyBorder(1, 5, 1, 1)));
+        regLName.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
-                jTextField5FocusGained(evt);
+                regLNameFocusGained(evt);
             }
             public void focusLost(java.awt.event.FocusEvent evt) {
-                jTextField5FocusLost(evt);
+                regLNameFocusLost(evt);
             }
         });
-        jTextField5.addActionListener(new java.awt.event.ActionListener() {
+        regLName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField5ActionPerformed(evt);
+                regLNameActionPerformed(evt);
             }
         });
-        jPanel2.add(jTextField5);
-        jTextField5.setBounds(80, 180, 240, 24);
+        jPanel2.add(regLName);
+        regLName.setBounds(80, 180, 240, 24);
 
-        jTextField6.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        jTextField6.setForeground(new java.awt.Color(153, 153, 153));
-        jTextField6.setText("Middle Name");
-        jTextField6.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createEmptyBorder(1, 5, 1, 1)));
-        jTextField6.addFocusListener(new java.awt.event.FocusAdapter() {
+        regMName.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        regMName.setForeground(new java.awt.Color(153, 153, 153));
+        regMName.setText("Middle Name");
+        regMName.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createEmptyBorder(1, 5, 1, 1)));
+        regMName.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
-                jTextField6FocusGained(evt);
+                regMNameFocusGained(evt);
             }
             public void focusLost(java.awt.event.FocusEvent evt) {
-                jTextField6FocusLost(evt);
+                regMNameFocusLost(evt);
             }
         });
-        jTextField6.addActionListener(new java.awt.event.ActionListener() {
+        regMName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField6ActionPerformed(evt);
+                regMNameActionPerformed(evt);
             }
         });
-        jPanel2.add(jTextField6);
-        jTextField6.setBounds(80, 210, 240, 24);
+        jPanel2.add(regMName);
+        regMName.setBounds(80, 210, 240, 24);
 
-        jTextField7.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        jTextField7.setForeground(new java.awt.Color(153, 153, 153));
-        jTextField7.setText("Date of Birth");
-        jTextField7.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createEmptyBorder(1, 5, 1, 1)));
-        jTextField7.addFocusListener(new java.awt.event.FocusAdapter() {
+        regBirthdate.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        regBirthdate.setForeground(new java.awt.Color(153, 153, 153));
+        regBirthdate.setText("Date of Birth");
+        regBirthdate.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createEmptyBorder(1, 5, 1, 1)));
+        regBirthdate.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
-                jTextField7FocusGained(evt);
+                regBirthdateFocusGained(evt);
             }
             public void focusLost(java.awt.event.FocusEvent evt) {
-                jTextField7FocusLost(evt);
+                regBirthdateFocusLost(evt);
             }
         });
-        jTextField7.addActionListener(new java.awt.event.ActionListener() {
+        regBirthdate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField7ActionPerformed(evt);
+                regBirthdateActionPerformed(evt);
             }
         });
-        jPanel2.add(jTextField7);
-        jTextField7.setBounds(80, 240, 240, 24);
+        jPanel2.add(regBirthdate);
+        regBirthdate.setBounds(80, 240, 240, 24);
 
-        jTextField8.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        jTextField8.setForeground(new java.awt.Color(153, 153, 153));
-        jTextField8.setText("Email Address");
-        jTextField8.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createEmptyBorder(1, 5, 1, 1)));
-        jTextField8.addFocusListener(new java.awt.event.FocusAdapter() {
+        regEmail.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        regEmail.setForeground(new java.awt.Color(153, 153, 153));
+        regEmail.setText("Email Address");
+        regEmail.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createEmptyBorder(1, 5, 1, 1)));
+        regEmail.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
-                jTextField8FocusGained(evt);
+                regEmailFocusGained(evt);
             }
             public void focusLost(java.awt.event.FocusEvent evt) {
-                jTextField8FocusLost(evt);
+                regEmailFocusLost(evt);
             }
         });
-        jTextField8.addActionListener(new java.awt.event.ActionListener() {
+        regEmail.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField8ActionPerformed(evt);
+                regEmailActionPerformed(evt);
             }
         });
-        jPanel2.add(jTextField8);
-        jTextField8.setBounds(80, 270, 240, 24);
+        jPanel2.add(regEmail);
+        regEmail.setBounds(80, 270, 240, 24);
 
-        jTextField9.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        jTextField9.setForeground(new java.awt.Color(153, 153, 153));
-        jTextField9.setText("Password");
-        jTextField9.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createEmptyBorder(1, 5, 1, 1)));
-        jTextField9.addFocusListener(new java.awt.event.FocusAdapter() {
+        regPass.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        regPass.setForeground(new java.awt.Color(153, 153, 153));
+        regPass.setText("Password");
+        regPass.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createEmptyBorder(1, 5, 1, 1)));
+        regPass.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
-                jTextField9FocusGained(evt);
+                regPassFocusGained(evt);
             }
             public void focusLost(java.awt.event.FocusEvent evt) {
-                jTextField9FocusLost(evt);
+                regPassFocusLost(evt);
             }
         });
-        jTextField9.addActionListener(new java.awt.event.ActionListener() {
+        regPass.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField9ActionPerformed(evt);
+                regPassActionPerformed(evt);
             }
         });
-        jPanel2.add(jTextField9);
-        jTextField9.setBounds(80, 300, 240, 24);
+        jPanel2.add(regPass);
+        regPass.setBounds(80, 300, 240, 24);
 
         jButton2.setBackground(new java.awt.Color(0, 51, 102));
         jButton2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
@@ -388,33 +403,33 @@ public class login extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+    private void regStNumberActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regStNumberActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
+    }//GEN-LAST:event_regStNumberActionPerformed
 
-    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+    private void regFNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regFNameActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField4ActionPerformed
+    }//GEN-LAST:event_regFNameActionPerformed
 
-    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
+    private void regLNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regLNameActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField5ActionPerformed
+    }//GEN-LAST:event_regLNameActionPerformed
 
-    private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
+    private void regMNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regMNameActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField6ActionPerformed
+    }//GEN-LAST:event_regMNameActionPerformed
 
-    private void jTextField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField7ActionPerformed
+    private void regBirthdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regBirthdateActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField7ActionPerformed
+    }//GEN-LAST:event_regBirthdateActionPerformed
 
-    private void jTextField8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField8ActionPerformed
+    private void regEmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regEmailActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField8ActionPerformed
+    }//GEN-LAST:event_regEmailActionPerformed
 
-    private void jTextField9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField9ActionPerformed
+    private void regPassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regPassActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField9ActionPerformed
+    }//GEN-LAST:event_regPassActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         LineBorder coloredBorderBlk = new LineBorder(Color.BLACK, 1);
@@ -474,7 +489,7 @@ public class login extends javax.swing.JFrame {
             else errorMsgText.setText("Incorrect credentials.");*/
             
             // sql accounts checking from database
-            String sql = "SELECT * from Accounts WHERE User = ? AND Pass = ?";
+            String sql = "SELECT * from Accounts WHERE studentnumber = ? AND pass = ?";
             try {
                 pst = con.prepareStatement(sql);
                 pst.setString(1, jTextField1.getText());
@@ -537,124 +552,148 @@ public class login extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jTextField1FocusGained
 
-    private void jTextField4FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField4FocusGained
-        if(jTextField4.getText().equals("First Name")) {
-            jTextField4.setText("");
-            jTextField4.setForeground(new Color(0, 0, 0));
+    private void regFNameFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_regFNameFocusGained
+        if(regFName.getText().equals("First Name")) {
+            regFName.setText("");
+            regFName.setForeground(new Color(0, 0, 0));
         }
-    }//GEN-LAST:event_jTextField4FocusGained
+    }//GEN-LAST:event_regFNameFocusGained
 
-    private void jTextField4FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField4FocusLost
-        if(jTextField4.getText().equals("")) {
-            jTextField4.setText("First Name");
-            jTextField4.setForeground(new Color(153, 153, 153));
+    private void regFNameFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_regFNameFocusLost
+        if(regFName.getText().equals("")) {
+            regFName.setText("First Name");
+            regFName.setForeground(new Color(153, 153, 153));
         }
-    }//GEN-LAST:event_jTextField4FocusLost
+    }//GEN-LAST:event_regFNameFocusLost
 
-    private void jTextField5FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField5FocusGained
-        if(jTextField5.getText().equals("Last Name")) {
-            jTextField5.setText("");
-            jTextField5.setForeground(new Color(0, 0, 0));
+    private void regLNameFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_regLNameFocusGained
+        if(regLName.getText().equals("Last Name")) {
+            regLName.setText("");
+            regLName.setForeground(new Color(0, 0, 0));
         }
-    }//GEN-LAST:event_jTextField5FocusGained
+    }//GEN-LAST:event_regLNameFocusGained
 
-    private void jTextField5FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField5FocusLost
-        if(jTextField5.getText().equals("")) {
-            jTextField5.setText("Last Name");
-            jTextField5.setForeground(new Color(153, 153, 153));
+    private void regLNameFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_regLNameFocusLost
+        if(regLName.getText().equals("")) {
+            regLName.setText("Last Name");
+            regLName.setForeground(new Color(153, 153, 153));
         }
-    }//GEN-LAST:event_jTextField5FocusLost
+    }//GEN-LAST:event_regLNameFocusLost
 
-    private void jTextField6FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField6FocusGained
-        if(jTextField6.getText().equals("Middle Name")) {
-            jTextField6.setText("");
-            jTextField6.setForeground(new Color(0, 0, 0));
+    private void regMNameFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_regMNameFocusGained
+        if(regMName.getText().equals("Middle Name")) {
+            regMName.setText("");
+            regMName.setForeground(new Color(0, 0, 0));
         }
-    }//GEN-LAST:event_jTextField6FocusGained
+    }//GEN-LAST:event_regMNameFocusGained
 
-    private void jTextField6FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField6FocusLost
-        if(jTextField6.getText().equals("")) {
-            jTextField6.setText("Middle Name");
-            jTextField6.setForeground(new Color(153, 153, 153));
+    private void regMNameFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_regMNameFocusLost
+        if(regMName.getText().equals("")) {
+            regMName.setText("Middle Name");
+            regMName.setForeground(new Color(153, 153, 153));
         }
-    }//GEN-LAST:event_jTextField6FocusLost
+    }//GEN-LAST:event_regMNameFocusLost
 
-    private void jTextField7FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField7FocusGained
-        if(jTextField7.getText().equals("Date of Birth")) {
-            jTextField7.setText("");
-            jTextField7.setForeground(new Color(0, 0, 0));
+    private void regBirthdateFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_regBirthdateFocusGained
+        if(regBirthdate.getText().equals("Date of Birth")) {
+            regBirthdate.setText("");
+            regBirthdate.setForeground(new Color(0, 0, 0));
         }
-    }//GEN-LAST:event_jTextField7FocusGained
+    }//GEN-LAST:event_regBirthdateFocusGained
 
-    private void jTextField7FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField7FocusLost
-        if(jTextField7.getText().equals("")) {
-            jTextField7.setText("Date of Birth");
-            jTextField7.setForeground(new Color(153, 153, 153));
+    private void regBirthdateFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_regBirthdateFocusLost
+        if(regBirthdate.getText().equals("")) {
+            regBirthdate.setText("Date of Birth");
+            regBirthdate.setForeground(new Color(153, 153, 153));
         }
-    }//GEN-LAST:event_jTextField7FocusLost
+    }//GEN-LAST:event_regBirthdateFocusLost
 
-    private void jTextField8FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField8FocusGained
-        if(jTextField8.getText().equals("Email Address")) {
-            jTextField8.setText("");
-            jTextField8.setForeground(new Color(0, 0, 0));
+    private void regEmailFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_regEmailFocusGained
+        if(regEmail.getText().equals("Email Address")) {
+            regEmail.setText("");
+            regEmail.setForeground(new Color(0, 0, 0));
         }
-    }//GEN-LAST:event_jTextField8FocusGained
+    }//GEN-LAST:event_regEmailFocusGained
 
-    private void jTextField8FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField8FocusLost
-        if(jTextField8.getText().equals("")) {
-            jTextField8.setText("Email Address");
-            jTextField8.setForeground(new Color(153, 153, 153));
+    private void regEmailFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_regEmailFocusLost
+        if(regEmail.getText().equals("")) {
+            regEmail.setText("Email Address");
+            regEmail.setForeground(new Color(153, 153, 153));
         }
-    }//GEN-LAST:event_jTextField8FocusLost
+    }//GEN-LAST:event_regEmailFocusLost
 
-    private void jTextField9FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField9FocusGained
-        if(jTextField9.getText().equals("Password")) {
-            jTextField9.setText("");
-            jTextField9.setForeground(new Color(0, 0, 0));
+    private void regPassFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_regPassFocusGained
+        if(regPass.getText().equals("Password")) {
+            regPass.setText("");
+            regPass.setForeground(new Color(0, 0, 0));
         }
-    }//GEN-LAST:event_jTextField9FocusGained
+    }//GEN-LAST:event_regPassFocusGained
 
-    private void jTextField9FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField9FocusLost
-        if(jTextField9.getText().equals("")) {
-            jTextField9.setText("Password");
-            jTextField9.setForeground(new Color(153, 153, 153));
+    private void regPassFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_regPassFocusLost
+        if(regPass.getText().equals("")) {
+            regPass.setText("Password");
+            regPass.setForeground(new Color(153, 153, 153));
         }
-    }//GEN-LAST:event_jTextField9FocusLost
+    }//GEN-LAST:event_regPassFocusLost
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         LineBorder coloredBorderRed = new LineBorder(Color.RED, 1);
         LineBorder coloredBorderBlk = new LineBorder(Color.BLACK, 1);
         EmptyBorder paddingBorder = new EmptyBorder(1, 5, 1, 1);
         
-        if(jTextField3.getText().equals("Student Number"))
-            jTextField3.setBorder(new CompoundBorder(coloredBorderRed, paddingBorder));
-        else jTextField3.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
+        if(regStNumber.getText().equals("Student Number"))
+            regStNumber.setBorder(new CompoundBorder(coloredBorderRed, paddingBorder));
+        else 
+            regStNumber.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
         
-        if(jTextField4.getText().equals("First Name"))
-            jTextField4.setBorder(new CompoundBorder(coloredBorderRed, paddingBorder));
-        else jTextField4.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
+        if(regFName.getText().equals("First Name"))
+            regFName.setBorder(new CompoundBorder(coloredBorderRed, paddingBorder));
+        else
+            regFName.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
         
-        if(jTextField5.getText().equals("Last Name"))
-            jTextField5.setBorder(new CompoundBorder(coloredBorderRed, paddingBorder));
-        else jTextField5.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
+        if(regLName.getText().equals("Last Name"))
+            regLName.setBorder(new CompoundBorder(coloredBorderRed, paddingBorder));
+        else
+            regLName.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
         
-        if(jTextField6.getText().equals("Middle Name"))
-            jTextField6.setBorder(new CompoundBorder(coloredBorderRed, paddingBorder));
-        else jTextField6.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
+        if(regMName.getText().equals("Middle Name"))
+            regMName.setBorder(new CompoundBorder(coloredBorderRed, paddingBorder));
+        else
+            regMName.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
         
-        if(jTextField7.getText().equals("Date of Birth"))
-            jTextField7.setBorder(new CompoundBorder(coloredBorderRed, paddingBorder));
-        else jTextField7.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
+        if(regBirthdate.getText().equals("Date of Birth"))
+            regBirthdate.setBorder(new CompoundBorder(coloredBorderRed, paddingBorder));
+        else
+            regBirthdate.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
         
-        if(jTextField8.getText().equals("Email Address"))
-            jTextField8.setBorder(new CompoundBorder(coloredBorderRed, paddingBorder));
-        else jTextField8.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
+        if(regEmail.getText().equals("Email Address"))
+            regEmail.setBorder(new CompoundBorder(coloredBorderRed, paddingBorder));
+        else
+            regEmail.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
         
-        if(jTextField9.getText().equals("Password"))
-            jTextField9.setBorder(new CompoundBorder(coloredBorderRed, paddingBorder));
-        else jTextField9.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
+        if(regPass.getText().equals("Password"))
+            regPass.setBorder(new CompoundBorder(coloredBorderRed, paddingBorder));
+        else
+            regPass.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
         
-        //String sql = "INSERT INTO Accounts VALUES()";
+        if(emptyspaces()) {
+        } else {
+            try {
+                String sql = "INSERT INTO Accounts (studentnumber, firstname, lastname, middlename, birthdate, email, pass) VALUES(?, ?, ?, ?, ?, ?, ?)";
+                pst = con.prepareStatement(sql);
+                pst.setString(1, regStNumber.getText());
+                pst.setString(2, regFName.getText());
+                pst.setString(3, regLName.getText());
+                pst.setString(4, regMName.getText());
+                pst.setString(5, regBirthdate.getText());
+                pst.setString(6, regEmail.getText());
+                pst.setString(7, regPass.getText());
+                pst.execute();
+                
+                JOptionPane.showMessageDialog(jPanel2, "Your account is registered successfully. Please proceed to login.");
+            }
+            catch (SQLException ex) { System.out.println(ex.getMessage()); }
+        }
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -663,30 +702,30 @@ public class login extends javax.swing.JFrame {
         LineBorder coloredBorderBlk = new LineBorder(Color.BLACK, 1);
         EmptyBorder paddingBorder = new EmptyBorder(1, 5, 1, 1);
         
-        jTextField3.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
-        jTextField4.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
-        jTextField5.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
-        jTextField6.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
-        jTextField7.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
-        jTextField8.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
-        jTextField9.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
+        regStNumber.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
+        regFName.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
+        regLName.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
+        regMName.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
+        regBirthdate.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
+        regEmail.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
+        regPass.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jTextField1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField1MouseExited
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1MouseExited
 
-    private void jTextField3FocusGained(java.awt.event.FocusEvent evt) {                                        
-        if(jTextField3.getText().equals("Student Number")) {
-            jTextField3.setText("");
-            jTextField3.setForeground(new Color(0, 0, 0));
+    private void regStNumberFocusGained(java.awt.event.FocusEvent evt) {                                        
+        if(regStNumber.getText().equals("Student Number")) {
+            regStNumber.setText("");
+            regStNumber.setForeground(new Color(0, 0, 0));
         }
     }                                       
 
-    private void jTextField3FocusLost(java.awt.event.FocusEvent evt) {                                      
-        if(jTextField3.getText().equals("")) {
-            jTextField3.setText("Student Number");
-            jTextField3.setForeground(new Color(153, 153, 153));
+    private void regStNumberFocusLost(java.awt.event.FocusEvent evt) {                                      
+        if(regStNumber.getText().equals("")) {
+            regStNumber.setText("Student Number");
+            regStNumber.setForeground(new Color(153, 153, 153));
         }
     }                                     
 
@@ -745,12 +784,12 @@ public class login extends javax.swing.JFrame {
     private static javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
+    private javax.swing.JTextField regBirthdate;
+    private javax.swing.JTextField regEmail;
+    private javax.swing.JTextField regFName;
+    private javax.swing.JTextField regLName;
+    private javax.swing.JTextField regMName;
+    private javax.swing.JTextField regPass;
+    private javax.swing.JTextField regStNumber;
     // End of variables declaration//GEN-END:variables
 }
