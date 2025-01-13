@@ -18,14 +18,18 @@ import javax.swing.border.LineBorder;
  *
  * @author Windows
  */
+
 public class login extends javax.swing.JFrame {
     Connection con = null;
     PreparedStatement pst = null;
     ResultSet rs = null;
     
+    public static int baseStudentNumber;
+    
     public login() {
         initComponents();
         con = dbConnection.connectionDB();
+        
     }
     
     boolean emptyspaces() {
@@ -476,18 +480,6 @@ public class login extends javax.swing.JFrame {
             jTextField1.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
             jTextField2.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
             
-            /*if(jTextField1.getText().equals("admin") && jTextField2.getText().equals("pass")) {
-                java.awt.EventQueue.invokeLater(new Runnable() {
-                    public void run() {
-                        new dashboard().setVisible(true);
-                    }
-                });
-                
-                dispose();
-            }
-            
-            else errorMsgText.setText("Incorrect credentials.");*/
-            
             // sql accounts checking from database
             String sql = "SELECT * from Accounts WHERE studentnumber = ? AND pass = ?";
             try {
@@ -498,6 +490,8 @@ public class login extends javax.swing.JFrame {
                 
                 if(rs.next()) { // login successful
                     // show dashboard
+                    baseStudentNumber = rs.getInt("studentnumber"); 
+                    
                     java.awt.EventQueue.invokeLater(new Runnable() {
                         public void run() {
                             new dashboard().setVisible(true);
