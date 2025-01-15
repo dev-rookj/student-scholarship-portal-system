@@ -213,16 +213,17 @@ public class login extends javax.swing.JFrame {
             loginPass.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
             
             // sql accounts checking from database
-            String sql = "SELECT * from user WHERE user_name = ? AND password = ?";
+            String sql = "SELECT * from student WHERE student_number = ? OR email = ? AND password = ?";
             try {
                 pst = con.prepareStatement(sql);
                 pst.setString(1, loginUser.getText());
-                pst.setString(2, loginPass.getText());
+                pst.setString(2, loginUser.getText());
+                pst.setString(3, loginPass.getText());
                 rs = pst.executeQuery();
                 
                 if(rs.next()) { // login successful
                     // show dashboard
-                    baseStudentNumber = rs.getInt("user_id"); 
+                    baseStudentNumber = rs.getInt("user_id");
                     
                     java.awt.EventQueue.invokeLater(new Runnable() {
                         public void run() {

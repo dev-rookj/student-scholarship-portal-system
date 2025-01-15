@@ -54,6 +54,7 @@ public class dashboard extends javax.swing.JFrame {
                 birthdate = rs.getString("birth_date");
                 email = rs.getString("email"); 
                 gender = rs.getString("gender"); 
+                address = rs.getString("address"); 
                 phonenumber = rs.getString("phone_number"); 
                 religion = rs.getString("religion"); 
                 citizenship = rs.getString("citizenship");
@@ -79,8 +80,26 @@ public class dashboard extends javax.swing.JFrame {
         // set birthdate in student profule
         tpDateOfBirth.setText(birthdate);
         
-        // set email in student profule
+        // set email in student profile
         tpEmail.setText(email);
+        
+        // set gender in student profile
+        tpGender.setText(gender);
+        
+        // set address in student profile
+        tpAddress.setText(address);
+        
+        tpEmail.setText(email);
+        
+        tpMobileNum.setText(phonenumber);
+        
+        tpReligion.setText(religion);
+        
+        tpCitizenship.setText(citizenship);
+        
+        tpCivilStatus.setText(civilstatus);
+        
+        tpGuardian.setText(guardian);
     }
 
 
@@ -640,7 +659,7 @@ public class dashboard extends javax.swing.JFrame {
             .addGroup(pnHeaderName2Layout.createSequentialGroup()
                 .addGap(33, 33, 33)
                 .addComponent(lbFullName3, javax.swing.GroupLayout.PREFERRED_SIZE, 703, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(180, Short.MAX_VALUE))
+                .addContainerGap(186, Short.MAX_VALUE))
         );
         pnHeaderName2Layout.setVerticalGroup(
             pnHeaderName2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -666,7 +685,9 @@ public class dashboard extends javax.swing.JFrame {
         lblDateOfBirth1.setText("DATE OF BIRTH:");
 
         tpDateOfBirth.setBackground(new java.awt.Color(184, 184, 184));
+        tpDateOfBirth.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         tpDateOfBirth.setPreferredSize(new java.awt.Dimension(0, 0));
+        tpDateOfBirth.setRequestFocusEnabled(false);
         spDateOfBirth.setViewportView(tpDateOfBirth);
 
         lblGender.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -674,7 +695,9 @@ public class dashboard extends javax.swing.JFrame {
         lblGender.setText("GENDER:");
 
         tpGender.setBackground(new java.awt.Color(184, 184, 184));
+        tpGender.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         tpGender.setPreferredSize(new java.awt.Dimension(0, 0));
+        tpGender.setRequestFocusEnabled(false);
         spGender.setViewportView(tpGender);
 
         lblAddress.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -682,8 +705,10 @@ public class dashboard extends javax.swing.JFrame {
         lblAddress.setText("ADDRESS:");
 
         tpAddress.setBackground(new java.awt.Color(184, 184, 184));
+        tpAddress.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         tpAddress.setMinimumSize(new java.awt.Dimension(62, 556));
         tpAddress.setPreferredSize(new java.awt.Dimension(0, 0));
+        tpAddress.setRequestFocusEnabled(false);
         spAddress.setViewportView(tpAddress);
 
         lblEmailAddress.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -691,7 +716,9 @@ public class dashboard extends javax.swing.JFrame {
         lblEmailAddress.setText("EMAIL ADDRESS:");
 
         tpEmail.setBackground(new java.awt.Color(184, 184, 184));
+        tpEmail.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         tpEmail.setPreferredSize(new java.awt.Dimension(0, 0));
+        tpEmail.setRequestFocusEnabled(false);
         spEmailAddress.setViewportView(tpEmail);
 
         lblMobileNum.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -699,7 +726,9 @@ public class dashboard extends javax.swing.JFrame {
         lblMobileNum.setText("MOBILE NUMBER:");
 
         tpMobileNum.setBackground(new java.awt.Color(184, 184, 184));
+        tpMobileNum.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         tpMobileNum.setPreferredSize(new java.awt.Dimension(0, 0));
+        tpMobileNum.setRequestFocusEnabled(false);
         spMobileNum.setViewportView(tpMobileNum);
 
         lblReligion.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -707,7 +736,9 @@ public class dashboard extends javax.swing.JFrame {
         lblReligion.setText("RELIGION: ");
 
         tpReligion.setBackground(new java.awt.Color(184, 184, 184));
+        tpReligion.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         tpReligion.setPreferredSize(new java.awt.Dimension(0, 0));
+        tpReligion.setRequestFocusEnabled(false);
         spReligion.setViewportView(tpReligion);
 
         lblCitizenship.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -715,7 +746,9 @@ public class dashboard extends javax.swing.JFrame {
         lblCitizenship.setText("CITIZENSHIP:");
 
         tpCitizenship.setBackground(new java.awt.Color(184, 184, 184));
+        tpCitizenship.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         tpCitizenship.setPreferredSize(new java.awt.Dimension(0, 0));
+        tpCitizenship.setRequestFocusEnabled(false);
         spCitizenship.setViewportView(tpCitizenship);
 
         lblCivilStatus.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -723,8 +756,10 @@ public class dashboard extends javax.swing.JFrame {
         lblCivilStatus.setText("CIVIL STATUS:");
 
         tpCivilStatus.setBackground(new java.awt.Color(184, 184, 184));
+        tpCivilStatus.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         tpCivilStatus.setMinimumSize(new java.awt.Dimension(0, 0));
         tpCivilStatus.setPreferredSize(new java.awt.Dimension(0, 0));
+        tpCivilStatus.setRequestFocusEnabled(false);
         spCivilStatus.setViewportView(tpCivilStatus);
 
         lblGuardian.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -732,106 +767,108 @@ public class dashboard extends javax.swing.JFrame {
         lblGuardian.setText("GUARDIAN:");
 
         tpGuardian.setBackground(new java.awt.Color(184, 184, 184));
+        tpGuardian.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         tpGuardian.setPreferredSize(new java.awt.Dimension(0, 0));
+        tpGuardian.setRequestFocusEnabled(false);
         spGuardian.setViewportView(tpGuardian);
 
         javax.swing.GroupLayout pnProfileDetailsLayout = new javax.swing.GroupLayout(pnProfileDetails);
         pnProfileDetails.setLayout(pnProfileDetailsLayout);
         pnProfileDetailsLayout.setHorizontalGroup(
             pnProfileDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(pnHeaderName2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(pnProfileDetailsLayout.createSequentialGroup()
                 .addGap(35, 35, 35)
                 .addGroup(pnProfileDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(pnProfileDetailsLayout.createSequentialGroup()
-                        .addGroup(pnProfileDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblStuNum1, javax.swing.GroupLayout.DEFAULT_SIZE, 336, Short.MAX_VALUE)
-                            .addComponent(spGender)
-                            .addComponent(spDateOfBirth)
-                            .addGroup(pnProfileDetailsLayout.createSequentialGroup()
-                                .addGroup(pnProfileDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lblDateOfBirth1)
-                                    .addComponent(lblAddress)
-                                    .addComponent(lblGender))
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addComponent(spStuNum))
-                        .addGap(175, 175, 175))
+                        .addComponent(lblStuNum1, javax.swing.GroupLayout.PREFERRED_SIZE, 337, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(148, 148, 148)
+                        .addComponent(lblReligion))
                     .addGroup(pnProfileDetailsLayout.createSequentialGroup()
-                        .addGroup(pnProfileDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(spEmailAddress)
-                            .addComponent(spMobileNum)
-                            .addGroup(pnProfileDetailsLayout.createSequentialGroup()
-                                .addGroup(pnProfileDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lblEmailAddress)
-                                    .addComponent(lblMobileNum))
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addComponent(spAddress))
-                        .addGap(174, 174, 174)))
-                .addGroup(pnProfileDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(spReligion)
-                    .addComponent(spCitizenship)
-                    .addComponent(spCivilStatus)
+                        .addComponent(spStuNum, javax.swing.GroupLayout.PREFERRED_SIZE, 337, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(148, 148, 148)
+                        .addComponent(spReligion, javax.swing.GroupLayout.PREFERRED_SIZE, 369, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(pnProfileDetailsLayout.createSequentialGroup()
-                        .addGroup(pnProfileDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblCivilStatus)
-                            .addComponent(lblReligion)
-                            .addComponent(lblCitizenship)
-                            .addComponent(lblGuardian)
-                            .addComponent(spGuardian, javax.swing.GroupLayout.PREFERRED_SIZE, 305, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addGap(70, 70, 70))
-            .addGroup(pnProfileDetailsLayout.createSequentialGroup()
-                .addComponent(pnHeaderName2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                        .addComponent(lblDateOfBirth1)
+                        .addGap(375, 375, 375)
+                        .addComponent(lblCitizenship))
+                    .addGroup(pnProfileDetailsLayout.createSequentialGroup()
+                        .addComponent(spDateOfBirth, javax.swing.GroupLayout.PREFERRED_SIZE, 337, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(148, 148, 148)
+                        .addComponent(spCitizenship, javax.swing.GroupLayout.PREFERRED_SIZE, 370, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(pnProfileDetailsLayout.createSequentialGroup()
+                        .addComponent(lblGender)
+                        .addGap(422, 422, 422)
+                        .addComponent(lblCivilStatus))
+                    .addGroup(pnProfileDetailsLayout.createSequentialGroup()
+                        .addComponent(spGender, javax.swing.GroupLayout.PREFERRED_SIZE, 337, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(148, 148, 148)
+                        .addComponent(spCivilStatus, javax.swing.GroupLayout.PREFERRED_SIZE, 370, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(pnProfileDetailsLayout.createSequentialGroup()
+                        .addComponent(lblAddress)
+                        .addGap(415, 415, 415)
+                        .addComponent(lblGuardian))
+                    .addGroup(pnProfileDetailsLayout.createSequentialGroup()
+                        .addComponent(spAddress, javax.swing.GroupLayout.PREFERRED_SIZE, 338, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(147, 147, 147)
+                        .addComponent(spGuardian, javax.swing.GroupLayout.PREFERRED_SIZE, 370, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblEmailAddress)
+                    .addComponent(spEmailAddress, javax.swing.GroupLayout.PREFERRED_SIZE, 338, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblMobileNum)
+                    .addComponent(spMobileNum, javax.swing.GroupLayout.PREFERRED_SIZE, 338, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
         pnProfileDetailsLayout.setVerticalGroup(
             pnProfileDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnProfileDetailsLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(6, 6, 6)
                 .addComponent(pnHeaderName2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(pnProfileDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblReligion)
-                    .addComponent(lblStuNum1, javax.swing.GroupLayout.DEFAULT_SIZE, 20, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(pnProfileDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(spStuNum, javax.swing.GroupLayout.DEFAULT_SIZE, 64, Short.MAX_VALUE)
-                    .addComponent(spReligion))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(pnProfileDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblDateOfBirth1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(lblCitizenship))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(pnProfileDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(spDateOfBirth, javax.swing.GroupLayout.DEFAULT_SIZE, 64, Short.MAX_VALUE)
-                    .addComponent(spCitizenship))
+                    .addComponent(lblStuNum1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblReligion))
+                .addGap(10, 10, 10)
+                .addGroup(pnProfileDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(spReligion, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(spStuNum, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(12, 12, 12)
                 .addGroup(pnProfileDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(pnProfileDetailsLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lblCivilStatus)
-                        .addGap(12, 12, 12)
-                        .addComponent(spCivilStatus))
+                        .addComponent(lblDateOfBirth1)
+                        .addGap(6, 6, 6)
+                        .addComponent(spDateOfBirth, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(12, 12, 12))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnProfileDetailsLayout.createSequentialGroup()
+                        .addComponent(lblCitizenship)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(spCitizenship, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)))
+                .addGroup(pnProfileDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(pnProfileDetailsLayout.createSequentialGroup()
-                        .addGap(12, 12, 12)
                         .addComponent(lblGender)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(spGender, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(6, 6, 6)
+                        .addComponent(spGender, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(pnProfileDetailsLayout.createSequentialGroup()
+                        .addComponent(lblCivilStatus)
+                        .addGap(1, 1, 1)
+                        .addComponent(spCivilStatus, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(8, 8, 8)
                 .addGroup(pnProfileDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblAddress)
                     .addComponent(lblGuardian))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(pnProfileDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(spGuardian, javax.swing.GroupLayout.DEFAULT_SIZE, 64, Short.MAX_VALUE)
-                    .addComponent(spAddress))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(11, 11, 11)
+                .addGroup(pnProfileDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnProfileDetailsLayout.createSequentialGroup()
+                        .addGap(1, 1, 1)
+                        .addComponent(spAddress, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(spGuardian, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(16, 16, 16)
                 .addComponent(lblEmailAddress)
                 .addGap(18, 18, 18)
                 .addComponent(spEmailAddress, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(lblMobileNum)
                 .addGap(18, 18, 18)
-                .addComponent(spMobileNum, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(67, 67, 67))
+                .addComponent(spMobileNum, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         tpHomePage.addTab("tab2", pnProfileDetails);

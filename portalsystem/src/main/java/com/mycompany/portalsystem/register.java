@@ -76,12 +76,12 @@ public class register extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(null);
 
-        regTitle.setFont(new java.awt.Font("Californian FB", 1, 28)); // NOI18N
+        regTitle.setFont(new java.awt.Font("Californian FB", 1, 35)); // NOI18N
         regTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         regTitle.setText("REGISTRATION");
         regTitle.setToolTipText("");
         getContentPane().add(regTitle);
-        regTitle.setBounds(0, 60, 490, 30);
+        regTitle.setBounds(0, 50, 490, 40);
 
         regStudNum_label.setText("Student Number:");
         getContentPane().add(regStudNum_label);
@@ -893,7 +893,7 @@ public class register extends javax.swing.JFrame {
             
             pst.setString(13, regGuardian.getText());
             pst.setString(14, regPassword.getText());
-            pst.executeQuery();
+            pst.execute();
             
             JOptionPane.showMessageDialog(bg, "You have successfully created an account. Please proceed to login.");
         }
