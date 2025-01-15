@@ -481,7 +481,7 @@ public class login extends javax.swing.JFrame {
             jTextField2.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
             
             // sql accounts checking from database
-            String sql = "SELECT * from Accounts WHERE studentnumber = ? AND pass = ?";
+            String sql = "SELECT * from user WHERE user_name = ? AND password = ?";
             try {
                 pst = con.prepareStatement(sql);
                 pst.setString(1, jTextField1.getText());
@@ -490,7 +490,7 @@ public class login extends javax.swing.JFrame {
                 
                 if(rs.next()) { // login successful
                     // show dashboard
-                    baseStudentNumber = rs.getInt("studentnumber"); 
+                    baseStudentNumber = rs.getInt("user_id"); 
                     
                     java.awt.EventQueue.invokeLater(new Runnable() {
                         public void run() {

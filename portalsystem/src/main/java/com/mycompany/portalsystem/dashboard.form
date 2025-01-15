@@ -403,7 +403,7 @@
                                   <Component id="tfStuCode" min="-2" pref="405" max="-2" attributes="0"/>
                                   <Component id="tfStatus" min="-2" pref="405" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace pref="964" max="32767" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -868,7 +868,7 @@
                       <Component id="pnHeaderName2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="lblStuNum1" pref="45" max="32767" attributes="0"/>
+                          <Component id="lblStuNum1" max="32767" attributes="0"/>
                           <Component id="lblReligion" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
@@ -882,7 +882,7 @@
                           <Component id="lblCitizenship" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="spDateOfBirth" pref="73" max="32767" attributes="0"/>
+                      <Component id="spDateOfBirth" pref="100" max="32767" attributes="0"/>
                       <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblGender" alignment="3" pref="20" max="32767" attributes="0"/>
@@ -890,15 +890,15 @@
                       </Group>
                       <EmptySpace min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="spCivilStatus" pref="103" max="32767" attributes="0"/>
-                          <Component id="spGender" pref="103" max="32767" attributes="0"/>
+                          <Component id="spCivilStatus" pref="100" max="32767" attributes="0"/>
+                          <Component id="spGender" pref="100" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="lblAddress" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
-                              <Component id="spCitizenship" pref="73" max="32767" attributes="0"/>
+                              <Component id="spCitizenship" pref="100" max="32767" attributes="0"/>
                               <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                               <Component id="lblGuardian" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -907,11 +907,11 @@
                           <Component id="spAddress" min="-2" pref="92" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="lblEmailAddress" pref="46" max="32767" attributes="0"/>
+                      <Component id="lblEmailAddress" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="spEmailAddress" pref="70" max="32767" attributes="0"/>
+                      <Component id="spEmailAddress" pref="101" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="lblMobileNum" pref="49" max="32767" attributes="0"/>
+                      <Component id="lblMobileNum" max="32767" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="spMobileNum" min="-2" pref="58" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
