@@ -20,13 +20,21 @@ public class dashboard extends javax.swing.JFrame {
     ResultSet rs = null;
     
     // user variables
-    int UserID = -1;
-    int StudentNumber = 0;
-    String FirstName = null;
-    String LastName = null;
-    String MiddleName = null;
-    String BirthDate = null;
-    String Email = null;
+    int userid = -1;
+    int studentnumber = 0;
+    String firstname = null;
+    String lastname = null;
+    String middlename = null;
+    String birthdate = null;
+    String email = null;
+    String gender = null;
+    String address = null;
+    String phonenumber = null;
+    String religion = null;
+    String citizenship = null;
+    String civilstatus = null;
+    String guardian = null;
+    
     
     public dashboard() {
         initComponents();
@@ -39,34 +47,40 @@ public class dashboard extends javax.swing.JFrame {
             rs = pst.executeQuery();
             
             if(rs.next()) {
-                StudentNumber = rs.getInt("student_number"); 
-                FirstName = rs.getString("first_name");
-                LastName = rs.getString("last_name");
-                MiddleName = rs.getString("middle_name"); 
-                BirthDate = rs.getString("birth_date");
-                Email = rs.getString("email"); 
+                studentnumber = rs.getInt("student_number"); 
+                firstname = rs.getString("first_name");
+                lastname = rs.getString("last_name");
+                middlename = rs.getString("middle_name"); 
+                birthdate = rs.getString("birth_date");
+                email = rs.getString("email"); 
+                gender = rs.getString("gender"); 
+                phonenumber = rs.getString("phone_number"); 
+                religion = rs.getString("religion"); 
+                citizenship = rs.getString("citizenship");
+                civilstatus = rs.getString("civil_status"); 
+                guardian = rs.getString("guardian"); 
             }
         }
         catch (SQLException ex) { System.out.println(ex.getMessage()); }
         
         // set name at welcome in dashboard
-        char MiddleInitial = MiddleName.charAt(0);
-        lbFullName.setText(LastName + ", " + FirstName + " " + MiddleInitial + ".");
+        char MiddleInitial = middlename.charAt(0);
+        lbFullName.setText(lastname + ", " + firstname + " " + MiddleInitial + ".");
         
         // set name in student profile
-        lbFullName3.setText(LastName + ", " + FirstName + " " +  MiddleInitial + ".");
+        lbFullName3.setText(lastname + ", " + firstname + " " +  MiddleInitial + ".");
         
         // set student number in student profile
-        tpStuNum.setText(Integer.toString(StudentNumber));
+        tpStuNum.setText(Integer.toString(studentnumber));
         
         // set student number in dashboard
-        tfStuCode.setText(Integer.toString(StudentNumber));
+        tfStuCode.setText(Integer.toString(studentnumber));
         
         // set birthdate in student profule
-        tpDateOfBirth.setText(BirthDate);
+        tpDateOfBirth.setText(birthdate);
         
         // set email in student profule
-        tpEmail.setText(Email);
+        tpEmail.setText(email);
     }
 
 

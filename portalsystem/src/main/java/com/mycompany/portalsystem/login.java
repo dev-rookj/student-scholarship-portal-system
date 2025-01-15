@@ -31,19 +31,6 @@ public class login extends javax.swing.JFrame {
         con = dbConnection.connectionDB();
         
     }
-    
-    boolean emptyspaces() {
-        if(regStNumber.getText().equals("Student Number") ||
-           regFName.getText().equals("First Name") ||
-           regLName.getText().equals("Last Name") ||
-           regMName.getText().equals("Middle Name") ||
-           regBirthdate.getText().equals("Date of Birth") ||
-           regEmail.getText().equals("Email Address") ||
-           regPass.getText().equals("Password"))
-        return true;
-        
-        return false;
-    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -54,438 +41,183 @@ public class login extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jTabbedPane1 = new javax.swing.JTabbedPane();
-        jPanel1 = new javax.swing.JPanel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
+        loginUser = new javax.swing.JTextField();
+        loginPass = new javax.swing.JTextField();
+        logo = new javax.swing.JLabel();
+        loginLoginBtn = new javax.swing.JButton();
+        loginRegBtn = new javax.swing.JButton();
+        copyright = new javax.swing.JLabel();
         errorMsgText = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        regStNumber = new javax.swing.JTextField();
-        regFName = new javax.swing.JTextField();
-        regLName = new javax.swing.JTextField();
-        regMName = new javax.swing.JTextField();
-        regBirthdate = new javax.swing.JTextField();
-        regEmail = new javax.swing.JTextField();
-        regPass = new javax.swing.JTextField();
-        jButton2 = new javax.swing.JButton();
-        jLabel11 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
-        jLabel6 = new javax.swing.JLabel();
+        loginRegBtn_label = new javax.swing.JLabel();
+        bg = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Scholarship Portal");
         setBounds(new java.awt.Rectangle(0, 0, 0, 0));
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        setPreferredSize(new java.awt.Dimension(415, 518));
+        setMinimumSize(new java.awt.Dimension(416, 533));
+        setPreferredSize(new java.awt.Dimension(415, 525));
         setResizable(false);
         setSize(new java.awt.Dimension(400, 480));
         getContentPane().setLayout(null);
 
-        jPanel1.setLayout(null);
-
-        jTextField1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        jTextField1.setForeground(new java.awt.Color(153, 153, 153));
-        jTextField1.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        jTextField1.setText("Student Number or Student Email");
-        jTextField1.setToolTipText("");
-        jTextField1.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createEmptyBorder(1, 5, 1, 1)));
-        jTextField1.addFocusListener(new java.awt.event.FocusAdapter() {
+        loginUser.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        loginUser.setForeground(new java.awt.Color(153, 153, 153));
+        loginUser.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        loginUser.setText("Student Number or Student Email");
+        loginUser.setToolTipText("");
+        loginUser.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createEmptyBorder(1, 5, 1, 1)));
+        loginUser.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
-                jTextField1FocusGained(evt);
+                loginUserFocusGained(evt);
             }
             public void focusLost(java.awt.event.FocusEvent evt) {
-                jTextField1FocusLost(evt);
+                loginUserFocusLost(evt);
             }
         });
-        jTextField1.addMouseListener(new java.awt.event.MouseAdapter() {
+        loginUser.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jTextField1MouseExited(evt);
+                loginUserMouseExited(evt);
             }
         });
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        loginUser.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                loginUserActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField1);
-        jTextField1.setBounds(100, 180, 200, 37);
+        getContentPane().add(loginUser);
+        loginUser.setBounds(100, 180, 200, 37);
 
-        jTextField2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        jTextField2.setForeground(new java.awt.Color(153, 153, 153));
-        jTextField2.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        jTextField2.setText("Password");
-        jTextField2.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createEmptyBorder(1, 5, 1, 1)));
-        jTextField2.addFocusListener(new java.awt.event.FocusAdapter() {
+        loginPass.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        loginPass.setForeground(new java.awt.Color(153, 153, 153));
+        loginPass.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        loginPass.setText("Password");
+        loginPass.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createEmptyBorder(1, 5, 1, 1)));
+        loginPass.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
-                jTextField2FocusGained(evt);
+                loginPassFocusGained(evt);
             }
             public void focusLost(java.awt.event.FocusEvent evt) {
-                jTextField2FocusLost(evt);
+                loginPassFocusLost(evt);
             }
         });
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+        loginPass.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
+                loginPassActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField2);
-        jTextField2.setBounds(100, 230, 200, 37);
+        getContentPane().add(loginPass);
+        loginPass.setBounds(100, 230, 200, 37);
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logo.png"))); // NOI18N
-        jPanel1.add(jLabel4);
-        jLabel4.setBounds(80, 60, 240, 110);
+        logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logo.png"))); // NOI18N
+        getContentPane().add(logo);
+        logo.setBounds(80, 50, 240, 110);
 
-        jButton1.setBackground(new java.awt.Color(0, 51, 102));
-        jButton1.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Login");
-        jButton1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jButton1.setFocusPainted(false);
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        loginLoginBtn.setBackground(new java.awt.Color(0, 51, 102));
+        loginLoginBtn.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        loginLoginBtn.setForeground(new java.awt.Color(255, 255, 255));
+        loginLoginBtn.setText("Login");
+        loginLoginBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        loginLoginBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        loginLoginBtn.setFocusPainted(false);
+        loginLoginBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                loginLoginBtnActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1);
-        jButton1.setBounds(150, 280, 100, 30);
+        getContentPane().add(loginLoginBtn);
+        loginLoginBtn.setBounds(150, 280, 100, 30);
 
-        jButton3.setBackground(new java.awt.Color(0, 51, 102));
-        jButton3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("Register");
-        jButton3.setBorder(null);
-        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jButton3.setFocusPainted(false);
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        loginRegBtn.setBackground(new java.awt.Color(0, 51, 102));
+        loginRegBtn.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        loginRegBtn.setForeground(new java.awt.Color(255, 255, 255));
+        loginRegBtn.setText("Register");
+        loginRegBtn.setBorder(null);
+        loginRegBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        loginRegBtn.setFocusPainted(false);
+        loginRegBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                loginRegBtnActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton3);
-        jButton3.setBounds(160, 420, 80, 20);
+        getContentPane().add(loginRegBtn);
+        loginRegBtn.setBounds(160, 420, 80, 20);
 
-        jLabel3.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("© Copyright 2024 #include <iostream> | Scholarship Portal");
-        jPanel1.add(jLabel3);
-        jLabel3.setBounds(0, 460, 400, 20);
+        copyright.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        copyright.setForeground(new java.awt.Color(255, 255, 255));
+        copyright.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        copyright.setText("© Copyright 2024 #include <iostream> | Scholarship Portal");
+        getContentPane().add(copyright);
+        copyright.setBounds(0, 460, 400, 20);
 
         errorMsgText.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         errorMsgText.setForeground(new java.awt.Color(200, 0, 0));
         errorMsgText.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         errorMsgText.setText(" ");
         errorMsgText.setAlignmentY(0.0F);
-        jPanel1.add(errorMsgText);
+        getContentPane().add(errorMsgText);
         errorMsgText.setBounds(100, 320, 200, 20);
 
-        jLabel12.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel12.setText("Don't have an account?");
-        jLabel12.setAlignmentY(0.0F);
-        jPanel1.add(jLabel12);
-        jLabel12.setBounds(130, 400, 140, 20);
+        loginRegBtn_label.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        loginRegBtn_label.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        loginRegBtn_label.setText("Don't have an account?");
+        loginRegBtn_label.setAlignmentY(0.0F);
+        getContentPane().add(loginRegBtn_label);
+        loginRegBtn_label.setBounds(130, 400, 140, 20);
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/bg.jpg"))); // NOI18N
-        jLabel7.setText("jLabel7");
-        jPanel1.add(jLabel7);
-        jLabel7.setBounds(0, 0, 400, 490);
-
-        jTabbedPane1.addTab("login", jPanel1);
-
-        jPanel2.setLayout(null);
-
-        jLabel8.setFont(new java.awt.Font("Californian FB", 1, 28)); // NOI18N
-        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel8.setText("REGISTRATION");
-        jLabel8.setToolTipText("");
-        jPanel2.add(jLabel8);
-        jLabel8.setBounds(80, 80, 240, 30);
-
-        jLabel9.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel9.setText("Already Registered?");
-        jLabel9.setAlignmentY(0.0F);
-        jPanel2.add(jLabel9);
-        jLabel9.setBounds(140, 400, 120, 20);
-
-        regStNumber.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        regStNumber.setForeground(new java.awt.Color(153, 153, 153));
-        regStNumber.setText("Student Number");
-        regStNumber.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createEmptyBorder(1, 5, 1, 1)));
-        regStNumber.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                regStNumberFocusGained(evt);
-            }
-            public void focusLost(java.awt.event.FocusEvent evt) {
-                regStNumberFocusLost(evt);
-            }
-        });
-        regStNumber.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                regStNumberActionPerformed(evt);
-            }
-        });
-        jPanel2.add(regStNumber);
-        regStNumber.setBounds(80, 120, 240, 24);
-
-        regFName.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        regFName.setForeground(new java.awt.Color(153, 153, 153));
-        regFName.setText("First Name");
-        regFName.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createEmptyBorder(1, 5, 1, 1)));
-        regFName.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                regFNameFocusGained(evt);
-            }
-            public void focusLost(java.awt.event.FocusEvent evt) {
-                regFNameFocusLost(evt);
-            }
-        });
-        regFName.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                regFNameActionPerformed(evt);
-            }
-        });
-        jPanel2.add(regFName);
-        regFName.setBounds(80, 150, 240, 24);
-
-        regLName.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        regLName.setForeground(new java.awt.Color(153, 153, 153));
-        regLName.setText("Last Name");
-        regLName.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createEmptyBorder(1, 5, 1, 1)));
-        regLName.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                regLNameFocusGained(evt);
-            }
-            public void focusLost(java.awt.event.FocusEvent evt) {
-                regLNameFocusLost(evt);
-            }
-        });
-        regLName.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                regLNameActionPerformed(evt);
-            }
-        });
-        jPanel2.add(regLName);
-        regLName.setBounds(80, 180, 240, 24);
-
-        regMName.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        regMName.setForeground(new java.awt.Color(153, 153, 153));
-        regMName.setText("Middle Name");
-        regMName.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createEmptyBorder(1, 5, 1, 1)));
-        regMName.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                regMNameFocusGained(evt);
-            }
-            public void focusLost(java.awt.event.FocusEvent evt) {
-                regMNameFocusLost(evt);
-            }
-        });
-        regMName.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                regMNameActionPerformed(evt);
-            }
-        });
-        jPanel2.add(regMName);
-        regMName.setBounds(80, 210, 240, 24);
-
-        regBirthdate.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        regBirthdate.setForeground(new java.awt.Color(153, 153, 153));
-        regBirthdate.setText("Date of Birth");
-        regBirthdate.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createEmptyBorder(1, 5, 1, 1)));
-        regBirthdate.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                regBirthdateFocusGained(evt);
-            }
-            public void focusLost(java.awt.event.FocusEvent evt) {
-                regBirthdateFocusLost(evt);
-            }
-        });
-        regBirthdate.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                regBirthdateActionPerformed(evt);
-            }
-        });
-        jPanel2.add(regBirthdate);
-        regBirthdate.setBounds(80, 240, 240, 24);
-
-        regEmail.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        regEmail.setForeground(new java.awt.Color(153, 153, 153));
-        regEmail.setText("Email Address");
-        regEmail.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createEmptyBorder(1, 5, 1, 1)));
-        regEmail.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                regEmailFocusGained(evt);
-            }
-            public void focusLost(java.awt.event.FocusEvent evt) {
-                regEmailFocusLost(evt);
-            }
-        });
-        regEmail.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                regEmailActionPerformed(evt);
-            }
-        });
-        jPanel2.add(regEmail);
-        regEmail.setBounds(80, 270, 240, 24);
-
-        regPass.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        regPass.setForeground(new java.awt.Color(153, 153, 153));
-        regPass.setText("Password");
-        regPass.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createEmptyBorder(1, 5, 1, 1)));
-        regPass.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                regPassFocusGained(evt);
-            }
-            public void focusLost(java.awt.event.FocusEvent evt) {
-                regPassFocusLost(evt);
-            }
-        });
-        regPass.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                regPassActionPerformed(evt);
-            }
-        });
-        jPanel2.add(regPass);
-        regPass.setBounds(80, 300, 240, 24);
-
-        jButton2.setBackground(new java.awt.Color(0, 51, 102));
-        jButton2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("Login");
-        jButton2.setBorder(null);
-        jButton2.setFocusPainted(false);
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-        jPanel2.add(jButton2);
-        jButton2.setBounds(160, 420, 80, 20);
-
-        jLabel11.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel11.setText("© Copyright 2024 #include <iostream> | Scholarship Portal");
-        jPanel2.add(jLabel11);
-        jLabel11.setBounds(0, 460, 400, 20);
-
-        jButton4.setBackground(new java.awt.Color(0, 51, 102));
-        jButton4.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setText("Sign up");
-        jButton4.setBorder(null);
-        jButton4.setFocusPainted(false);
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
-            }
-        });
-        jPanel2.add(jButton4);
-        jButton4.setBounds(150, 340, 100, 30);
-
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/bg.jpg"))); // NOI18N
-        jLabel6.setText("jLabel2");
-        jPanel2.add(jLabel6);
-        jLabel6.setBounds(0, 0, 400, 490);
-
-        jTabbedPane1.addTab("register", jPanel2);
-
-        getContentPane().add(jTabbedPane1);
-        jTabbedPane1.setBounds(0, -40, 400, 590);
+        bg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/loginbg.jpg"))); // NOI18N
+        bg.setText("jLabel7");
+        bg.setMaximumSize(new java.awt.Dimension(0, 0));
+        bg.setMinimumSize(new java.awt.Dimension(0, 0));
+        bg.setPreferredSize(new java.awt.Dimension(0, 0));
+        getContentPane().add(bg);
+        bg.setBounds(0, 0, 400, 500);
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void regStNumberActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regStNumberActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_regStNumberActionPerformed
-
-    private void regFNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regFNameActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_regFNameActionPerformed
-
-    private void regLNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regLNameActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_regLNameActionPerformed
-
-    private void regMNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regMNameActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_regMNameActionPerformed
-
-    private void regBirthdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regBirthdateActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_regBirthdateActionPerformed
-
-    private void regEmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regEmailActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_regEmailActionPerformed
-
-    private void regPassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regPassActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_regPassActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        LineBorder coloredBorderBlk = new LineBorder(Color.BLACK, 1);
-        EmptyBorder paddingBorder = new EmptyBorder(1, 5, 1, 1);
-        
-        jTabbedPane1.setSelectedIndex(0);
-        errorMsgText.setText("");
-        jTextField1.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
-        jTextField2.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
-    }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void loginLoginBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginLoginBtnActionPerformed
         LineBorder coloredBorderRed = new LineBorder(Color.RED, 1);
         LineBorder coloredBorderBlk = new LineBorder(Color.BLACK, 1);
         EmptyBorder paddingBorder = new EmptyBorder(1, 5, 1, 1);
         
         // if user entered empty credentials in the text boxes
-        if(jTextField1.getText().equals("Student Number or Student Email") && jTextField2.getText().equals("Password")) {
+        if(loginUser.getText().equals("Student Number or Student Email") && loginPass.getText().equals("Password")) {
             errorMsgText.setText("You entered empty credentials.");
             
-            jTextField1.setBorder(new CompoundBorder(coloredBorderRed, paddingBorder));
-            jTextField2.setBorder(new CompoundBorder(coloredBorderRed, paddingBorder));
+            loginUser.setBorder(new CompoundBorder(coloredBorderRed, paddingBorder));
+            loginPass.setBorder(new CompoundBorder(coloredBorderRed, paddingBorder));
         }
         
         // if user entered empty username in the username field
-        else if(jTextField1.getText().equals("Student Number or Student Email")) {
+        else if(loginUser.getText().equals("Student Number or Student Email")) {
             errorMsgText.setText("Username is empty.");
             
-            jTextField1.setBorder(new CompoundBorder(coloredBorderRed, paddingBorder));
-            jTextField2.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
+            loginUser.setBorder(new CompoundBorder(coloredBorderRed, paddingBorder));
+            loginPass.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
         }
         
         // if user entered empty password in the password field
-        else if(jTextField2.getText().equals("Password")) {
+        else if(loginPass.getText().equals("Password")) {
             errorMsgText.setText("Password is empty.");
             
-            jTextField1.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
-            jTextField2.setBorder(new CompoundBorder(coloredBorderRed, paddingBorder));
+            loginUser.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
+            loginPass.setBorder(new CompoundBorder(coloredBorderRed, paddingBorder));
         }
         
         else {
             errorMsgText.setText("");
             
-            jTextField1.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
-            jTextField2.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
+            loginUser.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
+            loginPass.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
             
             // sql accounts checking from database
             String sql = "SELECT * from user WHERE user_name = ? AND password = ?";
             try {
                 pst = con.prepareStatement(sql);
-                pst.setString(1, jTextField1.getText());
-                pst.setString(2, jTextField2.getText());
+                pst.setString(1, loginUser.getText());
+                pst.setString(2, loginPass.getText());
                 rs = pst.executeQuery();
                 
                 if(rs.next()) { // login successful
@@ -508,219 +240,64 @@ public class login extends javax.swing.JFrame {
                 System.out.println(ex.getMessage());
             }
         }
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_loginLoginBtnActionPerformed
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+    private void loginPassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginPassActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
+    }//GEN-LAST:event_loginPassActionPerformed
 
-    private void jTextField2FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField2FocusLost
-        if(jTextField2.getText().equals("")) {
-            jTextField2.setText("Password");
-            jTextField2.setForeground(new Color(153, 153, 153));
+    private void loginPassFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_loginPassFocusLost
+        if(loginPass.getText().equals("")) {
+            loginPass.setText("Password");
+            loginPass.setForeground(new Color(153, 153, 153));
         }
-    }//GEN-LAST:event_jTextField2FocusLost
+    }//GEN-LAST:event_loginPassFocusLost
 
-    private void jTextField2FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField2FocusGained
-        if(jTextField2.getText().equals("Password")) {
-            jTextField2.setText("");
-            jTextField2.setForeground(new Color(0, 0, 0));
+    private void loginPassFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_loginPassFocusGained
+        if(loginPass.getText().equals("Password")) {
+            loginPass.setText("");
+            loginPass.setForeground(new Color(0, 0, 0));
         }
-    }//GEN-LAST:event_jTextField2FocusGained
+    }//GEN-LAST:event_loginPassFocusGained
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void loginUserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginUserActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_loginUserActionPerformed
 
-    private void jTextField1FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField1FocusLost
-        if(jTextField1.getText().equals("")) {
-            jTextField1.setText("Student Number or Student Email");
-            jTextField1.setForeground(new Color(153, 153, 153));
+    private void loginUserFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_loginUserFocusLost
+        if(loginUser.getText().equals("")) {
+            loginUser.setText("Student Number or Student Email");
+            loginUser.setForeground(new Color(153, 153, 153));
         }
-    }//GEN-LAST:event_jTextField1FocusLost
+    }//GEN-LAST:event_loginUserFocusLost
 
-    private void jTextField1FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField1FocusGained
-        if(jTextField1.getText().equals("Student Number or Student Email")) {
-            jTextField1.setText("");
-            jTextField1.setForeground(new Color(0, 0, 0));
+    private void loginUserFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_loginUserFocusGained
+        if(loginUser.getText().equals("Student Number or Student Email")) {
+            loginUser.setText("");
+            loginUser.setForeground(new Color(0, 0, 0));
         }
-    }//GEN-LAST:event_jTextField1FocusGained
+    }//GEN-LAST:event_loginUserFocusGained
 
-    private void regFNameFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_regFNameFocusGained
-        if(regFName.getText().equals("First Name")) {
-            regFName.setText("");
-            regFName.setForeground(new Color(0, 0, 0));
-        }
-    }//GEN-LAST:event_regFNameFocusGained
-
-    private void regFNameFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_regFNameFocusLost
-        if(regFName.getText().equals("")) {
-            regFName.setText("First Name");
-            regFName.setForeground(new Color(153, 153, 153));
-        }
-    }//GEN-LAST:event_regFNameFocusLost
-
-    private void regLNameFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_regLNameFocusGained
-        if(regLName.getText().equals("Last Name")) {
-            regLName.setText("");
-            regLName.setForeground(new Color(0, 0, 0));
-        }
-    }//GEN-LAST:event_regLNameFocusGained
-
-    private void regLNameFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_regLNameFocusLost
-        if(regLName.getText().equals("")) {
-            regLName.setText("Last Name");
-            regLName.setForeground(new Color(153, 153, 153));
-        }
-    }//GEN-LAST:event_regLNameFocusLost
-
-    private void regMNameFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_regMNameFocusGained
-        if(regMName.getText().equals("Middle Name")) {
-            regMName.setText("");
-            regMName.setForeground(new Color(0, 0, 0));
-        }
-    }//GEN-LAST:event_regMNameFocusGained
-
-    private void regMNameFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_regMNameFocusLost
-        if(regMName.getText().equals("")) {
-            regMName.setText("Middle Name");
-            regMName.setForeground(new Color(153, 153, 153));
-        }
-    }//GEN-LAST:event_regMNameFocusLost
-
-    private void regBirthdateFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_regBirthdateFocusGained
-        if(regBirthdate.getText().equals("Date of Birth")) {
-            regBirthdate.setText("");
-            regBirthdate.setForeground(new Color(0, 0, 0));
-        }
-    }//GEN-LAST:event_regBirthdateFocusGained
-
-    private void regBirthdateFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_regBirthdateFocusLost
-        if(regBirthdate.getText().equals("")) {
-            regBirthdate.setText("Date of Birth");
-            regBirthdate.setForeground(new Color(153, 153, 153));
-        }
-    }//GEN-LAST:event_regBirthdateFocusLost
-
-    private void regEmailFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_regEmailFocusGained
-        if(regEmail.getText().equals("Email Address")) {
-            regEmail.setText("");
-            regEmail.setForeground(new Color(0, 0, 0));
-        }
-    }//GEN-LAST:event_regEmailFocusGained
-
-    private void regEmailFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_regEmailFocusLost
-        if(regEmail.getText().equals("")) {
-            regEmail.setText("Email Address");
-            regEmail.setForeground(new Color(153, 153, 153));
-        }
-    }//GEN-LAST:event_regEmailFocusLost
-
-    private void regPassFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_regPassFocusGained
-        if(regPass.getText().equals("Password")) {
-            regPass.setText("");
-            regPass.setForeground(new Color(0, 0, 0));
-        }
-    }//GEN-LAST:event_regPassFocusGained
-
-    private void regPassFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_regPassFocusLost
-        if(regPass.getText().equals("")) {
-            regPass.setText("Password");
-            regPass.setForeground(new Color(153, 153, 153));
-        }
-    }//GEN-LAST:event_regPassFocusLost
-
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        LineBorder coloredBorderRed = new LineBorder(Color.RED, 1);
-        LineBorder coloredBorderBlk = new LineBorder(Color.BLACK, 1);
-        EmptyBorder paddingBorder = new EmptyBorder(1, 5, 1, 1);
-        
-        if(regStNumber.getText().equals("Student Number"))
-            regStNumber.setBorder(new CompoundBorder(coloredBorderRed, paddingBorder));
-        else 
-            regStNumber.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
-        
-        if(regFName.getText().equals("First Name"))
-            regFName.setBorder(new CompoundBorder(coloredBorderRed, paddingBorder));
-        else
-            regFName.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
-        
-        if(regLName.getText().equals("Last Name"))
-            regLName.setBorder(new CompoundBorder(coloredBorderRed, paddingBorder));
-        else
-            regLName.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
-        
-        if(regMName.getText().equals("Middle Name"))
-            regMName.setBorder(new CompoundBorder(coloredBorderRed, paddingBorder));
-        else
-            regMName.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
-        
-        if(regBirthdate.getText().equals("Date of Birth"))
-            regBirthdate.setBorder(new CompoundBorder(coloredBorderRed, paddingBorder));
-        else
-            regBirthdate.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
-        
-        if(regEmail.getText().equals("Email Address"))
-            regEmail.setBorder(new CompoundBorder(coloredBorderRed, paddingBorder));
-        else
-            regEmail.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
-        
-        if(regPass.getText().equals("Password"))
-            regPass.setBorder(new CompoundBorder(coloredBorderRed, paddingBorder));
-        else
-            regPass.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
-        
-        if(emptyspaces()) {
-        } else {
-            try {
-                String sql = "INSERT INTO Accounts (studentnumber, firstname, lastname, middlename, birthdate, email, pass) VALUES(?, ?, ?, ?, ?, ?, ?)";
-                pst = con.prepareStatement(sql);
-                pst.setString(1, regStNumber.getText());
-                pst.setString(2, regFName.getText());
-                pst.setString(3, regLName.getText());
-                pst.setString(4, regMName.getText());
-                pst.setString(5, regBirthdate.getText());
-                pst.setString(6, regEmail.getText());
-                pst.setString(7, regPass.getText());
-                pst.execute();
-                
-                JOptionPane.showMessageDialog(jPanel2, "Your account is registered successfully. Please proceed to login.");
+    private void loginRegBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginRegBtnActionPerformed
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new register().setVisible(true);
             }
-            catch (SQLException ex) { System.out.println(ex.getMessage()); }
-        }
-    }//GEN-LAST:event_jButton4ActionPerformed
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        jTabbedPane1.setSelectedIndex(1);
+        });
         
-        LineBorder coloredBorderBlk = new LineBorder(Color.BLACK, 1);
-        EmptyBorder paddingBorder = new EmptyBorder(1, 5, 1, 1);
-        
-        regStNumber.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
-        regFName.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
-        regLName.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
-        regMName.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
-        regBirthdate.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
-        regEmail.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
-        regPass.setBorder(new CompoundBorder(coloredBorderBlk, paddingBorder));
-    }//GEN-LAST:event_jButton3ActionPerformed
+        dispose();
+    }//GEN-LAST:event_loginRegBtnActionPerformed
 
-    private void jTextField1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField1MouseExited
+    private void loginUserMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_loginUserMouseExited
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1MouseExited
+    }//GEN-LAST:event_loginUserMouseExited
 
     private void regStNumberFocusGained(java.awt.event.FocusEvent evt) {                                        
-        if(regStNumber.getText().equals("Student Number")) {
-            regStNumber.setText("");
-            regStNumber.setForeground(new Color(0, 0, 0));
-        }
+        // wala
     }                                       
 
     private void regStNumberFocusLost(java.awt.event.FocusEvent evt) {                                      
-        if(regStNumber.getText().equals("")) {
-            regStNumber.setText("Student Number");
-            regStNumber.setForeground(new Color(153, 153, 153));
-        }
+        // wala
     }                                     
 
     /**
@@ -760,30 +337,14 @@ public class login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel bg;
+    private javax.swing.JLabel copyright;
     private javax.swing.JLabel errorMsgText;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private static javax.swing.JTabbedPane jTabbedPane1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField regBirthdate;
-    private javax.swing.JTextField regEmail;
-    private javax.swing.JTextField regFName;
-    private javax.swing.JTextField regLName;
-    private javax.swing.JTextField regMName;
-    private javax.swing.JTextField regPass;
-    private javax.swing.JTextField regStNumber;
+    private javax.swing.JButton loginLoginBtn;
+    private javax.swing.JTextField loginPass;
+    private javax.swing.JButton loginRegBtn;
+    private javax.swing.JLabel loginRegBtn_label;
+    private javax.swing.JTextField loginUser;
+    private javax.swing.JLabel logo;
     // End of variables declaration//GEN-END:variables
 }
