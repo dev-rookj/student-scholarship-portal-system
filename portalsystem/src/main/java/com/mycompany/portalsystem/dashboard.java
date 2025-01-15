@@ -117,7 +117,7 @@ public class dashboard extends javax.swing.JFrame {
         btnDashboard = new javax.swing.JButton();
         btnProfile = new javax.swing.JButton();
         btnProfileDetails = new javax.swing.JButton();
-        btnAcadBg = new javax.swing.JButton();
+        btnCourseSub = new javax.swing.JButton();
         btnScholarship = new javax.swing.JButton();
         btnScholarDeets = new javax.swing.JButton();
         btnRenewInf = new javax.swing.JButton();
@@ -168,43 +168,7 @@ public class dashboard extends javax.swing.JFrame {
         lblGuardian = new javax.swing.JLabel();
         spGuardian = new javax.swing.JScrollPane();
         tpGuardian = new javax.swing.JTextPane();
-        pnSDetails = new javax.swing.JPanel();
-        jPanel3 = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
-        jLabel13 = new javax.swing.JLabel();
-        jScrollPane6 = new javax.swing.JScrollPane();
-        jTextArea2 = new javax.swing.JTextArea();
-        jLabel14 = new javax.swing.JLabel();
-        jScrollPane7 = new javax.swing.JScrollPane();
-        jTextArea3 = new javax.swing.JTextArea();
-        jSeparator2 = new javax.swing.JSeparator();
-        jPanel1 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        pnProSteps = new javax.swing.JPanel();
-        jPanel4 = new javax.swing.JPanel();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jPanel5 = new javax.swing.JPanel();
-        jLabel18 = new javax.swing.JLabel();
-        jScrollPane8 = new javax.swing.JScrollPane();
-        jTextArea4 = new javax.swing.JTextArea();
-        jScrollPane9 = new javax.swing.JScrollPane();
-        jTextArea5 = new javax.swing.JTextArea();
-        pnSchedule = new javax.swing.JPanel();
-        jPanel7 = new javax.swing.JPanel();
-        jScrollPane10 = new javax.swing.JScrollPane();
-        jTable10 = new javax.swing.JTable();
-        jPanel9 = new javax.swing.JPanel();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField1 = new javax.swing.JTextField();
-        jScrollPane4 = new javax.swing.JScrollPane();
+        spCourseSubject = new javax.swing.JScrollPane();
         pnAcadBG = new javax.swing.JPanel();
         jpFirstYearFirstSem = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
@@ -246,14 +210,52 @@ public class dashboard extends javax.swing.JFrame {
         lblFourthYearSecondSem = new javax.swing.JLabel();
         spFourthYearSecondSem = new javax.swing.JScrollPane();
         jTable9 = new javax.swing.JTable();
+        pnSDetails = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        jLabel13 = new javax.swing.JLabel();
+        jScrollPane6 = new javax.swing.JScrollPane();
+        jTextArea2 = new javax.swing.JTextArea();
+        jLabel14 = new javax.swing.JLabel();
+        jScrollPane7 = new javax.swing.JScrollPane();
+        jTextArea3 = new javax.swing.JTextArea();
+        jSeparator2 = new javax.swing.JSeparator();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        pnProSteps = new javax.swing.JPanel();
+        jPanel4 = new javax.swing.JPanel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jPanel5 = new javax.swing.JPanel();
+        jLabel18 = new javax.swing.JLabel();
+        jScrollPane8 = new javax.swing.JScrollPane();
+        jTextArea4 = new javax.swing.JTextArea();
+        jScrollPane9 = new javax.swing.JScrollPane();
+        jTextArea5 = new javax.swing.JTextArea();
+        pnSchedule = new javax.swing.JPanel();
+        jPanel7 = new javax.swing.JPanel();
+        jScrollPane10 = new javax.swing.JScrollPane();
+        jTable10 = new javax.swing.JTable();
+        jPanel9 = new javax.swing.JPanel();
+        jTextField2 = new javax.swing.JTextField();
+        jTextField4 = new javax.swing.JTextField();
+        jTextField5 = new javax.swing.JTextField();
+        jTextField1 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Scholarship Portal");
-        setExtendedState(JFrame.MAXIMIZED_BOTH);
-        setMinimumSize(new java.awt.Dimension(1000, 750));
+        setMaximumSize(new java.awt.Dimension(1206, 891));
+        setMinimumSize(new java.awt.Dimension(1206, 891));
         setName("dashboard"); // NOI18N
         setResizable(false);
-        setSize(new java.awt.Dimension(1000, 750));
+        setSize(new java.awt.Dimension(1206, 891));
+        getContentPane().setLayout(null);
 
         navBar.setBackground(new java.awt.Color(8, 24, 47));
         navBar.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -309,16 +311,16 @@ public class dashboard extends javax.swing.JFrame {
             }
         });
 
-        btnAcadBg.setBackground(new java.awt.Color(8, 24, 47));
-        btnAcadBg.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
-        btnAcadBg.setForeground(new java.awt.Color(215, 215, 217));
-        btnAcadBg.setText("Academic Background");
-        btnAcadBg.setBorder(null);
-        btnAcadBg.setFocusPainted(false);
-        btnAcadBg.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        btnAcadBg.addActionListener(new java.awt.event.ActionListener() {
+        btnCourseSub.setBackground(new java.awt.Color(8, 24, 47));
+        btnCourseSub.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
+        btnCourseSub.setForeground(new java.awt.Color(215, 215, 217));
+        btnCourseSub.setText("Course Subjects");
+        btnCourseSub.setBorder(null);
+        btnCourseSub.setFocusPainted(false);
+        btnCourseSub.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnCourseSub.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAcadBgActionPerformed(evt);
+                btnCourseSubActionPerformed(evt);
             }
         });
 
@@ -417,7 +419,7 @@ public class dashboard extends javax.swing.JFrame {
                             .addComponent(btnScholarship, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnProfile, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnProfileDetails, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnAcadBg, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnCourseSub, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnProcessSteps, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnSchedule, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnDashboard, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -437,7 +439,7 @@ public class dashboard extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnProfileDetails, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnAcadBg)
+                .addComponent(btnCourseSub)
                 .addGap(54, 54, 54)
                 .addComponent(btnScholarship)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -452,6 +454,9 @@ public class dashboard extends javax.swing.JFrame {
                 .addComponent(logOut, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(62, 62, 62))
         );
+
+        getContentPane().add(navBar);
+        navBar.setBounds(0, 0, 266, 891);
 
         pnHomePage.setMaximumSize(new java.awt.Dimension(0, 0));
         pnHomePage.setName(""); // NOI18N
@@ -669,104 +674,124 @@ public class dashboard extends javax.swing.JFrame {
                 .addGap(34, 34, 34))
         );
 
-        lblStuNum1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        lblStuNum1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         lblStuNum1.setForeground(new java.awt.Color(15, 30, 54));
         lblStuNum1.setText("STUDENT NUMBER: ");
 
         tpStuNum.setEditable(false);
         tpStuNum.setBackground(new java.awt.Color(184, 184, 184));
+        tpStuNum.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
+        tpStuNum.setForeground(new java.awt.Color(15, 30, 54));
         tpStuNum.setMinimumSize(new java.awt.Dimension(62, 556));
         tpStuNum.setPreferredSize(new java.awt.Dimension(0, 0));
         tpStuNum.setRequestFocusEnabled(false);
         spStuNum.setViewportView(tpStuNum);
 
-        lblDateOfBirth1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        lblDateOfBirth1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         lblDateOfBirth1.setForeground(new java.awt.Color(15, 30, 54));
         lblDateOfBirth1.setText("DATE OF BIRTH:");
 
         tpDateOfBirth.setBackground(new java.awt.Color(184, 184, 184));
+        tpDateOfBirth.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
+        tpDateOfBirth.setForeground(new java.awt.Color(15, 30, 54));
         tpDateOfBirth.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         tpDateOfBirth.setPreferredSize(new java.awt.Dimension(0, 0));
         tpDateOfBirth.setRequestFocusEnabled(false);
         spDateOfBirth.setViewportView(tpDateOfBirth);
 
-        lblGender.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        lblGender.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         lblGender.setForeground(new java.awt.Color(15, 30, 54));
         lblGender.setText("GENDER:");
 
         tpGender.setBackground(new java.awt.Color(184, 184, 184));
+        tpGender.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
+        tpGender.setForeground(new java.awt.Color(15, 30, 54));
         tpGender.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         tpGender.setPreferredSize(new java.awt.Dimension(0, 0));
         tpGender.setRequestFocusEnabled(false);
         spGender.setViewportView(tpGender);
 
-        lblAddress.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        lblAddress.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         lblAddress.setForeground(new java.awt.Color(15, 30, 54));
         lblAddress.setText("ADDRESS:");
 
         tpAddress.setBackground(new java.awt.Color(184, 184, 184));
+        tpAddress.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
+        tpAddress.setForeground(new java.awt.Color(15, 30, 54));
         tpAddress.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         tpAddress.setMinimumSize(new java.awt.Dimension(62, 556));
         tpAddress.setPreferredSize(new java.awt.Dimension(0, 0));
         tpAddress.setRequestFocusEnabled(false);
         spAddress.setViewportView(tpAddress);
 
-        lblEmailAddress.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        lblEmailAddress.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         lblEmailAddress.setForeground(new java.awt.Color(15, 30, 54));
         lblEmailAddress.setText("EMAIL ADDRESS:");
 
         tpEmail.setBackground(new java.awt.Color(184, 184, 184));
+        tpEmail.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
+        tpEmail.setForeground(new java.awt.Color(15, 30, 54));
         tpEmail.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         tpEmail.setPreferredSize(new java.awt.Dimension(0, 0));
         tpEmail.setRequestFocusEnabled(false);
         spEmailAddress.setViewportView(tpEmail);
 
-        lblMobileNum.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        lblMobileNum.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         lblMobileNum.setForeground(new java.awt.Color(15, 30, 54));
         lblMobileNum.setText("MOBILE NUMBER:");
 
         tpMobileNum.setBackground(new java.awt.Color(184, 184, 184));
+        tpMobileNum.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
+        tpMobileNum.setForeground(new java.awt.Color(15, 30, 54));
         tpMobileNum.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         tpMobileNum.setPreferredSize(new java.awt.Dimension(0, 0));
         tpMobileNum.setRequestFocusEnabled(false);
         spMobileNum.setViewportView(tpMobileNum);
 
-        lblReligion.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        lblReligion.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         lblReligion.setForeground(new java.awt.Color(15, 30, 54));
         lblReligion.setText("RELIGION: ");
 
         tpReligion.setBackground(new java.awt.Color(184, 184, 184));
+        tpReligion.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
+        tpReligion.setForeground(new java.awt.Color(15, 30, 54));
         tpReligion.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         tpReligion.setPreferredSize(new java.awt.Dimension(0, 0));
         tpReligion.setRequestFocusEnabled(false);
         spReligion.setViewportView(tpReligion);
 
-        lblCitizenship.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        lblCitizenship.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         lblCitizenship.setForeground(new java.awt.Color(15, 30, 54));
         lblCitizenship.setText("CITIZENSHIP:");
 
         tpCitizenship.setBackground(new java.awt.Color(184, 184, 184));
+        tpCitizenship.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
+        tpCitizenship.setForeground(new java.awt.Color(15, 30, 54));
         tpCitizenship.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         tpCitizenship.setPreferredSize(new java.awt.Dimension(0, 0));
         tpCitizenship.setRequestFocusEnabled(false);
         spCitizenship.setViewportView(tpCitizenship);
 
-        lblCivilStatus.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        lblCivilStatus.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         lblCivilStatus.setForeground(new java.awt.Color(15, 30, 54));
         lblCivilStatus.setText("CIVIL STATUS:");
 
         tpCivilStatus.setBackground(new java.awt.Color(184, 184, 184));
+        tpCivilStatus.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
+        tpCivilStatus.setForeground(new java.awt.Color(15, 30, 54));
         tpCivilStatus.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         tpCivilStatus.setMinimumSize(new java.awt.Dimension(0, 0));
         tpCivilStatus.setPreferredSize(new java.awt.Dimension(0, 0));
         tpCivilStatus.setRequestFocusEnabled(false);
         spCivilStatus.setViewportView(tpCivilStatus);
 
-        lblGuardian.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        lblGuardian.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         lblGuardian.setForeground(new java.awt.Color(15, 30, 54));
         lblGuardian.setText("GUARDIAN:");
 
         tpGuardian.setBackground(new java.awt.Color(184, 184, 184));
+        tpGuardian.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
+        tpGuardian.setForeground(new java.awt.Color(15, 30, 54));
         tpGuardian.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         tpGuardian.setPreferredSize(new java.awt.Dimension(0, 0));
         tpGuardian.setRequestFocusEnabled(false);
@@ -873,6 +898,632 @@ public class dashboard extends javax.swing.JFrame {
 
         tpHomePage.addTab("tab2", pnProfileDetails);
 
+        spCourseSubject.setMaximumSize(new java.awt.Dimension(1375, 844));
+        spCourseSubject.setMinimumSize(new java.awt.Dimension(1375, 844));
+        spCourseSubject.setPreferredSize(new java.awt.Dimension(1172, 775));
+
+        jpFirstYearFirstSem.setBackground(new java.awt.Color(221, 221, 222));
+
+        jPanel2.setBackground(new java.awt.Color(112, 136, 162));
+
+        jLabel1.setBackground(new java.awt.Color(112, 136, 162));
+        jLabel1.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(15, 30, 54));
+        jLabel1.setText("FIRST YEAR");
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(25, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(25, 25, 25))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        lblFirstSem.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
+        lblFirstSem.setForeground(new java.awt.Color(15, 30, 54));
+        lblFirstSem.setText("FIRST SEMESTER");
+
+        jScrollPane5.setAutoscrolls(true);
+
+        jTable2.setBackground(new java.awt.Color(202, 202, 203));
+        jTable2.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jTable2.setForeground(new java.awt.Color(15, 30, 54));
+        jTable2.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"Code 1", "Name 1", "-"},
+                {"Code 2", "Name 2", "-"},
+                {"Code 3", "Name 3", "-"},
+                {"Code 4", "Name  4", "-"},
+                {"Code 5", "Name 5", "-"},
+                {"Code 6", "Name 6", "-"},
+                {"Code 7", "Name 7", "-"},
+                {"Code 8", "Name 8", "-"},
+                {"Code 9", "Name 9", "-"},
+                {"Code 10", "Name 10", null}
+            },
+            new String [] {
+                "CODE", "COURSE TITLE", "GRADE"
+            }
+        ));
+        jTable2.setAutoscrolls(false);
+        jTable2.setGridColor(new java.awt.Color(255, 255, 255));
+        jTable2.setShowGrid(true);
+        jScrollPane5.setViewportView(jTable2);
+
+        javax.swing.GroupLayout jpFirstYearFirstSemLayout = new javax.swing.GroupLayout(jpFirstYearFirstSem);
+        jpFirstYearFirstSem.setLayout(jpFirstYearFirstSemLayout);
+        jpFirstYearFirstSemLayout.setHorizontalGroup(
+            jpFirstYearFirstSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpFirstYearFirstSemLayout.createSequentialGroup()
+                .addGroup(jpFirstYearFirstSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jpFirstYearFirstSemLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 890, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jpFirstYearFirstSemLayout.createSequentialGroup()
+                        .addGap(391, 391, 391)
+                        .addComponent(lblFirstSem))
+                    .addGroup(jpFirstYearFirstSemLayout.createSequentialGroup()
+                        .addGap(382, 382, 382)
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(55, Short.MAX_VALUE))
+        );
+        jpFirstYearFirstSemLayout.setVerticalGroup(
+            jpFirstYearFirstSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpFirstYearFirstSemLayout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblFirstSem, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(12, Short.MAX_VALUE))
+        );
+
+        jpFirstYearSecondSem.setBackground(new java.awt.Color(221, 221, 222));
+
+        lblSecondSem.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
+        lblSecondSem.setForeground(new java.awt.Color(15, 30, 54));
+        lblSecondSem.setText("SECOND SEMESTER");
+
+        spSecondSem.setAutoscrolls(true);
+
+        jTable3.setBackground(new java.awt.Color(202, 202, 203));
+        jTable3.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jTable3.setForeground(new java.awt.Color(15, 30, 54));
+        jTable3.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"Code 1", "Name 1", "-"},
+                {"Code 2", "Name 2", "-"},
+                {"Code 3", "Name 3", "-"},
+                {"Code 4", "Name  4", "-"},
+                {"Code 5", "Name 5", "-"},
+                {"Code 6", "Name 6", "-"},
+                {"Code 7", "Name 7", "-"},
+                {"Code 8", "Name 8", "-"},
+                {"Code 9", "Name 9", "-"},
+                {"Code 10", "Name 10", null}
+            },
+            new String [] {
+                "CODE", "COURSE TITLE", "GRADE"
+            }
+        ));
+        jTable3.setAutoscrolls(false);
+        jTable3.setGridColor(new java.awt.Color(255, 255, 255));
+        jTable3.setShowGrid(true);
+        spSecondSem.setViewportView(jTable3);
+
+        javax.swing.GroupLayout jpFirstYearSecondSemLayout = new javax.swing.GroupLayout(jpFirstYearSecondSem);
+        jpFirstYearSecondSem.setLayout(jpFirstYearSecondSemLayout);
+        jpFirstYearSecondSemLayout.setHorizontalGroup(
+            jpFirstYearSecondSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpFirstYearSecondSemLayout.createSequentialGroup()
+                .addGroup(jpFirstYearSecondSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jpFirstYearSecondSemLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(spSecondSem, javax.swing.GroupLayout.PREFERRED_SIZE, 889, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jpFirstYearSecondSemLayout.createSequentialGroup()
+                        .addGap(389, 389, 389)
+                        .addComponent(lblSecondSem)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jpFirstYearSecondSemLayout.setVerticalGroup(
+            jpFirstYearSecondSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpFirstYearSecondSemLayout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addComponent(lblSecondSem, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(spSecondSem, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jpSecondYear.setBackground(new java.awt.Color(221, 221, 222));
+
+        jpSecondYearBG.setBackground(new java.awt.Color(112, 136, 162));
+
+        jLabel3.setBackground(new java.awt.Color(112, 136, 162));
+        jLabel3.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(15, 30, 54));
+        jLabel3.setText("SECOND YEAR");
+
+        javax.swing.GroupLayout jpSecondYearBGLayout = new javax.swing.GroupLayout(jpSecondYearBG);
+        jpSecondYearBG.setLayout(jpSecondYearBGLayout);
+        jpSecondYearBGLayout.setHorizontalGroup(
+            jpSecondYearBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpSecondYearBGLayout.createSequentialGroup()
+                .addGap(13, 13, 13)
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(13, Short.MAX_VALUE))
+        );
+        jpSecondYearBGLayout.setVerticalGroup(
+            jpSecondYearBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpSecondYearBGLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        lblSecondYearFirstSem.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
+        lblSecondYearFirstSem.setForeground(new java.awt.Color(15, 30, 54));
+        lblSecondYearFirstSem.setText("FIRST SEMESTER");
+
+        spSecondYearFirstSem.setAutoscrolls(true);
+
+        jTable4.setBackground(new java.awt.Color(202, 202, 203));
+        jTable4.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jTable4.setForeground(new java.awt.Color(15, 30, 54));
+        jTable4.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"Code 1", "Name 1", "-"},
+                {"Code 2", "Name 2", "-"},
+                {"Code 3", "Name 3", "-"},
+                {"Code 4", "Name  4", "-"},
+                {"Code 5", "Name 5", "-"},
+                {"Code 6", "Name 6", "-"},
+                {"Code 7", "Name 7", "-"},
+                {"Code 8", "Name 8", "-"},
+                {"Code 9", "Name 9", "-"},
+                {"Code 10", "Name 10", null}
+            },
+            new String [] {
+                "CODE", "COURSE TITLE", "GRADE"
+            }
+        ));
+        jTable4.setAutoscrolls(false);
+        jTable4.setGridColor(new java.awt.Color(255, 255, 255));
+        jTable4.setShowGrid(true);
+        spSecondYearFirstSem.setViewportView(jTable4);
+
+        javax.swing.GroupLayout jpSecondYearLayout = new javax.swing.GroupLayout(jpSecondYear);
+        jpSecondYear.setLayout(jpSecondYearLayout);
+        jpSecondYearLayout.setHorizontalGroup(
+            jpSecondYearLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpSecondYearLayout.createSequentialGroup()
+                .addGroup(jpSecondYearLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jpSecondYearLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(spSecondYearFirstSem, javax.swing.GroupLayout.PREFERRED_SIZE, 889, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jpSecondYearLayout.createSequentialGroup()
+                        .addGap(382, 382, 382)
+                        .addGroup(jpSecondYearLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jpSecondYearLayout.createSequentialGroup()
+                                .addGap(9, 9, 9)
+                                .addComponent(lblSecondYearFirstSem))
+                            .addComponent(jpSecondYearBG, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jpSecondYearLayout.setVerticalGroup(
+            jpSecondYearLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpSecondYearLayout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jpSecondYearBG, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblSecondYearFirstSem, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(spSecondYearFirstSem, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(18, Short.MAX_VALUE))
+        );
+
+        jpSecondYearSecondSem.setBackground(new java.awt.Color(221, 221, 222));
+
+        lblSecondYearSecondSem.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
+        lblSecondYearSecondSem.setForeground(new java.awt.Color(15, 30, 54));
+        lblSecondYearSecondSem.setText("SECOND SEMESTER");
+
+        spSecondYearSecondSem.setAutoscrolls(true);
+
+        jTable5.setBackground(new java.awt.Color(202, 202, 203));
+        jTable5.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jTable5.setForeground(new java.awt.Color(15, 30, 54));
+        jTable5.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"Code 1", "Name 1", "-"},
+                {"Code 2", "Name 2", "-"},
+                {"Code 3", "Name 3", "-"},
+                {"Code 4", "Name  4", "-"},
+                {"Code 5", "Name 5", "-"},
+                {"Code 6", "Name 6", "-"},
+                {"Code 7", "Name 7", "-"},
+                {"Code 8", "Name 8", "-"},
+                {"Code 9", "Name 9", "-"},
+                {"Code 10", "Name 10", null}
+            },
+            new String [] {
+                "CODE", "COURSE TITLE", "GRADE"
+            }
+        ));
+        jTable5.setAutoscrolls(false);
+        jTable5.setGridColor(new java.awt.Color(255, 255, 255));
+        jTable5.setShowGrid(true);
+        spSecondYearSecondSem.setViewportView(jTable5);
+
+        javax.swing.GroupLayout jpSecondYearSecondSemLayout = new javax.swing.GroupLayout(jpSecondYearSecondSem);
+        jpSecondYearSecondSem.setLayout(jpSecondYearSecondSemLayout);
+        jpSecondYearSecondSemLayout.setHorizontalGroup(
+            jpSecondYearSecondSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpSecondYearSecondSemLayout.createSequentialGroup()
+                .addGroup(jpSecondYearSecondSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jpSecondYearSecondSemLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(spSecondYearSecondSem, javax.swing.GroupLayout.PREFERRED_SIZE, 890, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jpSecondYearSecondSemLayout.createSequentialGroup()
+                        .addGap(379, 379, 379)
+                        .addComponent(lblSecondYearSecondSem)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jpSecondYearSecondSemLayout.setVerticalGroup(
+            jpSecondYearSecondSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpSecondYearSecondSemLayout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addComponent(lblSecondYearSecondSem, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
+                .addComponent(spSecondYearSecondSem, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        jpThirdYearFirstSem.setBackground(new java.awt.Color(221, 221, 222));
+
+        jpThirdYearFirstSemBG.setBackground(new java.awt.Color(112, 136, 162));
+
+        jLabel12.setBackground(new java.awt.Color(112, 136, 162));
+        jLabel12.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(15, 30, 54));
+        jLabel12.setText("THIRD YEAR");
+
+        javax.swing.GroupLayout jpThirdYearFirstSemBGLayout = new javax.swing.GroupLayout(jpThirdYearFirstSemBG);
+        jpThirdYearFirstSemBG.setLayout(jpThirdYearFirstSemBGLayout);
+        jpThirdYearFirstSemBGLayout.setHorizontalGroup(
+            jpThirdYearFirstSemBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpThirdYearFirstSemBGLayout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addComponent(jLabel12)
+                .addContainerGap(25, Short.MAX_VALUE))
+        );
+        jpThirdYearFirstSemBGLayout.setVerticalGroup(
+            jpThirdYearFirstSemBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpThirdYearFirstSemBGLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        lblThirdYearFirstSem.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
+        lblThirdYearFirstSem.setForeground(new java.awt.Color(15, 30, 54));
+        lblThirdYearFirstSem.setText("FIRST SEMESTER");
+
+        spThirdYearFirstSem.setAutoscrolls(true);
+
+        jTable6.setBackground(new java.awt.Color(202, 202, 203));
+        jTable6.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jTable6.setForeground(new java.awt.Color(15, 30, 54));
+        jTable6.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"Code 1", "Name 1", "-"},
+                {"Code 2", "Name 2", "-"},
+                {"Code 3", "Name 3", "-"},
+                {"Code 4", "Name  4", "-"},
+                {"Code 5", "Name 5", "-"},
+                {"Code 6", "Name 6", "-"},
+                {"Code 7", "Name 7", "-"},
+                {"Code 8", "Name 8", "-"},
+                {"Code 9", "Name 9", "-"},
+                {"Code 10", "Name 10", null}
+            },
+            new String [] {
+                "CODE", "COURSE TITLE", "GRADE"
+            }
+        ));
+        jTable6.setAutoscrolls(false);
+        jTable6.setGridColor(new java.awt.Color(255, 255, 255));
+        jTable6.setShowGrid(true);
+        spThirdYearFirstSem.setViewportView(jTable6);
+
+        javax.swing.GroupLayout jpThirdYearFirstSemLayout = new javax.swing.GroupLayout(jpThirdYearFirstSem);
+        jpThirdYearFirstSem.setLayout(jpThirdYearFirstSemLayout);
+        jpThirdYearFirstSemLayout.setHorizontalGroup(
+            jpThirdYearFirstSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpThirdYearFirstSemLayout.createSequentialGroup()
+                .addGroup(jpThirdYearFirstSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jpThirdYearFirstSemLayout.createSequentialGroup()
+                        .addGap(376, 376, 376)
+                        .addGroup(jpThirdYearFirstSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jpThirdYearFirstSemLayout.createSequentialGroup()
+                                .addGap(9, 9, 9)
+                                .addComponent(lblThirdYearFirstSem))
+                            .addComponent(jpThirdYearFirstSemBG, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jpThirdYearFirstSemLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(spThirdYearFirstSem, javax.swing.GroupLayout.PREFERRED_SIZE, 889, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jpThirdYearFirstSemLayout.setVerticalGroup(
+            jpThirdYearFirstSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpThirdYearFirstSemLayout.createSequentialGroup()
+                .addGap(12, 12, 12)
+                .addComponent(jpThirdYearFirstSemBG, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblThirdYearFirstSem, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(spThirdYearFirstSem, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(26, Short.MAX_VALUE))
+        );
+
+        jpThirdYearSecondSem.setBackground(new java.awt.Color(221, 221, 222));
+
+        lblThirdYearSecondSem.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
+        lblThirdYearSecondSem.setForeground(new java.awt.Color(15, 30, 54));
+        lblThirdYearSecondSem.setText("SECOND SEMESTER");
+
+        spThirdYearSecondSem.setAutoscrolls(true);
+
+        jTable7.setBackground(new java.awt.Color(202, 202, 203));
+        jTable7.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jTable7.setForeground(new java.awt.Color(15, 30, 54));
+        jTable7.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"Code 1", "Name 1", "-"},
+                {"Code 2", "Name 2", "-"},
+                {"Code 3", "Name 3", "-"},
+                {"Code 4", "Name  4", "-"},
+                {"Code 5", "Name 5", "-"},
+                {"Code 6", "Name 6", "-"},
+                {"Code 7", "Name 7", "-"},
+                {"Code 8", "Name 8", "-"},
+                {"Code 9", "Name 9", "-"},
+                {"Code 10", "Name 10", null}
+            },
+            new String [] {
+                "CODE", "COURSE TITLE", "GRADE"
+            }
+        ));
+        jTable7.setAutoscrolls(false);
+        jTable7.setGridColor(new java.awt.Color(255, 255, 255));
+        jTable7.setShowGrid(true);
+        spThirdYearSecondSem.setViewportView(jTable7);
+
+        javax.swing.GroupLayout jpThirdYearSecondSemLayout = new javax.swing.GroupLayout(jpThirdYearSecondSem);
+        jpThirdYearSecondSem.setLayout(jpThirdYearSecondSemLayout);
+        jpThirdYearSecondSemLayout.setHorizontalGroup(
+            jpThirdYearSecondSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpThirdYearSecondSemLayout.createSequentialGroup()
+                .addGroup(jpThirdYearSecondSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jpThirdYearSecondSemLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(spThirdYearSecondSem, javax.swing.GroupLayout.PREFERRED_SIZE, 890, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jpThirdYearSecondSemLayout.createSequentialGroup()
+                        .addGap(384, 384, 384)
+                        .addComponent(lblThirdYearSecondSem)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jpThirdYearSecondSemLayout.setVerticalGroup(
+            jpThirdYearSecondSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpThirdYearSecondSemLayout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(lblThirdYearSecondSem, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(spThirdYearSecondSem, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jpFourthYearFirstSem.setBackground(new java.awt.Color(221, 221, 222));
+
+        jpFourthYearFirstSemBG.setBackground(new java.awt.Color(112, 136, 162));
+
+        jLabel15.setBackground(new java.awt.Color(112, 136, 162));
+        jLabel15.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(15, 30, 54));
+        jLabel15.setText("FOURTH YEAR");
+
+        javax.swing.GroupLayout jpFourthYearFirstSemBGLayout = new javax.swing.GroupLayout(jpFourthYearFirstSemBG);
+        jpFourthYearFirstSemBG.setLayout(jpFourthYearFirstSemBGLayout);
+        jpFourthYearFirstSemBGLayout.setHorizontalGroup(
+            jpFourthYearFirstSemBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpFourthYearFirstSemBGLayout.createSequentialGroup()
+                .addGap(13, 13, 13)
+                .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(13, Short.MAX_VALUE))
+        );
+        jpFourthYearFirstSemBGLayout.setVerticalGroup(
+            jpFourthYearFirstSemBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpFourthYearFirstSemBGLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        lblFourthYearFirstSem.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
+        lblFourthYearFirstSem.setForeground(new java.awt.Color(15, 30, 54));
+        lblFourthYearFirstSem.setText("FIRST SEMESTER");
+
+        spFourthYearFirstSem.setAutoscrolls(true);
+
+        jTable8.setBackground(new java.awt.Color(202, 202, 203));
+        jTable8.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jTable8.setForeground(new java.awt.Color(15, 30, 54));
+        jTable8.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"Code 1", "Name 1", "-"},
+                {"Code 2", "Name 2", "-"},
+                {"Code 3", "Name 3", "-"},
+                {"Code 4", "Name  4", "-"},
+                {"Code 5", "Name 5", "-"},
+                {"Code 6", "Name 6", "-"},
+                {"Code 7", "Name 7", "-"},
+                {"Code 8", "Name 8", "-"},
+                {"Code 9", "Name 9", "-"},
+                {"Code 10", "Name 10", null}
+            },
+            new String [] {
+                "CODE", "COURSE TITLE", "GRADE"
+            }
+        ));
+        jTable8.setAutoscrolls(false);
+        jTable8.setGridColor(new java.awt.Color(255, 255, 255));
+        jTable8.setShowGrid(true);
+        spFourthYearFirstSem.setViewportView(jTable8);
+
+        javax.swing.GroupLayout jpFourthYearFirstSemLayout = new javax.swing.GroupLayout(jpFourthYearFirstSem);
+        jpFourthYearFirstSem.setLayout(jpFourthYearFirstSemLayout);
+        jpFourthYearFirstSemLayout.setHorizontalGroup(
+            jpFourthYearFirstSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpFourthYearFirstSemLayout.createSequentialGroup()
+                .addGroup(jpFourthYearFirstSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jpFourthYearFirstSemLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(spFourthYearFirstSem, javax.swing.GroupLayout.PREFERRED_SIZE, 894, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jpFourthYearFirstSemLayout.createSequentialGroup()
+                        .addGap(387, 387, 387)
+                        .addGroup(jpFourthYearFirstSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jpFourthYearFirstSemLayout.createSequentialGroup()
+                                .addGap(9, 9, 9)
+                                .addComponent(lblFourthYearFirstSem))
+                            .addComponent(jpFourthYearFirstSemBG, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(51, Short.MAX_VALUE))
+        );
+        jpFourthYearFirstSemLayout.setVerticalGroup(
+            jpFourthYearFirstSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpFourthYearFirstSemLayout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addComponent(jpFourthYearFirstSemBG, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblFourthYearFirstSem, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(spFourthYearFirstSem, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(18, Short.MAX_VALUE))
+        );
+
+        jpFourthYearSecondSem.setBackground(new java.awt.Color(221, 221, 222));
+
+        lblFourthYearSecondSem.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
+        lblFourthYearSecondSem.setForeground(new java.awt.Color(15, 30, 54));
+        lblFourthYearSecondSem.setText("SECOND SEMESTER");
+
+        spFourthYearSecondSem.setAutoscrolls(true);
+
+        jTable9.setBackground(new java.awt.Color(202, 202, 203));
+        jTable9.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jTable9.setForeground(new java.awt.Color(15, 30, 54));
+        jTable9.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"Code 1", "Name 1", "-"},
+                {"Code 2", "Name 2", "-"},
+                {"Code 3", "Name 3", "-"},
+                {"Code 4", "Name  4", "-"},
+                {"Code 5", "Name 5", "-"},
+                {"Code 6", "Name 6", "-"},
+                {"Code 7", "Name 7", "-"},
+                {"Code 8", "Name 8", "-"},
+                {"Code 9", "Name 9", "-"},
+                {"Code 10", "Name 10", null}
+            },
+            new String [] {
+                "CODE", "COURSE TITLE", "GRADE"
+            }
+        ));
+        jTable9.setAutoscrolls(false);
+        jTable9.setGridColor(new java.awt.Color(255, 255, 255));
+        jTable9.setShowGrid(true);
+        spFourthYearSecondSem.setViewportView(jTable9);
+
+        javax.swing.GroupLayout jpFourthYearSecondSemLayout = new javax.swing.GroupLayout(jpFourthYearSecondSem);
+        jpFourthYearSecondSem.setLayout(jpFourthYearSecondSemLayout);
+        jpFourthYearSecondSemLayout.setHorizontalGroup(
+            jpFourthYearSecondSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpFourthYearSecondSemLayout.createSequentialGroup()
+                .addGroup(jpFourthYearSecondSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jpFourthYearSecondSemLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(spFourthYearSecondSem, javax.swing.GroupLayout.PREFERRED_SIZE, 898, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jpFourthYearSecondSemLayout.createSequentialGroup()
+                        .addGap(389, 389, 389)
+                        .addComponent(lblFourthYearSecondSem)))
+                .addContainerGap(453, Short.MAX_VALUE))
+        );
+        jpFourthYearSecondSemLayout.setVerticalGroup(
+            jpFourthYearSecondSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpFourthYearSecondSemLayout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(lblFourthYearSecondSem, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(spFourthYearSecondSem, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout pnAcadBGLayout = new javax.swing.GroupLayout(pnAcadBG);
+        pnAcadBG.setLayout(pnAcadBGLayout);
+        pnAcadBGLayout.setHorizontalGroup(
+            pnAcadBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnAcadBGLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(pnAcadBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnAcadBGLayout.createSequentialGroup()
+                        .addComponent(jpFourthYearSecondSem, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(0, 0, 0))
+                    .addGroup(pnAcadBGLayout.createSequentialGroup()
+                        .addGroup(pnAcadBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jpFourthYearFirstSem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(pnAcadBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(jpThirdYearFirstSem, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jpSecondYear, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jpFirstYearFirstSem, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jpFirstYearSecondSem, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jpSecondYearSecondSem, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jpThirdYearSecondSem, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addGap(0, 0, 0))))
+        );
+        pnAcadBGLayout.setVerticalGroup(
+            pnAcadBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnAcadBGLayout.createSequentialGroup()
+                .addComponent(jpFirstYearFirstSem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jpFirstYearSecondSem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jpSecondYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jpSecondYearSecondSem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jpThirdYearFirstSem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jpThirdYearSecondSem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jpFourthYearFirstSem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jpFourthYearSecondSem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+
+        spCourseSubject.setViewportView(pnAcadBG);
+
+        tpHomePage.addTab("tab7", spCourseSubject);
+
         pnSDetails.setMaximumSize(new java.awt.Dimension(0, 0));
         pnSDetails.setMinimumSize(new java.awt.Dimension(1375, 844));
         pnSDetails.setPreferredSize(new java.awt.Dimension(1172, 775));
@@ -954,40 +1605,38 @@ public class dashboard extends javax.swing.JFrame {
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(27, 27, 27)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel6))
+                .addGap(126, 126, 126)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGap(19, 19, 19)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addGap(21, 21, 21)
-                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel6))
-                                .addGap(126, 126, 126)
-                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addGap(19, 19, 19)
-                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 749, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(jScrollPane6, javax.swing.GroupLayout.DEFAULT_SIZE, 752, Short.MAX_VALUE)
-                                        .addComponent(jLabel10)
-                                        .addComponent(jLabel13)
-                                        .addGroup(jPanel3Layout.createSequentialGroup()
-                                            .addComponent(jLabel14)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(jScrollPane1))))))
-                        .addGap(65, 65, 65))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                        .addComponent(jSeparator2)
-                        .addContainerGap())))
+                            .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 749, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(jScrollPane6)
+                                .addComponent(jLabel10)
+                                .addComponent(jLabel13)
+                                .addGroup(jPanel3Layout.createSequentialGroup()
+                                    .addComponent(jLabel14)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 683, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(59, 59, 59))
+                    .addComponent(jSeparator2, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addContainerGap())
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(22, 22, 22)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
                     .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -995,7 +1644,7 @@ public class dashboard extends javax.swing.JFrame {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
                     .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel10)
@@ -1012,11 +1661,11 @@ public class dashboard extends javax.swing.JFrame {
                         .addComponent(jLabel14)
                         .addGap(18, 18, 18)))
                 .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(254, Short.MAX_VALUE))
+                .addGap(252, 252, 252))
         );
 
         pnSDetails.add(jPanel3);
-        jPanel3.setBounds(40, 120, 842, 720);
+        jPanel3.setBounds(40, 110, 842, 740);
 
         jPanel1.setBackground(new java.awt.Color(112, 136, 162));
 
@@ -1030,9 +1679,9 @@ public class dashboard extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(36, 36, 36)
+                .addGap(54, 54, 54)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 676, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(78, Short.MAX_VALUE))
+                .addContainerGap(60, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1042,7 +1691,7 @@ public class dashboard extends javax.swing.JFrame {
         );
 
         pnSDetails.add(jPanel1);
-        jPanel1.setBounds(50, 20, 790, 50);
+        jPanel1.setBounds(60, 20, 790, 50);
 
         tpHomePage.addTab("tab3", pnSDetails);
 
@@ -1070,23 +1719,21 @@ public class dashboard extends javax.swing.JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                        .addComponent(jLabel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addContainerGap())))
+                    .addComponent(jLabel16, javax.swing.GroupLayout.DEFAULT_SIZE, 784, Short.MAX_VALUE)
+                    .addComponent(jLabel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel16)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel17)
-                .addGap(20, 20, 20))
+                .addGap(14, 14, 14))
         );
 
         pnProSteps.add(jPanel4);
-        jPanel4.setBounds(60, 30, 780, 90);
+        jPanel4.setBounds(60, 20, 790, 100);
 
         jPanel5.setBackground(new java.awt.Color(202, 202, 203));
 
@@ -1126,7 +1773,7 @@ public class dashboard extends javax.swing.JFrame {
                     .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 766, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel18)
                     .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 756, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(20, Short.MAX_VALUE))
+                .addContainerGap(50, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1137,11 +1784,11 @@ public class dashboard extends javax.swing.JFrame {
                 .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(221, Short.MAX_VALUE))
+                .addContainerGap(231, Short.MAX_VALUE))
         );
 
         pnProSteps.add(jPanel5);
-        jPanel5.setBounds(50, 150, 810, 690);
+        jPanel5.setBounds(40, 150, 840, 700);
 
         tpHomePage.addTab("tab4", pnProSteps);
 
@@ -1149,7 +1796,8 @@ public class dashboard extends javax.swing.JFrame {
         pnSchedule.setMinimumSize(new java.awt.Dimension(1375, 844));
         pnSchedule.setLayout(null);
 
-        jTable10.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
+        jTable10.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
+        jTable10.setForeground(new java.awt.Color(15, 30, 54));
         jTable10.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {"", "                            (By Surname)", "                                     (By Surname)"},
@@ -1163,7 +1811,7 @@ public class dashboard extends javax.swing.JFrame {
             }
         ));
         jTable10.setEnabled(false);
-        jTable10.setGridColor(new java.awt.Color(0, 0, 0));
+        jTable10.setGridColor(new java.awt.Color(15, 30, 54));
         jTable10.setRowHeight(50);
         jTable10.setShowGrid(true);
         jScrollPane10.setViewportView(jTable10);
@@ -1172,9 +1820,12 @@ public class dashboard extends javax.swing.JFrame {
 
         jTextField2.setEditable(false);
         jTextField2.setBackground(new java.awt.Color(202, 202, 203));
-        jTextField2.setFont(new java.awt.Font("Arial", 2, 12)); // NOI18N
+        jTextField2.setFont(new java.awt.Font("Arial", 2, 14)); // NOI18N
+        jTextField2.setForeground(new java.awt.Color(15, 30, 54));
         jTextField2.setText("*Scholars whose time slots conflict with class schedule and official class activities.");
         jTextField2.setBorder(null);
+        jTextField2.setCaretColor(new java.awt.Color(15, 30, 54));
+        jTextField2.setEnabled(false);
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField2ActionPerformed(evt);
@@ -1183,11 +1834,23 @@ public class dashboard extends javax.swing.JFrame {
 
         jTextField4.setBackground(new java.awt.Color(202, 202, 203));
         jTextField4.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jTextField4.setText("Please refer to this LINK for the list of scholarships and grants that will be processed manually at the onsite renewal.");
+        jTextField4.setForeground(new java.awt.Color(15, 30, 54));
+        jTextField4.setText("Please refer to the LINK provided for the list of scholarships and grants that will be processed manually");
         jTextField4.setBorder(null);
         jTextField4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField4ActionPerformed(evt);
+            }
+        });
+
+        jTextField5.setBackground(new java.awt.Color(202, 202, 203));
+        jTextField5.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jTextField5.setForeground(new java.awt.Color(15, 30, 54));
+        jTextField5.setText("at  the onsite renewal.");
+        jTextField5.setBorder(null);
+        jTextField5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField5ActionPerformed(evt);
             }
         });
 
@@ -1198,10 +1861,11 @@ public class dashboard extends javax.swing.JFrame {
             .addGroup(jPanel9Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.DEFAULT_SIZE, 857, Short.MAX_VALUE)
+                    .addComponent(jTextField4)
                     .addGroup(jPanel9Layout.createSequentialGroup()
                         .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 772, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(0, 56, Short.MAX_VALUE))
+                    .addComponent(jTextField5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel9Layout.setVerticalGroup(
@@ -1211,15 +1875,20 @@ public class dashboard extends javax.swing.JFrame {
                 .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(16, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jTextField1.setEditable(false);
         jTextField1.setBackground(new java.awt.Color(112, 136, 162));
         jTextField1.setFont(new java.awt.Font("Arial", 1, 30)); // NOI18N
+        jTextField1.setForeground(new java.awt.Color(15, 30, 54));
         jTextField1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField1.setText("SCHEDULE AND ACCOMMODATION");
         jTextField1.setBorder(null);
+        jTextField1.setPreferredSize(new java.awt.Dimension(790, 36));
+        jTextField1.setRequestFocusEnabled(false);
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
@@ -1231,26 +1900,28 @@ public class dashboard extends javax.swing.JFrame {
         jPanel7Layout.setHorizontalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel7Layout.createSequentialGroup()
-                .addGap(45, 45, 45)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 830, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jScrollPane10)
-                    .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(27, 27, 27))
+                .addContainerGap(37, Short.MAX_VALUE)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
+                        .addGap(0, 24, Short.MAX_VALUE)
+                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(69, 69, 69))
+                    .addGroup(jPanel7Layout.createSequentialGroup()
+                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(jPanel9, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jScrollPane10, javax.swing.GroupLayout.Alignment.LEADING))
+                        .addContainerGap())))
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel7Layout.createSequentialGroup()
-                .addGap(22, 22, 22)
+                .addGap(14, 14, 14)
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26)
+                .addGap(34, 34, 34)
                 .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 279, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(40, 40, 40)
                 .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(345, Short.MAX_VALUE))
+                .addContainerGap(329, Short.MAX_VALUE))
         );
 
         pnSchedule.add(jPanel7);
@@ -1258,649 +1929,8 @@ public class dashboard extends javax.swing.JFrame {
 
         tpHomePage.addTab("tab5", pnSchedule);
 
-        jScrollPane4.setMaximumSize(new java.awt.Dimension(1375, 844));
-        jScrollPane4.setMinimumSize(new java.awt.Dimension(1375, 844));
-        jScrollPane4.setPreferredSize(new java.awt.Dimension(1172, 775));
-
-        jpFirstYearFirstSem.setBackground(new java.awt.Color(221, 221, 222));
-
-        jPanel2.setBackground(new java.awt.Color(112, 136, 162));
-
-        jLabel1.setBackground(new java.awt.Color(112, 136, 162));
-        jLabel1.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(15, 30, 54));
-        jLabel1.setText("FIRST YEAR");
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(25, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(25, 25, 25))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-
-        lblFirstSem.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
-        lblFirstSem.setForeground(new java.awt.Color(15, 30, 54));
-        lblFirstSem.setText("FIRST SEMESTER");
-
-        jScrollPane5.setAutoscrolls(true);
-
-        jTable2.setBackground(new java.awt.Color(202, 202, 203));
-        jTable2.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jTable2.setForeground(new java.awt.Color(15, 30, 54));
-        jTable2.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {"Code 1", "Name 1", "-"},
-                {"Code 2", "Name 2", "-"},
-                {"Code 3", "Name 3", "-"},
-                {"Code 4", "Name  4", "-"},
-                {"Code 5", "Name 5", "-"},
-                {"Code 6", "Name 6", "-"},
-                {"Code 7", "Name 7", "-"},
-                {"Code 8", "Name 8", "-"},
-                {"Code 9", "Name 9", "-"},
-                {"Code 10", "Name 10", null}
-            },
-            new String [] {
-                "CODE", "COURSE TITLE", "GRADE"
-            }
-        ));
-        jTable2.setAutoscrolls(false);
-        jTable2.setGridColor(new java.awt.Color(255, 255, 255));
-        jTable2.setShowGrid(true);
-        jScrollPane5.setViewportView(jTable2);
-
-        javax.swing.GroupLayout jpFirstYearFirstSemLayout = new javax.swing.GroupLayout(jpFirstYearFirstSem);
-        jpFirstYearFirstSem.setLayout(jpFirstYearFirstSemLayout);
-        jpFirstYearFirstSemLayout.setHorizontalGroup(
-            jpFirstYearFirstSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpFirstYearFirstSemLayout.createSequentialGroup()
-                .addGroup(jpFirstYearFirstSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jpFirstYearFirstSemLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 890, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jpFirstYearFirstSemLayout.createSequentialGroup()
-                        .addGap(385, 385, 385)
-                        .addComponent(lblFirstSem))
-                    .addGroup(jpFirstYearFirstSemLayout.createSequentialGroup()
-                        .addGap(375, 375, 375)
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(1013, Short.MAX_VALUE))
-        );
-        jpFirstYearFirstSemLayout.setVerticalGroup(
-            jpFirstYearFirstSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpFirstYearFirstSemLayout.createSequentialGroup()
-                .addGap(20, 20, 20)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lblFirstSem, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(12, Short.MAX_VALUE))
-        );
-
-        jpFirstYearSecondSem.setBackground(new java.awt.Color(221, 221, 222));
-
-        lblSecondSem.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
-        lblSecondSem.setForeground(new java.awt.Color(15, 30, 54));
-        lblSecondSem.setText("SECOND SEMESTER");
-
-        spSecondSem.setAutoscrolls(true);
-
-        jTable3.setBackground(new java.awt.Color(202, 202, 203));
-        jTable3.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jTable3.setForeground(new java.awt.Color(15, 30, 54));
-        jTable3.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {"Code 1", "Name 1", "-"},
-                {"Code 2", "Name 2", "-"},
-                {"Code 3", "Name 3", "-"},
-                {"Code 4", "Name  4", "-"},
-                {"Code 5", "Name 5", "-"},
-                {"Code 6", "Name 6", "-"},
-                {"Code 7", "Name 7", "-"},
-                {"Code 8", "Name 8", "-"},
-                {"Code 9", "Name 9", "-"},
-                {"Code 10", "Name 10", null}
-            },
-            new String [] {
-                "CODE", "COURSE TITLE", "GRADE"
-            }
-        ));
-        jTable3.setAutoscrolls(false);
-        jTable3.setGridColor(new java.awt.Color(255, 255, 255));
-        jTable3.setShowGrid(true);
-        spSecondSem.setViewportView(jTable3);
-
-        javax.swing.GroupLayout jpFirstYearSecondSemLayout = new javax.swing.GroupLayout(jpFirstYearSecondSem);
-        jpFirstYearSecondSem.setLayout(jpFirstYearSecondSemLayout);
-        jpFirstYearSecondSemLayout.setHorizontalGroup(
-            jpFirstYearSecondSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpFirstYearSecondSemLayout.createSequentialGroup()
-                .addGroup(jpFirstYearSecondSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jpFirstYearSecondSemLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(spSecondSem, javax.swing.GroupLayout.PREFERRED_SIZE, 889, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jpFirstYearSecondSemLayout.createSequentialGroup()
-                        .addGap(381, 381, 381)
-                        .addComponent(lblSecondSem)))
-                .addContainerGap(1002, Short.MAX_VALUE))
-        );
-        jpFirstYearSecondSemLayout.setVerticalGroup(
-            jpFirstYearSecondSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpFirstYearSecondSemLayout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addComponent(lblSecondSem, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(spSecondSem, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        jpSecondYear.setBackground(new java.awt.Color(221, 221, 222));
-
-        jpSecondYearBG.setBackground(new java.awt.Color(112, 136, 162));
-
-        jLabel3.setBackground(new java.awt.Color(112, 136, 162));
-        jLabel3.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(15, 30, 54));
-        jLabel3.setText("SECOND YEAR");
-
-        javax.swing.GroupLayout jpSecondYearBGLayout = new javax.swing.GroupLayout(jpSecondYearBG);
-        jpSecondYearBG.setLayout(jpSecondYearBGLayout);
-        jpSecondYearBGLayout.setHorizontalGroup(
-            jpSecondYearBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpSecondYearBGLayout.createSequentialGroup()
-                .addGap(13, 13, 13)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(13, Short.MAX_VALUE))
-        );
-        jpSecondYearBGLayout.setVerticalGroup(
-            jpSecondYearBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpSecondYearBGLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        lblSecondYearFirstSem.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
-        lblSecondYearFirstSem.setForeground(new java.awt.Color(15, 30, 54));
-        lblSecondYearFirstSem.setText("FIRST SEMESTER");
-
-        spSecondYearFirstSem.setAutoscrolls(true);
-
-        jTable4.setBackground(new java.awt.Color(202, 202, 203));
-        jTable4.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jTable4.setForeground(new java.awt.Color(15, 30, 54));
-        jTable4.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {"Code 1", "Name 1", "-"},
-                {"Code 2", "Name 2", "-"},
-                {"Code 3", "Name 3", "-"},
-                {"Code 4", "Name  4", "-"},
-                {"Code 5", "Name 5", "-"},
-                {"Code 6", "Name 6", "-"},
-                {"Code 7", "Name 7", "-"},
-                {"Code 8", "Name 8", "-"},
-                {"Code 9", "Name 9", "-"},
-                {"Code 10", "Name 10", null}
-            },
-            new String [] {
-                "CODE", "COURSE TITLE", "GRADE"
-            }
-        ));
-        jTable4.setAutoscrolls(false);
-        jTable4.setGridColor(new java.awt.Color(255, 255, 255));
-        jTable4.setShowGrid(true);
-        spSecondYearFirstSem.setViewportView(jTable4);
-
-        javax.swing.GroupLayout jpSecondYearLayout = new javax.swing.GroupLayout(jpSecondYear);
-        jpSecondYear.setLayout(jpSecondYearLayout);
-        jpSecondYearLayout.setHorizontalGroup(
-            jpSecondYearLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpSecondYearLayout.createSequentialGroup()
-                .addGroup(jpSecondYearLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jpSecondYearLayout.createSequentialGroup()
-                        .addGap(35, 35, 35)
-                        .addComponent(spSecondYearFirstSem, javax.swing.GroupLayout.PREFERRED_SIZE, 866, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jpSecondYearLayout.createSequentialGroup()
-                        .addGap(398, 398, 398)
-                        .addGroup(jpSecondYearLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jpSecondYearLayout.createSequentialGroup()
-                                .addGap(9, 9, 9)
-                                .addComponent(lblSecondYearFirstSem))
-                            .addComponent(jpSecondYearBG, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(35, Short.MAX_VALUE))
-        );
-        jpSecondYearLayout.setVerticalGroup(
-            jpSecondYearLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpSecondYearLayout.createSequentialGroup()
-                .addGap(20, 20, 20)
-                .addComponent(jpSecondYearBG, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lblSecondYearFirstSem, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(spSecondYearFirstSem, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(18, Short.MAX_VALUE))
-        );
-
-        jpSecondYearSecondSem.setBackground(new java.awt.Color(221, 221, 222));
-
-        lblSecondYearSecondSem.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
-        lblSecondYearSecondSem.setForeground(new java.awt.Color(15, 30, 54));
-        lblSecondYearSecondSem.setText("SECOND SEMESTER");
-
-        spSecondYearSecondSem.setAutoscrolls(true);
-
-        jTable5.setBackground(new java.awt.Color(202, 202, 203));
-        jTable5.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jTable5.setForeground(new java.awt.Color(15, 30, 54));
-        jTable5.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {"Code 1", "Name 1", "-"},
-                {"Code 2", "Name 2", "-"},
-                {"Code 3", "Name 3", "-"},
-                {"Code 4", "Name  4", "-"},
-                {"Code 5", "Name 5", "-"},
-                {"Code 6", "Name 6", "-"},
-                {"Code 7", "Name 7", "-"},
-                {"Code 8", "Name 8", "-"},
-                {"Code 9", "Name 9", "-"},
-                {"Code 10", "Name 10", null}
-            },
-            new String [] {
-                "CODE", "COURSE TITLE", "GRADE"
-            }
-        ));
-        jTable5.setAutoscrolls(false);
-        jTable5.setGridColor(new java.awt.Color(255, 255, 255));
-        jTable5.setShowGrid(true);
-        spSecondYearSecondSem.setViewportView(jTable5);
-
-        javax.swing.GroupLayout jpSecondYearSecondSemLayout = new javax.swing.GroupLayout(jpSecondYearSecondSem);
-        jpSecondYearSecondSem.setLayout(jpSecondYearSecondSemLayout);
-        jpSecondYearSecondSemLayout.setHorizontalGroup(
-            jpSecondYearSecondSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpSecondYearSecondSemLayout.createSequentialGroup()
-                .addGroup(jpSecondYearSecondSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jpSecondYearSecondSemLayout.createSequentialGroup()
-                        .addGap(35, 35, 35)
-                        .addComponent(spSecondYearSecondSem, javax.swing.GroupLayout.PREFERRED_SIZE, 863, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jpSecondYearSecondSemLayout.createSequentialGroup()
-                        .addGap(392, 392, 392)
-                        .addComponent(lblSecondYearSecondSem)))
-                .addContainerGap(32, Short.MAX_VALUE))
-        );
-        jpSecondYearSecondSemLayout.setVerticalGroup(
-            jpSecondYearSecondSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpSecondYearSecondSemLayout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addComponent(lblSecondYearSecondSem, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(spSecondYearSecondSem, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        jpThirdYearFirstSem.setBackground(new java.awt.Color(221, 221, 222));
-
-        jpThirdYearFirstSemBG.setBackground(new java.awt.Color(112, 136, 162));
-
-        jLabel12.setBackground(new java.awt.Color(112, 136, 162));
-        jLabel12.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(15, 30, 54));
-        jLabel12.setText("THIRD YEAR");
-
-        javax.swing.GroupLayout jpThirdYearFirstSemBGLayout = new javax.swing.GroupLayout(jpThirdYearFirstSemBG);
-        jpThirdYearFirstSemBG.setLayout(jpThirdYearFirstSemBGLayout);
-        jpThirdYearFirstSemBGLayout.setHorizontalGroup(
-            jpThirdYearFirstSemBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpThirdYearFirstSemBGLayout.createSequentialGroup()
-                .addContainerGap(20, Short.MAX_VALUE)
-                .addComponent(jLabel12)
-                .addGap(26, 26, 26))
-        );
-        jpThirdYearFirstSemBGLayout.setVerticalGroup(
-            jpThirdYearFirstSemBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpThirdYearFirstSemBGLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        lblThirdYearFirstSem.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
-        lblThirdYearFirstSem.setForeground(new java.awt.Color(15, 30, 54));
-        lblThirdYearFirstSem.setText("FIRST SEMESTER");
-
-        spThirdYearFirstSem.setAutoscrolls(true);
-
-        jTable6.setBackground(new java.awt.Color(202, 202, 203));
-        jTable6.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jTable6.setForeground(new java.awt.Color(15, 30, 54));
-        jTable6.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {"Code 1", "Name 1", "-"},
-                {"Code 2", "Name 2", "-"},
-                {"Code 3", "Name 3", "-"},
-                {"Code 4", "Name  4", "-"},
-                {"Code 5", "Name 5", "-"},
-                {"Code 6", "Name 6", "-"},
-                {"Code 7", "Name 7", "-"},
-                {"Code 8", "Name 8", "-"},
-                {"Code 9", "Name 9", "-"},
-                {"Code 10", "Name 10", null}
-            },
-            new String [] {
-                "CODE", "COURSE TITLE", "GRADE"
-            }
-        ));
-        jTable6.setAutoscrolls(false);
-        jTable6.setGridColor(new java.awt.Color(255, 255, 255));
-        jTable6.setShowGrid(true);
-        spThirdYearFirstSem.setViewportView(jTable6);
-
-        javax.swing.GroupLayout jpThirdYearFirstSemLayout = new javax.swing.GroupLayout(jpThirdYearFirstSem);
-        jpThirdYearFirstSem.setLayout(jpThirdYearFirstSemLayout);
-        jpThirdYearFirstSemLayout.setHorizontalGroup(
-            jpThirdYearFirstSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpThirdYearFirstSemLayout.createSequentialGroup()
-                .addGroup(jpThirdYearFirstSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jpThirdYearFirstSemLayout.createSequentialGroup()
-                        .addGap(35, 35, 35)
-                        .addComponent(spThirdYearFirstSem, javax.swing.GroupLayout.PREFERRED_SIZE, 873, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jpThirdYearFirstSemLayout.createSequentialGroup()
-                        .addGap(406, 406, 406)
-                        .addGroup(jpThirdYearFirstSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jpThirdYearFirstSemLayout.createSequentialGroup()
-                                .addGap(9, 9, 9)
-                                .addComponent(lblThirdYearFirstSem))
-                            .addComponent(jpThirdYearFirstSemBG, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(28, Short.MAX_VALUE))
-        );
-        jpThirdYearFirstSemLayout.setVerticalGroup(
-            jpThirdYearFirstSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpThirdYearFirstSemLayout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addComponent(jpThirdYearFirstSemBG, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lblThirdYearFirstSem, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(spThirdYearFirstSem, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(18, Short.MAX_VALUE))
-        );
-
-        jpThirdYearSecondSem.setBackground(new java.awt.Color(221, 221, 222));
-
-        lblThirdYearSecondSem.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
-        lblThirdYearSecondSem.setForeground(new java.awt.Color(15, 30, 54));
-        lblThirdYearSecondSem.setText("SECOND SEMESTER");
-
-        spThirdYearSecondSem.setAutoscrolls(true);
-
-        jTable7.setBackground(new java.awt.Color(202, 202, 203));
-        jTable7.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jTable7.setForeground(new java.awt.Color(15, 30, 54));
-        jTable7.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {"Code 1", "Name 1", "-"},
-                {"Code 2", "Name 2", "-"},
-                {"Code 3", "Name 3", "-"},
-                {"Code 4", "Name  4", "-"},
-                {"Code 5", "Name 5", "-"},
-                {"Code 6", "Name 6", "-"},
-                {"Code 7", "Name 7", "-"},
-                {"Code 8", "Name 8", "-"},
-                {"Code 9", "Name 9", "-"},
-                {"Code 10", "Name 10", null}
-            },
-            new String [] {
-                "CODE", "COURSE TITLE", "GRADE"
-            }
-        ));
-        jTable7.setAutoscrolls(false);
-        jTable7.setGridColor(new java.awt.Color(255, 255, 255));
-        jTable7.setShowGrid(true);
-        spThirdYearSecondSem.setViewportView(jTable7);
-
-        javax.swing.GroupLayout jpThirdYearSecondSemLayout = new javax.swing.GroupLayout(jpThirdYearSecondSem);
-        jpThirdYearSecondSem.setLayout(jpThirdYearSecondSemLayout);
-        jpThirdYearSecondSemLayout.setHorizontalGroup(
-            jpThirdYearSecondSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpThirdYearSecondSemLayout.createSequentialGroup()
-                .addGroup(jpThirdYearSecondSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jpThirdYearSecondSemLayout.createSequentialGroup()
-                        .addGap(35, 35, 35)
-                        .addComponent(spThirdYearSecondSem, javax.swing.GroupLayout.PREFERRED_SIZE, 869, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jpThirdYearSecondSemLayout.createSequentialGroup()
-                        .addGap(403, 403, 403)
-                        .addComponent(lblThirdYearSecondSem)))
-                .addContainerGap(26, Short.MAX_VALUE))
-        );
-        jpThirdYearSecondSemLayout.setVerticalGroup(
-            jpThirdYearSecondSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpThirdYearSecondSemLayout.createSequentialGroup()
-                .addGap(20, 20, 20)
-                .addComponent(lblThirdYearSecondSem, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(spThirdYearSecondSem, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        jpFourthYearFirstSem.setBackground(new java.awt.Color(221, 221, 222));
-
-        jpFourthYearFirstSemBG.setBackground(new java.awt.Color(112, 136, 162));
-
-        jLabel15.setBackground(new java.awt.Color(112, 136, 162));
-        jLabel15.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(15, 30, 54));
-        jLabel15.setText("FOURTH YEAR");
-
-        javax.swing.GroupLayout jpFourthYearFirstSemBGLayout = new javax.swing.GroupLayout(jpFourthYearFirstSemBG);
-        jpFourthYearFirstSemBG.setLayout(jpFourthYearFirstSemBGLayout);
-        jpFourthYearFirstSemBGLayout.setHorizontalGroup(
-            jpFourthYearFirstSemBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpFourthYearFirstSemBGLayout.createSequentialGroup()
-                .addGap(13, 13, 13)
-                .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(13, Short.MAX_VALUE))
-        );
-        jpFourthYearFirstSemBGLayout.setVerticalGroup(
-            jpFourthYearFirstSemBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpFourthYearFirstSemBGLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        lblFourthYearFirstSem.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
-        lblFourthYearFirstSem.setForeground(new java.awt.Color(15, 30, 54));
-        lblFourthYearFirstSem.setText("FIRST SEMESTER");
-
-        spFourthYearFirstSem.setAutoscrolls(true);
-
-        jTable8.setBackground(new java.awt.Color(202, 202, 203));
-        jTable8.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jTable8.setForeground(new java.awt.Color(15, 30, 54));
-        jTable8.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {"Code 1", "Name 1", "-"},
-                {"Code 2", "Name 2", "-"},
-                {"Code 3", "Name 3", "-"},
-                {"Code 4", "Name  4", "-"},
-                {"Code 5", "Name 5", "-"},
-                {"Code 6", "Name 6", "-"},
-                {"Code 7", "Name 7", "-"},
-                {"Code 8", "Name 8", "-"},
-                {"Code 9", "Name 9", "-"},
-                {"Code 10", "Name 10", null}
-            },
-            new String [] {
-                "CODE", "COURSE TITLE", "GRADE"
-            }
-        ));
-        jTable8.setAutoscrolls(false);
-        jTable8.setGridColor(new java.awt.Color(255, 255, 255));
-        jTable8.setShowGrid(true);
-        spFourthYearFirstSem.setViewportView(jTable8);
-
-        javax.swing.GroupLayout jpFourthYearFirstSemLayout = new javax.swing.GroupLayout(jpFourthYearFirstSem);
-        jpFourthYearFirstSem.setLayout(jpFourthYearFirstSemLayout);
-        jpFourthYearFirstSemLayout.setHorizontalGroup(
-            jpFourthYearFirstSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpFourthYearFirstSemLayout.createSequentialGroup()
-                .addGroup(jpFourthYearFirstSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jpFourthYearFirstSemLayout.createSequentialGroup()
-                        .addGap(35, 35, 35)
-                        .addComponent(spFourthYearFirstSem, javax.swing.GroupLayout.PREFERRED_SIZE, 876, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jpFourthYearFirstSemLayout.createSequentialGroup()
-                        .addGap(407, 407, 407)
-                        .addGroup(jpFourthYearFirstSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jpFourthYearFirstSemLayout.createSequentialGroup()
-                                .addGap(9, 9, 9)
-                                .addComponent(lblFourthYearFirstSem))
-                            .addComponent(jpFourthYearFirstSemBG, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(25, Short.MAX_VALUE))
-        );
-        jpFourthYearFirstSemLayout.setVerticalGroup(
-            jpFourthYearFirstSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpFourthYearFirstSemLayout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addComponent(jpFourthYearFirstSemBG, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lblFourthYearFirstSem, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(spFourthYearFirstSem, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(18, Short.MAX_VALUE))
-        );
-
-        jpFourthYearSecondSem.setBackground(new java.awt.Color(221, 221, 222));
-
-        lblFourthYearSecondSem.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
-        lblFourthYearSecondSem.setForeground(new java.awt.Color(15, 30, 54));
-        lblFourthYearSecondSem.setText("SECOND SEMESTER");
-
-        spFourthYearSecondSem.setAutoscrolls(true);
-
-        jTable9.setBackground(new java.awt.Color(202, 202, 203));
-        jTable9.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jTable9.setForeground(new java.awt.Color(15, 30, 54));
-        jTable9.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {"Code 1", "Name 1", "-"},
-                {"Code 2", "Name 2", "-"},
-                {"Code 3", "Name 3", "-"},
-                {"Code 4", "Name  4", "-"},
-                {"Code 5", "Name 5", "-"},
-                {"Code 6", "Name 6", "-"},
-                {"Code 7", "Name 7", "-"},
-                {"Code 8", "Name 8", "-"},
-                {"Code 9", "Name 9", "-"},
-                {"Code 10", "Name 10", null}
-            },
-            new String [] {
-                "CODE", "COURSE TITLE", "GRADE"
-            }
-        ));
-        jTable9.setAutoscrolls(false);
-        jTable9.setGridColor(new java.awt.Color(255, 255, 255));
-        jTable9.setShowGrid(true);
-        spFourthYearSecondSem.setViewportView(jTable9);
-
-        javax.swing.GroupLayout jpFourthYearSecondSemLayout = new javax.swing.GroupLayout(jpFourthYearSecondSem);
-        jpFourthYearSecondSem.setLayout(jpFourthYearSecondSemLayout);
-        jpFourthYearSecondSemLayout.setHorizontalGroup(
-            jpFourthYearSecondSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpFourthYearSecondSemLayout.createSequentialGroup()
-                .addGroup(jpFourthYearSecondSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jpFourthYearSecondSemLayout.createSequentialGroup()
-                        .addGap(35, 35, 35)
-                        .addComponent(spFourthYearSecondSem, javax.swing.GroupLayout.PREFERRED_SIZE, 869, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jpFourthYearSecondSemLayout.createSequentialGroup()
-                        .addGap(395, 395, 395)
-                        .addComponent(lblFourthYearSecondSem)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jpFourthYearSecondSemLayout.setVerticalGroup(
-            jpFourthYearSecondSemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpFourthYearSecondSemLayout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addComponent(lblFourthYearSecondSem, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(spFourthYearSecondSem, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        javax.swing.GroupLayout pnAcadBGLayout = new javax.swing.GroupLayout(pnAcadBG);
-        pnAcadBG.setLayout(pnAcadBGLayout);
-        pnAcadBGLayout.setHorizontalGroup(
-            pnAcadBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnAcadBGLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(pnAcadBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pnAcadBGLayout.createSequentialGroup()
-                        .addGroup(pnAcadBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jpFourthYearSecondSem, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(pnAcadBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jpSecondYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jpThirdYearFirstSem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jpFourthYearFirstSem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(2231, 2231, 2231))
-                    .addGroup(pnAcadBGLayout.createSequentialGroup()
-                        .addGroup(pnAcadBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jpFirstYearFirstSem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jpFirstYearSecondSem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jpSecondYearSecondSem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jpThirdYearSecondSem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-        );
-        pnAcadBGLayout.setVerticalGroup(
-            pnAcadBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnAcadBGLayout.createSequentialGroup()
-                .addComponent(jpFirstYearFirstSem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jpFirstYearSecondSem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jpSecondYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jpSecondYearSecondSem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jpThirdYearFirstSem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jpThirdYearSecondSem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jpFourthYearFirstSem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jpFourthYearSecondSem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 1260, Short.MAX_VALUE))
-        );
-
-        jScrollPane4.setViewportView(pnAcadBG);
-
-        tpHomePage.addTab("tab7", jScrollPane4);
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(navBar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(tpHomePage, javax.swing.GroupLayout.PREFERRED_SIZE, 922, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(navBar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(tpHomePage, javax.swing.GroupLayout.PREFERRED_SIZE, 879, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 12, Short.MAX_VALUE))
-        );
+        getContentPane().add(tpHomePage);
+        tpHomePage.setBounds(278, -41, 922, 930);
 
         pack();
         setLocationRelativeTo(null);
@@ -1914,16 +1944,16 @@ public class dashboard extends javax.swing.JFrame {
         tpHomePage.setSelectedIndex(1);
     }//GEN-LAST:event_btnProfileDetailsActionPerformed
 
-    private void btnAcadBgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAcadBgActionPerformed
-        tpHomePage.setSelectedIndex(5);
-    }//GEN-LAST:event_btnAcadBgActionPerformed
+    private void btnCourseSubActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCourseSubActionPerformed
+        tpHomePage.setSelectedIndex(2);
+    }//GEN-LAST:event_btnCourseSubActionPerformed
 
     private void btnScholarshipActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnScholarshipActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnScholarshipActionPerformed
 
     private void btnScholarDeetsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnScholarDeetsActionPerformed
-        tpHomePage.setSelectedIndex(2);
+        tpHomePage.setSelectedIndex(3);
     }//GEN-LAST:event_btnScholarDeetsActionPerformed
 
     private void btnRenewInfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRenewInfActionPerformed
@@ -1931,7 +1961,7 @@ public class dashboard extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRenewInfActionPerformed
 
     private void btnProcessStepsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProcessStepsActionPerformed
-        tpHomePage.setSelectedIndex(3);
+        tpHomePage.setSelectedIndex(4);
     }//GEN-LAST:event_btnProcessStepsActionPerformed
 
     private void logOutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logOutActionPerformed
@@ -1992,12 +2022,16 @@ public class dashboard extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField4ActionPerformed
 
     private void btnScheduleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnScheduleActionPerformed
-        tpHomePage.setSelectedIndex(4);
+        tpHomePage.setSelectedIndex(5);
     }//GEN-LAST:event_btnScheduleActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField5ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -2036,7 +2070,7 @@ public class dashboard extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnAcadBg;
+    private javax.swing.JButton btnCourseSub;
     private javax.swing.JButton btnDashboard;
     private javax.swing.JButton btnProcessSteps;
     private javax.swing.JButton btnProfile;
@@ -2069,7 +2103,6 @@ public class dashboard extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane10;
-    private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JScrollPane jScrollPane7;
@@ -2093,6 +2126,7 @@ public class dashboard extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
     private javax.swing.JPanel jpFirstYearFirstSem;
     private javax.swing.JPanel jpFirstYearSecondSem;
     private javax.swing.JPanel jpFourthYearFirstSem;
@@ -2139,6 +2173,7 @@ public class dashboard extends javax.swing.JFrame {
     private javax.swing.JScrollPane spAddress;
     private javax.swing.JScrollPane spCitizenship;
     private javax.swing.JScrollPane spCivilStatus;
+    private javax.swing.JScrollPane spCourseSubject;
     private javax.swing.JScrollPane spDateOfBirth;
     private javax.swing.JScrollPane spEmailAddress;
     private javax.swing.JScrollPane spFourthYearFirstSem;
