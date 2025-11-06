@@ -21,11 +21,11 @@ cd <directory>
 ```
 (it should look like this)
 ```
-cd C:\Users\Windows\cs1b
+cd C:\Users\username\cs2d\
 ```
 - Clone the repository using this command:
 ```
-git clone https://github.com/dev-rookj/student-scholarship-portal-system.git
+git clone https://github.com/dev-rookj/id-verification-system.git
 ```
 and the repository should be cloned to your device.
 
@@ -37,7 +37,7 @@ cd <directory>
 ```
 (it should look like this)
 ```
-cd C:\Users\username\cs1b\student-scholarship-portal-system
+cd C:\Users\username\cs2d\
 ```
 - Pull the contents in the repository using this commmand:
 ```
