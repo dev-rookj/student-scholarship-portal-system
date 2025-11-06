@@ -4,7 +4,7 @@ Student Scholarship Portal System made by selected CS1B students for application
 ## To-Do
 **Plan board on the whole process**
 
-https://trello.com/b/bfNtUz1H/dcit50-finals-project
+https://trello.com/b/70oi2Quo/scholarship-management-system
 
 *NOTE: Please create an Atlassian account to access the Trello board. The purpose of this is to make progress tracking easier.*
 
@@ -21,15 +21,14 @@ cd <directory>
 ```
 (it should look like this)
 ```
-cd C:\Users\username\cs2d\
+cd C:\Users\Windows\cs1b
 ```
 - Clone the repository using this command:
 ```
-git clone https://github.com/dev-rookj/id-verification-system.git
+git clone https://github.com/dev-rookj/student-scholarship-portal-system.git
 ```
-and the repository should be cloned to your device.
 
-## Updating project
+## Pulling the repository
 *This operation is done to update the project on your device.* <br/>
 - Open **Command Prompt** and allocate to the project directory using this command:
 ```
@@ -37,31 +36,10 @@ cd <directory>
 ```
 (it should look like this)
 ```
-cd C:\Users\username\cs2d\
+cd C:\Users\username\cs1b\student-scholarship-portal-system
 ```
 - Pull the contents in the repository using this commmand:
 ```
 git pull
 ```
 and it should update your files.
-
-## Submitting changes
-*This operation is done to submit your changes to the repository.*<br/>
-- Open **Command Prompt** and allocate to the project directory using this command:
-```
-cd <directory>
-```
-- Add the updated files you made to the files that are about to be moved in the repository using this command:
-```
-git add .
-```
-- Create a commit message for your push using this command:
-```
-git commit -m "<commitmessage>"
-```
-*Take note that your commit message should be brief, yet informative. (e.g. "button resized", "textbox opacity reduced")*
-- Push the changes to the repository using this command:
-```
-git push
-```
-and it should be submitted to the repository.
