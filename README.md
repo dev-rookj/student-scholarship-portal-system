@@ -4,7 +4,7 @@ Student Scholarship Portal System made by selected CS1B students for application
 ## To-Do
 **Plan board on the whole process**
 
-https://trello.com/b/70oi2Quo/scholarship-management-system
+https://trello.com/b/bfNtUz1H/dcit50-finals-project
 
 *NOTE: Please create an Atlassian account to access the Trello board. The purpose of this is to make progress tracking easier.*
 
